@@ -149,16 +149,16 @@ class Index extends React.Component {
       <Block layout="fourColumn">
         {[
           {
-            content: 'This is the content of my feature',
+            content: 'Re-use your existing React (Native) skills.',
             image: `${baseUrl}img/undraw_react.svg`,
             imageAlign: 'top',
-            title: 'Feature One',
+            title: 'Familiar React syntax',
           },
           {
-            content: 'The content of my second feature',
+            content: 'Enjoy synchronous JS access to 100% of the platform\'s APIs.',
             image: `${baseUrl}img/undraw_operating_system.svg`,
             imageAlign: 'top',
-            title: 'Feature Two',
+            title: 'Write native code in-line in JS',
           },
         ]}
       </Block>
@@ -198,10 +198,10 @@ class Index extends React.Component {
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           <Features />
-          <FeatureCallout />
-          <LearnHow />
-          <TryOut />
-          <Description />
+          {/* <FeatureCallout /> */}
+          {/* <LearnHow /> */}
+          {/* <TryOut /> */}
+          {/* <Description /> */}
           <Showcase />
         </div>
       </div>
