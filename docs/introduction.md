@@ -4,26 +4,48 @@ title: Introduction
 sidebar_label: Introduction
 ---
 
-Check the [documentation](https://docusaurus.io) for how to use Docusaurus.
+<!-- Check the [documentation](https://docusaurus.io) for how to use Docusaurus. -->
 
-## Lorem
+## What is [NativeScript](https://www.nativescript.org/)?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.
+NativeScript is an open source framework for building truly native mobile applications using JavaScript (or TypeScript).
 
-## Mauris In Code
+## What is [React.js](https://reactjs.org/)?
 
-```
-Mauris vestibulum ullamcorper nibh, ut semper purus pulvinar ut. Donec volutpat orci sit amet mauris malesuada, non pulvinar augue aliquam. Vestibulum ultricies at urna ut suscipit. Morbi iaculis, erat at imperdiet semper, ipsum nulla sodales erat, eget tincidunt justo dui quis justo. Pellentesque dictum bibendum diam at aliquet. Sed pulvinar, dolor quis finibus ornare, eros odio facilisis erat, eu rhoncus nunc dui sed ex. Nunc gravida dui massa, sed ornare arcu tincidunt sit amet. Maecenas efficitur sapien neque, a laoreet libero feugiat ut.
-```
+React is an industry-standard library for developing user interfaces.
 
-## Nulla
+## What is React NativeScript?
 
-Nulla facilisi. Maecenas sodales nec purus eget posuere. Sed sapien quam, pretium a risus in, porttitor dapibus erat. Sed sit amet fringilla ipsum, eget iaculis augue. Integer sollicitudin tortor quis ultricies aliquam. Suspendisse fringilla nunc in tellus cursus, at placerat tellus scelerisque. Sed tempus elit a sollicitudin rhoncus. Nulla facilisi. Morbi nec dolor dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras et aliquet lectus. Pellentesque sit amet eros nisi. Quisque ac sapien in sapien congue accumsan. Nullam in posuere ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin lacinia leo a nibh fringilla pharetra.
+React NativeScript is a React custom renderer that allows you to describe a NativeScript app using the familiar React 'way of thinking'.
 
-## Orci
+## Did you say [React Native](https://react-native.org/)?
 
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin venenatis lectus dui, vel ultrices ante bibendum hendrerit. Aenean egestas feugiat dui id hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur in tellus laoreet, eleifend nunc id, viverra leo. Proin vulputate non dolor vel vulputate. Curabitur pretium lobortis felis, sit amet finibus lorem suscipit ut. Sed non mollis risus. Duis sagittis, mi in euismod tincidunt, nunc mauris vestibulum urna, at euismod est elit quis erat. Phasellus accumsan vitae neque eu placerat. In elementum arcu nec tellus imperdiet, eget maximus nulla sodales. Curabitur eu sapien eget nisl sodales fermentum.
+No – React Native is another framework for building truly native mobile applications using JavaScript (or TypeScript). So it fits the same purpose as React NativeScript.
 
-## Phasellus
+## Why would you use this (and not React Native)?
 
-Phasellus pulvinar ex id commodo imperdiet. Praesent odio nibh, sollicitudin sit amet faucibus id, placerat at metus. Donec vitae eros vitae tortor hendrerit finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque vitae purus dolor. Duis suscipit ac nulla et finibus. Phasellus ac sem sed dui dictum gravida. Phasellus eleifend vestibulum facilisis. Integer pharetra nec enim vitae mattis. Duis auctor, lectus quis condimentum bibendum, nunc dolor aliquam massa, id bibendum orci velit quis magna. Ut volutpat nulla nunc, sed interdum magna condimentum non. Sed urna metus, scelerisque vitae consectetur a, feugiat quis magna. Donec dignissim ornare nisl, eget tempor risus malesuada quis.
+**In brief:** React NativeScript puts native access at the front of the developer experience.
+
+React Native has a different architecture (the JavaScript Virtual Machine runs on a separate thread to the main/UI thread), and – at the time of writing – it relies on a JSON-serialised bridge to communicate between the native and JS contexts.
+
+This architecture makes native access a chore – any native access from the JS context is necessarily asynchronous, and a lot of boilerplate is needed to set up a JSON-compatible communication interface between the two contexts. Any alterations to native code also require a recompile of the app.
+
+NativeScript (and therefore React NativeScript), by comparison, runs its JS VM on the main thread, and is bridgeless, with JS-native bindings to all the platform's APIs. This means that we can access native functionality synchronously simply by calling it via JS. Native development becomes even faster thanks to JS facilitating hot reload.
+
+## How is its compatibility with the React ecosystem?
+​
+React NativeScript can use anything that isn't coupled to a particular React renderer. So, for example, Redux will work (as it is simply a state store), but React Navigation (which depends upon React DOM or React Native) won't.
+​
+React NativeScript *cannot* consume code from React Native projects – that's a whole large-scale separate project. Support for non-UI plugins from the React Native ecosystem is a long-term area of interest, however.
+
+## Want to get involved?
+
+React NativeScript is an open-source project and contributions are very much encouraged. Join us on the `#react` channel on the [NativeScript Community Slack](https://www.nativescript.org/slack-invitation-form) to chat.
+
+## Who supports it?
+
+Nobody; it's purely been a labour of love. A donation page may pop up at some point in the future, however.
+
+## Is it production-ready?
+​
+It is feature-equivalent with NativeScript Core, which itself is production-ready (as is React); the question is how well that implementation has been achiever. Until users start picking it up and identifying holes in it, we can't be sure.
