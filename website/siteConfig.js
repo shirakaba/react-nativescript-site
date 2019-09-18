@@ -21,17 +21,19 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Test Site', // Title for your website.
-  tagline: 'A website for testing',
-  url: 'https://your-docusaurus-test-site.com', // Your website URL
+  title: 'React NativeScript', // Title for your website.
+  tagline: 'The native-first alternative to React Native',
+  url: 'http://react-nativescript.netlify.com', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
+  // defaultVersionShown: '0.12.0', /* I won't be touching this until the package hits v1.0.0 */
+
   // Used for publishing and more
-  projectName: 'test-site',
-  organizationName: 'facebook',
+  projectName: 'react-nativescript',
+  organizationName: 'shirakaba',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
@@ -44,19 +46,28 @@ const siteConfig = {
     {blog: true, label: 'Blog'},
   ],
 
-  // If you have users set above, you add it here:
-  users,
+  /* If you have users set above, you add it here: */
+  // users,
+
+  /* TODO */
+  // algolia: {
+  //   apiKey: '0f9f28b9ab9efae89810921a351753b5',
+  //   indexName: 'github',
+  // },
 
   /* path to images for header/footer */
-  headerIcon: 'img/favicon.ico',
-  footerIcon: 'img/favicon.ico',
+  headerIcon: 'img/react-nativescript.svg',
+  footerIcon: 'img/react-nativescript.svg',
   favicon: 'img/favicon.ico',
 
   /* Colors for website */
   colors: {
-    primaryColor: '#6619a7',
-    secondaryColor: '#471174',
+    // primaryColor: '#485FFC', /* NativeScript logo blue */
+    primaryColor: '#364CCB', /* NativeScript website backdrop blue */
+    secondaryColor: '#0B1C4C', /* NativeScript website dark button */
   },
+
+  editUrl: 'https://github.com/shirakaba/react-nativescript-site/edit/master/docs/', // TODO: check whether correct
 
   /* Custom fonts for website */
   /*
@@ -73,11 +84,16 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Your Name or Your Company Name`,
+  copyright: `Copyright © ${new Date().getFullYear()} Jamie Birch`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
-    theme: 'default',
+    // https://github.com/isagalaev/highlight.js/tree/master/src/styles
+    // theme: 'pojoaque',
+    // theme: 'default',
+    theme: 'solarized-dark',
+
+    defaultLang: 'typescript',
   },
 
   // Add custom scripts here that would be placed in <script> tags.
@@ -90,6 +106,8 @@ const siteConfig = {
 
   // Open Graph and Twitter card images.
   ogImage: 'img/undraw_online.svg',
+  twitter: false, // Whether (my) Twitter image should appear at the bottom of any blog post.
+  twitterUsername: 'LinguaBrowse',
   twitterImage: 'img/undraw_tweetstorm.svg',
 
   // For sites with a sizable amount of content, set collapsible to true.
