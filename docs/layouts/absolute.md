@@ -3,10 +3,11 @@ id: absolute
 title: AbsoluteLayout
 sidebar_label: AbsoluteLayout
 ---
+<!-- contributors: [shirakaba, rigor789, ikoevska] -->
 
 `<$AbsoluteLayout>` is a React wrapper around `AbsoluteLayout`, the simplest layout container in NativeScript (see the official [top-level documentation](https://docs.nativescript.org/ui/layouts/layout-containers#absolutelayout) and [detailed API specification](https://docs.nativescript.org/api-reference/modules/_ui_layouts_absolute_layout_)).
 
-`<$AbsoluteLayout>` has the following behavior:
+`<$AbsoluteLayout>` has the following behaviour:
 
 * Uses a pair of absolute left/top coordinates to position its children.
 * Doesn't enforce any layout constraints on its children.
@@ -40,6 +41,10 @@ The following example creates a group of overlapping items.
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/absolute_layout_overlap.svg" />
 
-## React NativeScript-specific props
+## Extra props for child elements
 
 None.
+
+## React NativeScript-specific props
+
+None for `<$AbsoluteLayout>`, nor for any of its children.

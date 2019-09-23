@@ -8,15 +8,33 @@
 // See https://docusaurus.io/docs/site-config for all the possible
 // site configuration options.
 
-// List of projects/orgs using your project for the users page.
 const users = [
+  // {
+  //   caption: 'User1',
+  //   // You will need to prepend the image path with your baseUrl
+  //   // if it is not '/', like: '/test-site/img/image.jpg'.
+  //   image: '/img/undraw_open_source.svg',
+  //   infoLink: 'https://www.facebook.com',
+  //   pinned: true,
+  // },
+];
+
+// List of projects/orgs using your project for the users page.
+const contributors = [
   {
-    caption: 'User1',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
-    pinned: true,
+    caption: 'shirakaba',
+    image: 'https://github.com/shirakaba.png?size=100',
+    infoLink: 'https://github.com/shirakaba',
+  },
+  {
+    caption: 'rigor789',
+    image: 'https://github.com/rigor789.png?size=100',
+    infoLink: 'https://github.com/rigor789',
+  },
+  {
+    caption: 'ikoevska',
+    image: 'https://github.com/ikoevska.png?size=100',
+    infoLink: 'https://github.com/ikoevska',
   },
 ];
 
@@ -116,7 +134,7 @@ const siteConfig = {
   // docsSideNavCollapsible: true,
 
   // Show documentation's last contributor's name.
-  // enableUpdateBy: true,
+  enableUpdateBy: true,
 
   // Show documentation's last update time.
   // enableUpdateTime: true,

@@ -3,7 +3,9 @@
     "INTRODUCTION": ["introduction"],
     "GETTING STARTED": ["quick-start", "installation", "devtools"],
     "ELEMENTS: LAYOUT": [
-    	"layouts/absolute"
+    	"layouts/absolute",
+    	"layouts/dock",
+    	"layouts/grid"
     ],
     "ELEMENTS: COMPONENTS": []
   },
