@@ -2,7 +2,9 @@
   "docs": {
     "INTRODUCTION": ["introduction"],
     "GETTING STARTED": ["quick-start", "installation", "devtools"],
-    "ELEMENTS: LAYOUT": [],
+    "ELEMENTS: LAYOUT": [
+    	"layouts/absolute"
+    ],
     "ELEMENTS: COMPONENTS": []
   },
   "docs-other": {
