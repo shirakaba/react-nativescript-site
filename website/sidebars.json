@@ -1,8 +1,9 @@
 {
   "docs": {
     "INTRODUCTION": ["introduction"],
-    "First Category": ["doc2"],
-    "Second Category": ["doc3"]
+    "GETTING STARTED": ["quick-start", "installation", "devtools"],
+    "ELEMENTS: LAYOUT": [],
+    "ELEMENTS: COMPONENTS": []
   },
   "docs-other": {
     "First Category": ["doc4", "doc5"]

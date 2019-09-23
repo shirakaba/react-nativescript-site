@@ -66,7 +66,7 @@ const siteConfig = {
     primaryColor: '#364CCB', /* NativeScript website backdrop blue */
     secondaryColor: '#0B1C4C', /* NativeScript website dark button */
   },
-
+  // https://github.com/nativescript-vue/nativescript-vue.org/blob/master/content/docs/en
   editUrl: 'https://github.com/shirakaba/react-nativescript-site/edit/master/docs/', // TODO: check whether correct
 
   /* Custom fonts for website */
