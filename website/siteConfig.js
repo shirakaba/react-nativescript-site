@@ -86,6 +86,7 @@ const siteConfig = {
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} Jamie Birch`,
 
+  usePrism: ['jsx', 'tsx'],
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
     // https://github.com/isagalaev/highlight.js/tree/master/src/styles
