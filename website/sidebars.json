@@ -5,6 +5,7 @@
     "ELEMENTS: LAYOUT": [
     	"layouts/absolute",
     	"layouts/dock",
+      "layouts/flexbox",
     	"layouts/grid"
     ],
     "ELEMENTS: COMPONENTS": []
