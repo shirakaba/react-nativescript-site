@@ -13,7 +13,8 @@
     "ELEMENTS: COMPONENTS": [
       "components/ActivityIndicator",
       "components/Button",
-      "components/DatePicker"
+      "components/DatePicker",
+      "components/Frame"
     ]
   },
   "docs-other": {
