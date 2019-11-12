@@ -16,7 +16,10 @@
       "components/DatePicker",
       "components/Frame",
       "components/HtmlView",
-      "components/Image"
+      "components/Image",
+      "components/Label",
+      "components/ListView",
+      "components/ListPicker"
     ]
   },
   "docs-other": {

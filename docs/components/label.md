@@ -1,17 +1,17 @@
 ---
+id: Label
 title: Label
-apiRef: https://docs.nativescript.org/api-reference/classes/_ui_label_.label
-contributors: [MisterBrownRSA, rigor789, eddyverbruggen, ikoevska]
+contributors: [shirakaba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska]
 ---
 
-`<Label>` is a UI component that displays read-only text.
+`<$Label>` is a UI component that displays read-only text (see the official [top-level documentation](https://docs.nativescript.org/ui/components/label) and [detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_label_.label)).
 
-**IMPORTANT**: This `<Label>` is **not** the same as the HTML `<label>`.
+**IMPORTANT**: This `<$Label>` is **not** the same as the HTML `<$label>`.
 
 ---
 
-```html
-<Label text="Label" />
+```tsx
+<$Label text="Label" />
 ```
 
 [> screenshots for=Label <]
@@ -20,24 +20,24 @@ contributors: [MisterBrownRSA, rigor789, eddyverbruggen, ikoevska]
 
 If you need to style parts of the text, you can use a combination of a [`FormattedString`](https://docs.nativescript.org/angular/ui/ng-ui-widgets/formatted-string) and [`Span`](https://docs.nativescript.org/api-reference/classes/_text_span_.span) elements.
 
-```html
-<Label textWrap="true">
-  <FormattedString>
-    <Span text="This text has a " />
-    <Span text="red " style="color: red" />
-    <Span text="piece of text. " />
-    <Span text="Also, this bit is italic, " fontStyle="italic" />
-    <Span text="and this bit is bold." fontWeight="bold" />
-  </FormattedString>
-</Label>
+```tsx
+<$Label textWrap={true}>
+  <$FormattedString>
+    <$Span text="This text has a " />
+    <$Span text="red " style="color: red" />
+    <$Span text="piece of text. " />
+    <$Span text="Also, this bit is italic, " fontStyle="italic" />
+    <$Span text="and this bit is bold." fontWeight="bold" />
+  </$FormattedString>
+</$Label>
 ```
 
 ## Props
 
 | Name | Type | Description |
 |------|------|-------------|
-| `text` | `String` | Gets or sets the text of the label.
-| `textWrap` | `Boolean` | Gets or sets whether the label wraps text.<br/>Default value: `false`.
+| `text` | `string` | Gets or sets the text of the label.
+| `textWrap` | `boolean` | Gets or sets whether the label wraps text.<br/>Default value: `false`.
 
 ## Native component
 

@@ -1,22 +1,25 @@
 ---
+id: ListPicker
 title: ListPicker
-apiRef: https://docs.nativescript.org/api-reference/classes/_ui_list_picker_.listpicker
-contributors: [MisterBrownRSA, rigor789, ikoevska]
+contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska]
 ---
 
-`<ListPicker>` is a UI component that lets the user select a value from a pre-configured list.
+`<$ListPicker>` is a UI component that lets the user select a value from a pre-configured list (see the official [top-level documentation](https://docs.nativescript.org/ui/components/list-picker) and [detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_list_picker_.listpicker)).
 
 ---
 
-```html
-<ListPicker :items="listOfItems" selectedIndex="0"
-    @selectedIndexChange="selectedIndexChanged" />
-```
+```tsx
+import { NarrowedEventData } from "react-nativescript/dist/shared/NativeScriptComponentTypings";
 
-`<ListPicker>` provides two-way data binding using `v-model`.
-
-```html
-<ListPicker :items="listOfItems" v-model="selectedItem" />
+<$ListPicker
+  items={listOfItems}
+  selectedIndex={0}
+  onSelectedIndexChange={(args: NarrowedEventData<ListPicker>) => {
+    const listPicker: ListPicker = args.object;
+    const index: number = listPicker.selectedIndex;
+    const item = listPicker.items[index];
+  }}
+/>
 ```
 
 [> screenshots for=ListPicker <]
@@ -25,14 +28,14 @@ contributors: [MisterBrownRSA, rigor789, ikoevska]
 
 | Name | Type | Description |
 |------|------|-------------|
-| `items` | `Array<String>` | Gets or sets the items displayed as options in the list picker.
-| `selectedIndex` | `Number` | Gets or sets the index of the currently selected item.
+| `items` | `Array<string>` | Gets or sets the items displayed as options in the list picker.
+| `selectedIndex` | `number` | Gets or sets the index of the currently selected item.
 
 ## Events
 
 | Name | Description |
 |------|-------------|
-| `selectedIndexChange`| Emitted when the currently selected option (index) changes. The new index can be retrieved via `$event.value`.
+| `onSelectedIndexChange`| Emitted when the currently selected option (index) changes. The new index can be retrieved via `args.object.selectedIndex`.
 
 ## Native component
 

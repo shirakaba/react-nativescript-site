@@ -1,41 +1,86 @@
 ---
+id: ListView
 title: ListView
-apiRef: https://docs.nativescript.org/api-reference/classes/_ui_list_view_.listview
-contributors: [MisterBrownRSA, rigor789, eddyverbruggen, ikoevska]
+contributors: [shirakaba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska]
 ---
 
-`<ListView>` is a UI component that shows items in a vertically scrolling list. To set how the list shows individual items, you can use the `<v-template>` component.
+`<$ListView>` is a UI component that shows items in a vertically scrolling list. To set how the list shows individual items, you can use the `<v-template>` component (see the official [top-level documentation](https://docs.nativescript.org/ui/components/list-view) and [detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_list_view_.listview)).
 
-```html
-<ListView for="item in listOfItems" @itemTap="onItemTap">
-  <v-template>
-    <!-- Shows the list item label in the default color and style. -->
-    <Label :text="item.text" />
-  </v-template>
-</ListView>
+```tsx
+import { ListView, ItemEventData } from "tns-core-modules/ui/list-view/list-view";
+
+<$ListView
+  cellFactory={(item: any, ref: React.RefObject<any>) => {
+    return (
+      <$Label ref={ref} text={item.text} />
+    );
+  }}
+  onitemTap={(args: ItemEventData) => {}}
+  onLoadMoreItems={(args: ItemEventData) => {}}
+/>
 ```
 
 ---
 
 [> screenshots for=ListView <]
 
-## Using `<ListView>` with multiple `<v-template>` blocks
+## Using `<$ListView>` with multiple templates
 
 The [`v-template` component](/en/docs/utilities/v-template) is used to define how each list item is shown on the screen. 
 
-If you need to visualize one or more list items differently than the rest, you can enclose them in additional `<v-template>` blocks and use conditions. You can have as many `<v-template>` blocks as needed within one `<ListView>`.
+If you need to visualize one or more list items differently than the rest, you can enclose them in additional `<v-template>` blocks and use conditions. You can have as many `<v-template>` blocks as needed within one `<$ListView>`.
 
-```html
-<ListView for="item in listOfItems" @itemTap="onItemTap"> 
-  <v-template>
-    <Label :text="item.text" /> 
-  </v-template>
+```tsx
+import {
+    ListView as NativeScriptListView,
+    ItemEventData,
+    knownTemplates,
+    ItemsSource,
+} from "tns-core-modules/ui/list-view/list-view";
 
-  <v-template if="$odd">
-    <!-- For items with an odd index, shows the label in red. -->
-    <Label :text="item.text" color="red" />
-  </v-template>
-</ListView>
+<$ListView
+  itemTemplateSelector={(item: any, index: number, items: any): string => {
+    return index % 2 === 0 ? "even" : "odd";
+  }}
+  cellFactories={new Map([
+    [
+      "odd",
+      {
+        placeholderItem: {
+          text: "some odd text"
+        },
+        cellFactory: (item: any, ref: React.RefObject<any>) => {
+          return (
+            <$Label
+              ref={ref}
+              text={item.text}
+              color={new Color("white")}
+            />
+          );
+        },
+      }
+    ],
+    [
+      "even",
+      {
+        placeholderItem: {
+          text: "some odd text"
+        },
+        cellFactory: (item: any, ref: React.RefObject<any>) => {
+          return (
+            <$Label
+              ref={ref}
+              text={item.text}
+              color={new Color("white")}
+            />
+          );
+        },
+      }
+    ],
+  ])}
+  onitemTap={(args: ItemEventData) => {}}
+  onLoadMoreItems={(args: ItemEventData) => {}}
+/>
 ```
 
 When you create conditions for `<v-template>`, you can use a valid JavaScript expression with the following variables:
@@ -49,7 +94,7 @@ Only the above variables are available in this scope, and currently you do not h
 
 ## An important note about `v-for`
 
-`<ListView>` does not loop through list items as you would expect when using a [`v-for`](https://vuejs.org/v2/guide/list.html#Mapping-an-Array-to-Elements-with-v-for) loop. Instead `<ListView>` only creates the necessary views to display the currently visible items on the screen, and reuses the views that are already off-screen when scrolled. This concept is called _view recycling_ and is commonly used in mobile apps to improve performance. 
+`<$ListView>` does not loop through list items as you would expect when using a [`v-for`](https://vuejs.org/v2/guide/list.html#Mapping-an-Array-to-Elements-with-v-for) loop. Instead `<$ListView>` only creates the necessary views to display the currently visible items on the screen, and reuses the views that are already off-screen when scrolled. This concept is called _view recycling_ and is commonly used in mobile apps to improve performance. 
 
 This is important because **you can't rely on event listeners attached inside the `v-template`**. Instead, you need to use the `itemTap` event which contains the index of the tapped item and the actual item from the list.
 
@@ -60,27 +105,27 @@ onItemTap(event) {
 }
 ```
 
-**NOTE:** If a `v-for` is used on a `<ListView>` a warning will be printed to the console, and it will be converted to the `for` property.
+**NOTE:** If a `v-for` is used on a `<$ListView>` a warning will be printed to the console, and it will be converted to the `for` property.
 
 ## Props
 
 | Name | Type | Description |
 |------|------|-------------|
 | `for` | `String` | Provides the expression for iterating through the items.<br/>For example: <ul><li><code>item in listOfItems</code></li><li><code>(item, index) in listOfItems</code></li><li><code>item in [1, 2, 3, 4, 5]</code></li></ul>
-| `items` | `Array<any>` | An array of items to be shown in the `<ListView>`.<br/>**This property is only for advanced use. Use the `for` property instead.**
+| `items` | `Array<any>` | An array of items to be shown in the `<$ListView>`.<br/>**This property is only for advanced use. Use the `for` property instead.**
 | `separatorColor` | `Color` | Sets the separator line color. Set to `transparent` to remove it.
 
 ## Events
 
 | Name | Description |
 |------|-------------|
-| `itemTap`| Emitted when an item in the `<ListView>` is tapped. To access the tapped item, use `event.item`.
+| `itemTap`| Emitted when an item in the `<$ListView>` is tapped. To access the tapped item, use `event.item`.
 
 ## Methods
 
 | Name | Description |
 |------|-------------|
-| `refresh()` | Forces the `<ListView>` to reload all its items.
+| `refresh()` | Forces the `<$ListView>` to reload all its items.
 
 ## Native component
 
