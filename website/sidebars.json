@@ -7,7 +7,8 @@
     	"layouts/dock",
       "layouts/flexbox",
     	"layouts/grid",
-      "layouts/stack"
+      "layouts/stack",
+      "layouts/wrap"
     ],
     "ELEMENTS: COMPONENTS": []
   },
