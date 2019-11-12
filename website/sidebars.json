@@ -6,7 +6,8 @@
     	"layouts/absolute",
     	"layouts/dock",
       "layouts/flexbox",
-    	"layouts/grid"
+    	"layouts/grid",
+      "layouts/stack"
     ],
     "ELEMENTS: COMPONENTS": []
   },
