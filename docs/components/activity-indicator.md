@@ -1,15 +1,15 @@
 ---
+id: ActivityIndicator
 title: ActivityIndicator
-apiRef: https://docs.nativescript.org/api-reference/classes/_ui_activity_indicator_.activityindicator
-contributors: [MisterBrownRSA, rigor789, ikoevska]
+contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska]
 ---
 
-`<ActivityIndicator>` is a UI component that shows a progress indicator signaling to the user of an operation running in the background.
+`<$ActivityIndicator>` is a UI component that shows a progress indicator signaling to the user of an operation running in the background (see the official [top-level documentation](https://docs.nativescript.org/ui/components/activity-indicator) and [detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_activity_indicator_.activityindicator)).
 
 ---
 
-```html
-<ActivityIndicator busy="true" @busyChange="onBusyChanged" />
+```tsx
+<$ActivityIndicator busy={true} />
 ```
 
 [> screenshots for=ActivityIndicator <]
@@ -19,12 +19,6 @@ contributors: [MisterBrownRSA, rigor789, ikoevska]
 | Name | Type | Description |
 |------|------|-------------|
 | `busy` | `Boolean` | Gets or sets whether the indicator is active. When `true`, the indicator is active.
-
-## Events
-
-| Name | Description |
-|------|-------------|
-| `busyChange`| Emitted when the `busy` property is changed.
 
 ## Native component
 

@@ -10,7 +10,11 @@
       "layouts/stack",
       "layouts/wrap"
     ],
-    "ELEMENTS: COMPONENTS": []
+    "ELEMENTS: COMPONENTS": [
+      "components/ActivityIndicator",
+      "components/Button",
+      "components/DatePicker"
+    ]
   },
   "docs-other": {
     "First Category": ["doc4", "doc5"]
