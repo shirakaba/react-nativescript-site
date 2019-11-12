@@ -14,7 +14,9 @@
       "components/ActivityIndicator",
       "components/Button",
       "components/DatePicker",
-      "components/Frame"
+      "components/Frame",
+      "components/HtmlView",
+      "components/Image"
     ]
   },
   "docs-other": {

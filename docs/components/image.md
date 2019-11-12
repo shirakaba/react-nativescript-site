@@ -1,35 +1,36 @@
 ---
+id: Image
 title: Image
 apiRef: https://docs.nativescript.org/api-reference/classes/_ui_image_.image
 contributors: [MisterBrownRSA, rigor789, ikoevska]
 ---
 
-`<Image>` is a UI component that shows an image from an [ImageSource](https://docs.nativescript.org/api-reference/modules/_image_source_) or from a URL.
+`<$Image>` is a UI component that shows an image from an [ImageSource](https://docs.nativescript.org/api-reference/modules/_image_source_) or from a URL (see the official [top-level documentation](https://docs.nativescript.org/ui/components/image) and [detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_image_.image)).
 
 ---
 
 #### Displaying an image relative to the `app` directory
 
-```html
-<Image src="~/logo.png" stretch="none" />
+```tsx
+<$Image src="~/logo.png" stretch="none" />
 ```
 
 #### Displaying an image from a URL
 
-```html
-<Image src="https://art.nativescript-vue.org/NativeScript-Vue-White-Green.png" stretch="none" />
+```tsx
+<$Image src="https://art.nativescript-vue.org/NativeScript-Vue-White-Green.png" stretch="none" />
 ```
 
 #### Displaying an image from `App_Resources`
 
-```html
-<Image src="res://icon" stretch="none" />
+```tsx
+<$Image src="res://icon" stretch="none" />
 ```
 
 #### Displaying a `base64`-encoded image
 
-```html
-<Image src="data:Image/png;base64,iVBORw..." stretch="none" />
+```tsx
+<$Image src="data:Image/png;base64,iVBORw..." stretch="none" />
 ```
 
 [> screenshots for=Image <]
@@ -38,7 +39,7 @@ contributors: [MisterBrownRSA, rigor789, ikoevska]
 
 | Name | Type | Description |
 |------|------|-------------|
-| `src` | `String` or [`ImageSource`](https://docs.nativescript.org/api-reference/modules/_image_source_) | Gets or sets the source of the image as a URL or an image source.
+| `src` | `string` or [`ImageSource`](https://docs.nativescript.org/api-reference/modules/_image_source_) | Gets or sets the source of the image as a URL or an image source.
 |`imageSource` | [`ImageSource`](https://docs.nativescript.org/api-reference/modules/_image_source_) | Gets or sets the image source of the image.
 | `tintColor` | `Color` | (Style property) Sets a color to tint template images.
 | `stretch` | `Stretch` | (Style property) Gets or sets the way the image is resized to fill its allocated space.<br/>Valid values: `none`, `aspectFill`, `aspectFit`, or `fill`.<br/>For more information, see [Stretch](https://docs.nativescript.org/api-reference/modules/_ui_enums_.stretch). 

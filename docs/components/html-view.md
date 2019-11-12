@@ -1,17 +1,18 @@
 ---
+id: HtmlView
 title: HtmlView
 apiRef: https://docs.nativescript.org/api-reference/classes/_ui_html_view_.htmlview
-contributors: [MisterBrownRSA, rigor789, ikoevska]
+contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska]
 ---
 
-`<HtmlView>` is a UI component that lets you show static HTML content.
+`<$HtmlView>` is a UI component that lets you show static HTML content (see the official [top-level documentation](https://docs.nativescript.org/ui/components/html-view) and [detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_html_view_.htmlview)).
 
-See also: [WebView](/en/docs/elements/components/web-view).
+See also: [WebView](/docs/components/web-view).
 
 ---
 
-```html
-<HtmlView html="<div><h1>HtmlView</h1></div>" />
+```tsx
+<$HtmlView html="<div><h1>HtmlView</h1></div>" />
 ```
 
 [> screenshots for=HtmlView <]
@@ -20,7 +21,7 @@ See also: [WebView](/en/docs/elements/components/web-view).
 
 | Name | Type | Description |
 |------|------|-------------|
-| `html` | `String` | The HTML content to be shown.
+| `html` | `string` | The HTML content to be shown.
 
 ## Native component
 
