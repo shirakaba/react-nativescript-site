@@ -6,24 +6,50 @@ contributors: [shirakaba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska]
 
 `<$ListView>` is a UI component that shows items in a vertically scrolling list. To set how the list shows individual items, you can specify different templates using a combination of the `cellFactories` rendering method and the `itemTemplateSelector`.
 
+Importantly, ListView is a "virtual list", i.e. it uses cell recycling (just like the native iOS/Android lists). This has implications for the behaviour of the ListView's cells, which will be detailed in this article.
+
 See also:
 
 * [Official top-level documentation](https://docs.nativescript.org/ui/components/list-view)
 * [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_list_view_.listview)
 
+---
+
+## Using `<$ListView>` with a single template
+
 ```tsx
 import { ListView, ItemEventData } from "tns-core-modules/ui/list-view/list-view";
 
+type MyItem = { text: string };;
+const items: MyItem[] = [{ text: "hi" }];
+
+/*
+ * OPTIMISATION NOTE:
+ * I have written callbacks and event listener handlers in-line
+ * only for readability. They should instead be written in a higher
+ * scope, which prevents them being re-instantiated on each render. 
+ */
+
 <$ListView
-  cellFactory={(item: any, ref: React.RefObject<any>) => {
+  items={items}
+  // The render function for each cell. Takes a MyItem.
+  cellFactory={(item: MyItem, ref: React.RefObject<any>) => {
     return (
+      // You MUST pass the ref in to the component.
       <$Label ref={ref} text={item.text} />
     );
   }}
-  onitemTap={(args: ItemEventData) => {}}
-  onLoadMoreItems={(args: ItemEventData) => {}}
+  onitemTap={(args: ItemEventData) => {
+    const index: number = args.index;
+    const item: MyItem = items[index];
+    console.log(`Tapped item index ${index}: "${text}".`);
+  }}
 />
 ```
+
+`cellFactory` is the function that renders a list cell, given an input item. Its callback takes a `ref` parameter: you must pass this ref into the root component rendered by the cellFactory function, otherwise your React NativeScript will crash. 
+
+`onitemTap` runs when tapping a cell. For handling taps on list items, please use this prop rather than adding event listeners on the individual items themselves, as event listeners in the cells may not be reliable due to cell recycling.
 
 ---
 
@@ -31,9 +57,11 @@ import { ListView, ItemEventData } from "tns-core-modules/ui/list-view/list-view
 
 ## Using `<$ListView>` with multiple templates
 
-The [`v-template` component](/en/docs/utilities/v-template) is used to define how each list item is shown on the screen. 
+If you want to display several different formats of cell (i.e. with different UI element hierarchies) in the same list, don't use conditional rendering, as it is not performant with respect to the cell recycling that ListViews perform.
 
-If you need to visualize one or more list items differently than the rest, you can enclose them in additional `<v-template>` blocks and use conditions. You can have as many `<v-template>` blocks as needed within one `<$ListView>`.
+Instead, use templates. This allows React to focus on updating individual properties on elements rather than adding/removing UI elements from the tree (which is memory-intensive, due to rapid re-instantiation of elements).
+
+See [Alexander Vakrilov's brilliant article](https://medium.com/@alexander.vakrilov/faster-nativescript-listview-with-multiple-item-templates-8f903a32e48f) on why templates optimise ListView performance when multiple different UI trees are required.
 
 ```tsx
 import {
@@ -43,22 +71,42 @@ import {
     ItemsSource,
 } from "tns-core-modules/ui/list-view/list-view";
 
+type MyEvenItem = { textOdd: string };
+type MyOddItem = { textOdd: string };
+type MyItem = MyEvenItem | MyOddItem;
+
+const items: MyItem[] = [{ textEven: "hi" }, { textOdd: "hi" }];
+
+function itemTemplateSelector(item: MyItem, index: number, items: MyItem[]): string {
+  return index % 2 === 0 ? "even" : "odd";
+}
+
+/*
+ * OPTIMISATION NOTE:
+ * I have written several callbacks and event listener handlers in-line
+ * only for readability. They should instead be written in a higher
+ * scope, which prevents them being re-instantiated on each render. 
+ */
+
 <$ListView
-  itemTemplateSelector={(item: any, index: number, items: any): string => {
-    return index % 2 === 0 ? "even" : "odd";
-  }}
+  items={items}
+  itemTemplateSelector={itemTemplateSelector}
   cellFactories={new Map([
     [
+      // The template key (to be matched by itemTemplateSelector).
       "odd",
       {
+        // The placeholder item to intialise each cell from.
         placeholderItem: {
           text: "some odd text"
         },
-        cellFactory: (item: any, ref: React.RefObject<any>) => {
+        // The render function for each cell. Takes a MyOddItem.
+        cellFactory: (item: MyOddItem, ref: React.RefObject<any>) => {
           return (
             <$Label
+              // You MUST pass the ref in to the component.
               ref={ref}
-              text={item.text}
+              text={item.textOdd}
               color={new Color("white")}
             />
           );
@@ -66,16 +114,20 @@ import {
       }
     ],
     [
+      // The template key (to be matched by itemTemplateSelector)
       "even",
       {
+        // The placeholder item to intialise each cell from.
         placeholderItem: {
           text: "some odd text"
         },
-        cellFactory: (item: any, ref: React.RefObject<any>) => {
+        // The render function for each cell. Takes a MyEvenItem.
+        cellFactory: (item: MyEvenItem, ref: React.RefObject<any>) => {
           return (
-            <$Label
+            <$TextView
+              // You MUST pass the ref in to the component.
               ref={ref}
-              text={item.text}
+              text={item.textEven}
               color={new Color("white")}
             />
           );
@@ -83,50 +135,108 @@ import {
       }
     ],
   ])}
-  onitemTap={(args: ItemEventData) => {}}
-  onLoadMoreItems={(args: ItemEventData) => {}}
+  onitemTap={(args: ItemEventData) => {
+    const index: number = args.index;
+    const item: MyItem = items[index];
+    const isEven: boolean = itemTemplateSelector(index) === "even";
+    const itemText: string = isEven ?  
+      (item as MyEvenItem).textEven :
+      (item as MyOddItem).textOdd;
+
+    console.log(`Tapped item index ${index} (${isEven ? "even" : "odd"}): "${itemText}".`);
+  }}
 />
 ```
 
-When you create conditions for `<v-template>`, you can use a valid JavaScript expression with the following variables:
+`itemTemplateSelector` must return the name of a template, which must match a key in the Map that you pass into the `cellFactories` prop.
 
-* `$index`&mdash; the index of the current item
-* `$even`&mdash; `true` if the index of the current item is even
-* `$odd`&mdash; `true` if the index of the current item is odd
-* *`item`*&mdash; the *item* of the list (the name corresponds to the iterator in the `for` property). E.g. `if="item.text == 'danger'"`
+`cellFactories` takes a `Map<string, { placeholderItem: any, cellFactory: CellFactory }>`. The string key should be matched by `itemTemplateSelector`, and the cellFactory is written just as it is in the single-template example above. `placeHolderItem` is the item that React NativeScript will use to intialise the cell before later reconciling it with an actual item from your list of items. The placeholder item should exactly match the schema of the item you'll be handling in `cellFactory`.
 
-Only the above variables are available in this scope, and currently you do not have access to the component scope (component state, computed properties...). 
+## Updating the list of items in the `<$ListView>`
 
-## An important note about `v-for`
+To update the list of items in the ListView, it is best to use NativeScript's ObservableArray for the list, as this will fire events at the ListView to prompt its model to update. This avoids React re-rendering the ListView altogether (no the below method will not trigger a list re-render).
 
-`<$ListView>` does not loop through list items as you would expect when using a [`v-for`](https://vuejs.org/v2/guide/list.html#Mapping-an-Array-to-Elements-with-v-for) loop. Instead `<$ListView>` only creates the necessary views to display the currently visible items on the screen, and reuses the views that are already off-screen when scrolled. This concept is called _view recycling_ and is commonly used in mobile apps to improve performance. 
+```tsx
+import { ListView, ItemEventData } from "tns-core-modules/ui/list-view/list-view";
+import { ObservableArray } from "tns-core-modules/data/observable-array/observable-array";
 
-This is important because **you can't rely on event listeners attached inside the `v-template`**. Instead, you need to use the `itemTap` event which contains the index of the tapped item and the actual item from the list.
+type MyItem = { text: string };;
+const itemsToLoad: number = 100;
+const items: ObservableArray<MyItem> = new ObservableArray(
+    [...Array(itemsToLoad).keys()]
+    .map((value: number) => ({ text: `Item ${value.toString()}` }))
+  );
+let loadMore: boolean = true;
+let loadMoreTimeout?: any;
 
-```javascript
-onItemTap(event) {
-  console.log(event.index)
-  console.log(event.item)
-}
+/*
+ * OPTIMISATION NOTE:
+ * I have written callbacks and event listener handlers in-line
+ * only for readability. They should instead be written in a higher
+ * scope, which prevents them being re-instantiated on each render. 
+ */
+
+<$ListView
+  items={items}
+  // The render function for each cell. Takes a MyItem.
+  cellFactory={(item: MyItem, ref: React.RefObject<any>) => {
+    return (
+      // You MUST pass the ref in to the component.
+      <$Label ref={ref} text={item.text} />
+    );
+  }}
+  onitemTap={(args: ItemEventData) => {
+    const index: number = args.index;
+    const item: MyItem = items.getItem(index);
+    console.log(`Tapped item index ${index}: "${text}".`);
+  }}
+  onLoadMoreItems={(args: ItemEventData) => {
+    if(!loadMore){
+        console.log(`[onLoadMoreItems] debouncing.`);
+        return;
+    }
+
+    console.log(`[onLoadMoreItems] permitted.`);
+
+    loadMoreTimeout = setTimeout(
+      () => {
+        const itemsToPush: MyItem[] = [];
+
+        for(let i = items.length; i < + items.length + itemsToLoad; i++){
+            const lastValueIncremented: number = i;
+    
+            itemsToPush.push({
+                text: `Item ${lastValueIncremented.toString()}`
+            });
+        }
+
+        items.push(itemsToPush);
+        loadMore = true;
+      },
+      /* Ample time for a (typical) scroll action's inertia to settle, to avoid list jumpiness. */
+      750
+    );
+
+    loadMore = false;
+  }}
+/>
 ```
 
-**NOTE:** If a `v-for` is used on a `<$ListView>` a warning will be printed to the console, and it will be converted to the `for` property.
+`onLoadMoreItems` runs when a user drags the list down beyond its limits to prompt a reload of the items.
+
+When accessing an item from an ObservableArray, remember to use the `getItem()` method rather than an array accessor.
 
 ## Props
 
 | Name | Type | Description |
 |------|------|-------------|
-| `for` | `String` | Provides the expression for iterating through the items.<br/>For example: <ul><li><code>item in listOfItems</code></li><li><code>(item, index) in listOfItems</code></li><li><code>item in [1, 2, 3, 4, 5]</code></li></ul>
-| `items` | `Array<any>` | An array of items to be shown in the `<$ListView>`.<br/>**This property is only for advanced use. Use the `for` property instead.**
+| `items` | `Array<any>` | An array of items to be shown in the `<$ListView>`.
 | `separatorColor` | `Color` | Sets the separator line color. Set to `transparent` to remove it.
-
-## Events
-
-| Name | Description |
-|------|-------------|
-| `itemTap`| Emitted when an item in the `<$ListView>` is tapped. To access the tapped item, use `event.item`.
+| `onItemTap`| `(args: ItemEventData) => void` | Emitted when an item in the `<$ListView>` is tapped. To access the tapped item, use `items[args.index]`.
 
 ## Methods
+
+Note: You must obtain a reference to the underlying NativeScript `ListView` element in order to call these methods.
 
 | Name | Description |
 |------|-------------|
