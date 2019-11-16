@@ -5,9 +5,13 @@ apiRef: https://docs.nativescript.org/api-reference/classes/_ui_html_view_.htmlv
 contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska]
 ---
 
-`<$HtmlView>` is a UI component that lets you show static HTML content (see the official [top-level documentation](https://docs.nativescript.org/ui/components/html-view) and [detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_html_view_.htmlview)).
+`<$HtmlView>` is a UI component that lets you show static HTML content.
 
-See also: [WebView](/docs/components/web-view).
+See also:
+
+* [Official top-level documentation](https://docs.nativescript.org/ui/components/html-view)
+* [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_html_view_.htmlview)
+* [WebView](/docs/components/web-view)
 
 ---
 

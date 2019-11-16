@@ -5,7 +5,12 @@ sidebar_label: StackLayout
 ---
 <!-- contributors: [shirakaba, rigor789, ikoevska] -->
 
-`<$StackLayout>` is a React wrapper around `StackLayout`, a layout container that lets you stack the child elements vertically (default) or horizontally (see the official [top-level documentation](https://docs.nativescript.org/ui/layouts/layout-containers#stacklayout) and [detailed API specification](https://docs.nativescript.org/api-reference/modules/_ui_layouts_stack_layout_)).
+`<$StackLayout>` is a React wrapper around `StackLayout`, a layout container that lets you stack the child elements vertically (default) or horizontally.
+
+See also:
+
+* [Official top-level documentation](https://docs.nativescript.org/ui/layouts/layout-containers#stacklayout)
+* [Detailed API specification](https://docs.nativescript.org/api-reference/modules/_ui_layouts_stack_layout_)
 
 ## Examples
 

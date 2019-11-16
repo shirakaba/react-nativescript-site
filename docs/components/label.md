@@ -4,9 +4,14 @@ title: Label
 contributors: [shirakaba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska]
 ---
 
-`<$Label>` is a UI component that displays read-only text (see the official [top-level documentation](https://docs.nativescript.org/ui/components/label) and [detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_label_.label)).
+`<$Label>` is a UI component that displays read-only text.
 
-**IMPORTANT**: This `<$Label>` is **not** the same as the HTML `<$label>`.
+**IMPORTANT**: This `<$Label>` is **not** the same as the HTML `<label>`.
+
+See also:
+
+* [Official top-level documentation](https://docs.nativescript.org/ui/components/label)
+* [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_label_.label)
 
 ---
 

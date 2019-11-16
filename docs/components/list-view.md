@@ -4,7 +4,12 @@ title: ListView
 contributors: [shirakaba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska]
 ---
 
-`<$ListView>` is a UI component that shows items in a vertically scrolling list. To set how the list shows individual items, you can use the `<v-template>` component (see the official [top-level documentation](https://docs.nativescript.org/ui/components/list-view) and [detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_list_view_.listview)).
+`<$ListView>` is a UI component that shows items in a vertically scrolling list. To set how the list shows individual items, you can specify different templates using a combination of the `cellFactories` rendering method and the `itemTemplateSelector`.
+
+See also:
+
+* [Official top-level documentation](https://docs.nativescript.org/ui/components/list-view)
+* [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_list_view_.listview)
 
 ```tsx
 import { ListView, ItemEventData } from "tns-core-modules/ui/list-view/list-view";

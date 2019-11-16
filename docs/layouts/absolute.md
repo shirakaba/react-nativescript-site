@@ -5,13 +5,18 @@ sidebar_label: AbsoluteLayout
 ---
 <!-- contributors: [shirakaba, rigor789, ikoevska] -->
 
-`<$AbsoluteLayout>` is a React wrapper around `AbsoluteLayout`, the simplest layout container in NativeScript (see the official [top-level documentation](https://docs.nativescript.org/ui/layouts/layout-containers#absolutelayout) and [detailed API specification](https://docs.nativescript.org/api-reference/modules/_ui_layouts_absolute_layout_)).
+`<$AbsoluteLayout>` is a React wrapper around `AbsoluteLayout`, the simplest layout container in NativeScript.
 
 `<$AbsoluteLayout>` has the following behaviour:
 
 * Uses a pair of absolute left/top coordinates to position its children.
 * Doesn't enforce any layout constraints on its children.
 * Doesn't resize its children at runtime when its size changes.
+
+See also:
+
+* [Official top-level documentation](https://docs.nativescript.org/ui/layouts/layout-containers#absolutelayout)
+* [Detailed API specification](https://docs.nativescript.org/api-reference/modules/_ui_layouts_absolute_layout_)
 
 ## Examples
 

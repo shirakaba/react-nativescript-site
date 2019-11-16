@@ -5,7 +5,12 @@ apiRef: https://docs.nativescript.org/api-reference/classes/_ui_frame_.frame
 contributors: [rigor789, PieterHartzer]
 ---
 
-`<$Frame>` is a UI component used to display [`<$Page>`](/en/docs/elements/components/page) elements. Every app needs at least a single `<$Frame>`  element, usually set as the root element (see the official [top-level documentation](https://docs.nativescript.org/ui/components/frame) and [detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_frame_.frame)).
+`<$Frame>` is a UI component used to display [`<$Page>`](/en/docs/elements/components/page) elements. Every app needs at least a single `<$Frame>`  element, usually set as the root element.
+
+See also:
+
+* [Official top-level documentation](https://docs.nativescript.org/ui/components/frame)
+* [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_frame_.frame)
 
 ---
 

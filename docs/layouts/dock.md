@@ -5,13 +5,18 @@ sidebar_label: DockLayout
 ---
 <!-- contributors: [shirakaba, rigor789, ikoevska] -->
 
-`<$DockLayout>` is a React wrapper around `DockLayout`, a layout container that lets you dock child elements to the sides or the center of the layout (see the official [top-level documentation](https://docs.nativescript.org/ui/layouts/layout-containers#docklayout) and [detailed API specification](https://docs.nativescript.org/api-reference/modules/_ui_layouts_dock_layout_)).
+`<$DockLayout>` is a React wrapper around `DockLayout`, a layout container that lets you dock child elements to the sides or the center of the layout.
 
 `<$DockLayout>` has the following behaviour:
 
 * Uses the `dock` property to dock its children to the `left`, `right`, `top`, `bottom` or center of the layout.<br/>To dock a child element to the center, it must be the **last child** of the container and you must set the `stretchLastChild` property of the parent to `true`.
 * Enforces layout constraints to its children.
 * Resizes its children at run-time when its size changes.
+
+See also:
+
+* [Official top-level documentation](https://docs.nativescript.org/ui/layouts/layout-containers#docklayout)
+* [Detailed API specification](https://docs.nativescript.org/api-reference/modules/_ui_layouts_dock_layout_)
 
 ## Examples
 

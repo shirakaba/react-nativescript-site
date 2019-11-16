@@ -5,7 +5,12 @@ sidebar_label: FlexboxLayout
 ---
 <!-- contributors: [shirakaba, rigor789, ikoevska] -->
 
-`<$FlexboxLayout>` is a React wrapper around `FlexboxLayout`, a layout container that provides a non-exact implementation of the [CSS Flexbox layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox). This layout lets you arrange child components both horizontally and vertically (see the official [top-level documentation](https://docs.nativescript.org/ui/layouts/layout-containers#flexboxlayout) and [detailed API specification](https://docs.nativescript.org/api-reference/modules/_ui_layouts_flexbox_layout_)).
+`<$FlexboxLayout>` is a React wrapper around `FlexboxLayout`, a layout container that provides a non-exact implementation of the [CSS Flexbox layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox). This layout lets you arrange child components both horizontally and vertically.
+
+See also:
+
+* [Official top-level documentation](https://docs.nativescript.org/ui/layouts/layout-containers#flexboxlayout)
+* [Detailed API specification](https://docs.nativescript.org/api-reference/modules/_ui_layouts_flexbox_layout_)
 
 ## Examples
 

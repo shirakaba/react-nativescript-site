@@ -5,7 +5,7 @@ sidebar_label: GridLayout
 ---
 <!-- contributors: [shirakaba, rigor789, ikoevska] -->
 
-`<$GridLayout>` is a React wrapper around `GridLayout`, a layout container that lets you arrange its child elements in a table-like manner (see the official [top-level documentation](https://docs.nativescript.org/ui/layouts/layout-containers#gridlayout) and [detailed API specification](https://docs.nativescript.org/api-reference/modules/_ui_layouts_grid_layout_)).
+`<$GridLayout>` is a React wrapper around `GridLayout`, a layout container that lets you arrange its child elements in a table-like manner.
 
 The grid consists of rows, columns, and cells. A cell can span one or more rows and one or more columns. It can contain multiple child elements which can span over multiple rows and columns, and even overlap each other. 
 
@@ -16,6 +16,12 @@ You can set a fixed size for column width and row height or you can create them 
 * **`"px"`:** Indicates a fixed size.
 * **`"auto"`:** Makes the column as wide as its widest child or makes the row as tall as its tallest child.
 * **`"star"`:** Takes as much space as available after filling all auto and fixed size columns or rows.
+
+
+See also:
+
+* [Official top-level documentation](https://docs.nativescript.org/ui/layouts/layout-containers#gridlayout)
+* [Detailed API specification](https://docs.nativescript.org/api-reference/modules/_ui_layouts_grid_layout_)
 
 ## Examples
 

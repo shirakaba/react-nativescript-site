@@ -4,7 +4,12 @@ title: ListPicker
 contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska]
 ---
 
-`<$ListPicker>` is a UI component that lets the user select a value from a pre-configured list (see the official [top-level documentation](https://docs.nativescript.org/ui/components/list-picker) and [detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_list_picker_.listpicker)).
+`<$ListPicker>` is a UI component that lets the user select a value from a pre-configured list.
+
+See also:
+
+* [Official top-level documentation](https://docs.nativescript.org/ui/components/list-picker)
+* [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_list_picker_.listpicker)
 
 ---
 

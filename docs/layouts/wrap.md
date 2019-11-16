@@ -5,7 +5,12 @@ sidebar_label: WrapLayout
 ---
 <!-- contributors: [shirakaba, rigor789, ikoevska] -->
 
-`<$WrapLayout>` is a React wrapper around `WrapLayout`, a layout container that lets you position items in rows or columns, based on the orientation property. When the space is filled, the container automatically wraps items onto a new row or column (see the official [top-level documentation](https://docs.nativescript.org/ui/layouts/layout-containers#wraplayout) and [detailed API specification](https://docs.nativescript.org/api-reference/modules/_ui_layouts_wrap_layout_)).
+`<$WrapLayout>` is a React wrapper around `WrapLayout`, a layout container that lets you position items in rows or columns, based on the orientation property. When the space is filled, the container automatically wraps items onto a new row or column.
+
+See also:
+
+* [Official top-level documentation](https://docs.nativescript.org/ui/layouts/layout-containers#wraplayout)
+* [Detailed API specification](https://docs.nativescript.org/api-reference/modules/_ui_layouts_wrap_layout_)
 
 ## Examples
 

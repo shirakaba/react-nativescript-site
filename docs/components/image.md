@@ -5,7 +5,12 @@ apiRef: https://docs.nativescript.org/api-reference/classes/_ui_image_.image
 contributors: [MisterBrownRSA, rigor789, ikoevska]
 ---
 
-`<$Image>` is a UI component that shows an image from an [ImageSource](https://docs.nativescript.org/api-reference/modules/_image_source_) or from a URL (see the official [top-level documentation](https://docs.nativescript.org/ui/components/image) and [detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_image_.image)).
+`<$Image>` is a UI component that shows an image from an [ImageSource](https://docs.nativescript.org/api-reference/modules/_image_source_) or from a URL.
+
+See also:
+
+* [Official top-level documentation](https://docs.nativescript.org/ui/components/image)
+* [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_image_.image)
 
 ---
 
