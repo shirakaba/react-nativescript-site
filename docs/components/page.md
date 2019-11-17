@@ -1,40 +1,40 @@
 ---
+id: Page
 title: Page
-apiRef: https://docs.nativescript.org/api-reference/classes/_ui_page_.page
-contributors: [rigor789, ikoevska]
+contributors: [shirakaba, rigor789, ikoevska]
 ---
 
-`<Page>` is a UI component that represents an application screen. NativeScript apps typically consist of one or more `<Page>` that wrap content such as an [`<ActionBar>`](/en/docs/elements/action-bar/action-bar) and other UI widgets.
+`<$Page>` is a UI component that represents an application screen. NativeScript apps typically consist of one or more `<$Page>` that wrap content such as an [`<$ActionBar>`](/docs/components/action-bar) and other UI widgets.
+
+See also:
+
+* [Official top-level documentation](https://docs.nativescript.org/ui/components/page)
+* [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_page_.page)
 
 ---
 
-```html
-<Page>
-  <ActionBar title="My App" />
-  <GridLayout>
-    <Label text="My Content"/>
-  </GridLayout>
-</Page>
+```tsx
+<$Page>
+  <$ActionBar title="My App" />
+  <$GridLayout>
+    <$Label text="My Content"/>
+  </$GridLayout>
+</$Page>
 ```
 
 ## Props
 
 | Name | Type | Description |
 |------|------|-------------|
-| `actionBarHidden` | `Boolean` | Shows or hides the `<ActionBar>` for the page.<br/>Default value: `false`.
-| `backgroundSpanUnderStatusBar` | `Boolean` | Gets or sets whether the background of the page spans under the status bar.<br/>Default value: `false`.
+| `actionBarHidden` | `boolean` | Shows or hides the `<$ActionBar>` for the page.<br/>Default value: `false`.
+| `backgroundSpanUnderStatusBar` | `boolean` | Gets or sets whether the background of the page spans under the status bar.<br/>Default value: `false`.
 | `androidStatusBarBackground` | `Color` | (Android-only) Gets or sets the color of the status bar on Android devices.
-| `enableSwipeBackNavigation` | `Boolean` | (iOS-only) Gets or sets whether the page can be swiped back on iOS.<br/>Default value: `true`.
-| `statusBarStyle` | `String` | Gets or sets the style of the status bar.<br/>Valid values:<br/>`light`,<br/>`dark`.
-
-## Events
-
-| Name | Description |
-|------|-------------|
-| `navigatedFrom` | Emitted after the app has navigated away from the current page.
-| `navigatedTo` | Emitted after the app has navigated to the current page.
-| `navigatingFrom` | Emitted before the app has navigated away from the current page.
-| `navigatingTo` | Emitted before the app has navigated to the current page.
+| `enableSwipeBackNavigation` | `boolean` | (iOS-only) Gets or sets whether the page can be swiped back on iOS.<br/>Default value: `true`.
+| `statusBarStyle` | `string` | Gets or sets the style of the status bar.<br/>Valid values:<br/>`light`,<br/>`dark`.
+| `onNavigatedFrom` | `(args: `[`NavigatedData`](https://github.com/NativeScript/NativeScript/blob/cc97a1680009f1bf6dbf97c421f6e8dc535295b5/nativescript-core/ui/page/page.d.ts#L19)`) => void` | Emitted after the app has navigated away from the current page.
+| `onNavigatedTo` | `(args: `[`NavigatedData`](https://github.com/NativeScript/NativeScript/blob/cc97a1680009f1bf6dbf97c421f6e8dc535295b5/nativescript-core/ui/page/page.d.ts#L19)`) => void` | Emitted after the app has navigated to the current page.
+| `onNavigatingFrom` | `(args: `[`NavigatedData`](https://github.com/NativeScript/NativeScript/blob/cc97a1680009f1bf6dbf97c421f6e8dc535295b5/nativescript-core/ui/page/page.d.ts#L19)`) => void` | Emitted before the app has navigated away from the current page.
+| `onNavigatingTo` | `(args: `[`NavigatedData`](https://github.com/NativeScript/NativeScript/blob/cc97a1680009f1bf6dbf97c421f6e8dc535295b5/nativescript-core/ui/page/page.d.ts#L19)`) => void` | Emitted before the app has navigated to the current page.
 
 ## Native component
 

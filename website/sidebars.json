@@ -19,7 +19,9 @@
       "components/Image",
       "components/Label",
       "components/ListView",
-      "components/ListPicker"
+      "components/ListPicker",
+      "components/Page",
+      "components/Placeholder"
     ]
   },
   "docs-other": {
