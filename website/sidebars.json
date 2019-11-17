@@ -27,7 +27,12 @@
       "components/SearchBar",
       "components/SegmentedBar",
       "components/Slider",
-      "components/Switch"
+      "components/Switch",
+      "components/TabView",
+      "components/TextField",
+      "components/TextView",
+      "components/TimePicker",
+      "components/WebView"
     ]
   },
   "docs-other": {
