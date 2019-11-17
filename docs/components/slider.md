@@ -2,7 +2,6 @@
 id: Slider
 title: Slider
 contributors: [shirakaba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska]
-
 ---
 
 `<$Slider>` is a UI component that provides a slider control for picking values within a specified numeric range.
