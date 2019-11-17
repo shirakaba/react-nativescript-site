@@ -1,24 +1,30 @@
 ---
+id: ScrollView
 title: ScrollView
-apiRef: https://docs.nativescript.org/api-reference/classes/_ui_scroll_view_.scrollview
-contributors: [eddyverbruggen,ikoevska, misterbrownza]
+contributors: [shirakaba, eddyverbruggen, ikoevska, misterbrownza]
 ---
 
-`<ScrollView>` is a UI component that shows a scrollable content area. Content can be scrolled vertically or horizontally.
+`<$ScrollView>` is a UI component that shows a scrollable content area. Content can be scrolled vertically or horizontally.
 
-It's important to note that `<ScrollView>` extends [`ContentView`](https://docs.nativescript.org/api-reference/classes/_ui_content_view_.contentview), so it can only have a single child element.
+It's important to note that `<$ScrollView>` extends [`ContentView`](https://docs.nativescript.org/api-reference/classes/_ui_content_view_.contentview), so it can only have a single child element.
+
+See also:
+
+* [Official top-level documentation](https://docs.nativescript.org/ui/components/scroll-view)
+* [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_scroll_view_.scrollview)
+* [ActivityIndicator](/docs/components/activity-indicator)
 
 ---
 
-```html
-<ScrollView orientation="horizontal">
-  <StackLayout orientation="horizontal">
-    <Label text="this" />
-    <Label text="text" />
-    <Label text="scrolls" />
-    <Label text="horizontally" />
-    <Label text="if necessary" />
-  </StackLayout>
+```tsx
+<$ScrollView orientation="horizontal">
+  <$StackLayout orientation="horizontal">
+    <$Label text="this" />
+    <$Label text="text" />
+    <$Label text="scrolls" />
+    <$Label text="horizontally" />
+    <$Label text="if necessary" />
+  </$StackLayout>
 </ScrollView>
 ```
 
@@ -28,14 +34,9 @@ It's important to note that `<ScrollView>` extends [`ContentView`](https://docs.
 
 | name | type | description |
 |------|------|-------------|
-| `orientation` | `String` | Gets or sets the direction in which the content can be scrolled: `horizontal` or `vertical`.<br/>Default value: `vertical`.
-| `scrollBarIndicatorVisible` | `Boolean` | Specifies if the scrollbar is visible.<br/>Default value: `true`.
-
-## Events
-
-| Name | Description |
-|------|-------------|
-| `scroll` | Emitted when a scroll event occurs.
+| `orientation` | `string` | Gets or sets the direction in which the content can be scrolled: `horizontal` or `vertical`.<br/>Default value: `vertical`.
+| `scrollBarIndicatorVisible` | `boolean` | Specifies if the scrollbar is visible.<br/>Default value: `true`.
+| `onScroll` | `(args: `[`ScrollEventData`](https://docs.nativescript.org/api-reference/interfaces/_ui_scroll_view_.scrolleventdata)`) => void` | Emitted when a scroll event occurs.
 
 ## Native component
 

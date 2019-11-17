@@ -31,10 +31,10 @@ See also:
 | `androidStatusBarBackground` | `Color` | (Android-only) Gets or sets the color of the status bar on Android devices.
 | `enableSwipeBackNavigation` | `boolean` | (iOS-only) Gets or sets whether the page can be swiped back on iOS.<br/>Default value: `true`.
 | `statusBarStyle` | `string` | Gets or sets the style of the status bar.<br/>Valid values:<br/>`light`,<br/>`dark`.
-| `onNavigatedFrom` | `(args: `[`NavigatedData`](https://github.com/NativeScript/NativeScript/blob/cc97a1680009f1bf6dbf97c421f6e8dc535295b5/nativescript-core/ui/page/page.d.ts#L19)`) => void` | Emitted after the app has navigated away from the current page.
-| `onNavigatedTo` | `(args: `[`NavigatedData`](https://github.com/NativeScript/NativeScript/blob/cc97a1680009f1bf6dbf97c421f6e8dc535295b5/nativescript-core/ui/page/page.d.ts#L19)`) => void` | Emitted after the app has navigated to the current page.
-| `onNavigatingFrom` | `(args: `[`NavigatedData`](https://github.com/NativeScript/NativeScript/blob/cc97a1680009f1bf6dbf97c421f6e8dc535295b5/nativescript-core/ui/page/page.d.ts#L19)`) => void` | Emitted before the app has navigated away from the current page.
-| `onNavigatingTo` | `(args: `[`NavigatedData`](https://github.com/NativeScript/NativeScript/blob/cc97a1680009f1bf6dbf97c421f6e8dc535295b5/nativescript-core/ui/page/page.d.ts#L19)`) => void` | Emitted before the app has navigated to the current page.
+| `onNavigatedFrom` | `(args: `[`NavigatedData`](https://docs.nativescript.org/api-reference/interfaces/_ui_page_.navigateddata.html)`) => void` | Emitted after the app has navigated away from the current page.
+| `onNavigatedTo` | `(args: `[`NavigatedData`](https://docs.nativescript.org/api-reference/interfaces/_ui_page_.navigateddata.html)`) => void` | Emitted after the app has navigated to the current page.
+| `onNavigatingFrom` | `(args: `[`NavigatedData`](https://docs.nativescript.org/api-reference/interfaces/_ui_page_.navigateddata.html)`) => void` | Emitted before the app has navigated away from the current page.
+| `onNavigatingTo` | `(args: `[`NavigatedData`](https://docs.nativescript.org/api-reference/interfaces/_ui_page_.navigateddata.html)`) => void` | Emitted before the app has navigated to the current page.
 
 ## Native component
 

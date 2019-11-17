@@ -21,7 +21,9 @@
       "components/ListView",
       "components/ListPicker",
       "components/Page",
-      "components/Placeholder"
+      "components/Placeholder",
+      "components/Progress",
+      "components/ScrollView"
     ]
   },
   "docs-other": {

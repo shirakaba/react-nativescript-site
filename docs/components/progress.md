@@ -1,17 +1,26 @@
 ---
+id: Progress
 title: Progress
-apiRef: https://docs.nativescript.org/api-reference/classes/_ui_progress_.progress
-contributors: [MisterBrownRSA, rigor789, eddyverbruggen, ikoevska]
+contributors: [shirakaba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska]
 ---
 
-`<Progress>` is a UI component that shows a bar to indicate the progress of a task. 
+`<Progress>` is a UI component that shows a bar to indicate the progress of a task.
 
-See also: [ActivityIndicator](/en/docs/elements/components/activity-indicator).
+See also:
+
+* [Official top-level documentation](https://docs.nativescript.org/ui/components/progress)
+* [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_progress_.progress)
+* [ActivityIndicator](/docs/components/activity-indicator)
 
 ---
 
-```html
-<Progress :value="currentProgress" />
+```tsx
+function getTaskCompletionPercent(){
+    // Just a stub method to illustrate the concept.
+    return 10;
+}
+
+<$Progress value={getTaskCompletionPercent()} maxValue={100} />
 ```
 
 [> screenshots for=Progress <]
@@ -20,14 +29,8 @@ See also: [ActivityIndicator](/en/docs/elements/components/activity-indicator).
 
 | Name | Type | Description |
 |------|------|-------------|
-| `value` | `Number` | Gets or sets the current value of the progress bar. Must be within the range of 0 to `maxValue`.
-| `maxValue` | `Number` | Gets or sets the maximum value of the progress bar.<br/>Default value: `100`.
-
-## Events
-
-| Name | Description |
-|------|-------------|
-| `valueChange` | Emitted when the `value` property changes.
+| `value` | `number` | Sets the current value of the progress bar. Must be within the range of 0 to `maxValue`.
+| `maxValue` | `number` | Sets the maximum value of the progress bar.<br/>Default value: `100`.
 
 ## Native Component
 
