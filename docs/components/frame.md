@@ -1,8 +1,7 @@
 ---
 id: Frame
 title: Frame
-apiRef: https://docs.nativescript.org/api-reference/classes/_ui_frame_.frame
-contributors: [rigor789, PieterHartzer]
+contributors: [shirakaba, rigor789, PieterHartzer]
 ---
 
 `<$Frame>` is a UI component used to display [`<$Page>`](/en/docs/elements/components/page) elements. Every app needs at least a single `<$Frame>`  element, usually set as the root element.
@@ -13,16 +12,6 @@ See also:
 * [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_frame_.frame)
 
 ---
-
-<!-- #### A single root Frame
-
-If you are migrating from nativescript 3.x and want to preserve the old behavior, the following snippet in your entry file will create a root frame and render your default page.
-
-```js
-new Vue({
-  render: h => h('Frame', [ h(HomePageComponent) ])
-})
-``` -->
 
 #### Multiple Frames
 
