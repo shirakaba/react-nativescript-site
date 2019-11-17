@@ -1,7 +1,6 @@
 ---
 id: HtmlView
 title: HtmlView
-apiRef: https://docs.nativescript.org/api-reference/classes/_ui_html_view_.htmlview
 contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska]
 ---
 
