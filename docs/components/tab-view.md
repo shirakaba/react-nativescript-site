@@ -1,31 +1,39 @@
 ---
+id: TabView
 title: TabView
-apiRef: https://docs.nativescript.org/api-reference/classes/_ui_tab_view_.tabview
-contributors: [MisterBrownRSA, rigor789, eddyverbruggen, ikoevska, kharysharpe, ramsesmoreno]
+contributors: [shirakaba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska, kharysharpe, ramsesmoreno]
 ---
 
-`<TabView>` is a navigation component that shows content grouped into tabs and lets users switch between tabs.
+`<$TabView>` is a navigation component that shows content grouped into tabs and lets users switch between tabs.
+
+See also:
+
+* [Official top-level documentation](https://docs.nativescript.org/ui/components/tab-view)
+* [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_tab_view_.tabview)
+* 
+<!-- TODO: link to TabViewItem -->
 
 ---
 
-```html
-<TabView :selectedIndex="selectedIndex" @selectedIndexChange="indexChange">
-  <TabViewItem title="Tab 1">
-    <Label text="Content for Tab 1" />
-  </TabViewItem>
-  <TabViewItem title="Tab 2">
-    <Label text="Content for Tab 2" />
-  </TabViewItem>
-</TabView>
-```
+<!-- TODO: show how to import SelectedIndexChangedEventData_4 from scoped modules -->
 
-```js
-methods: {
-  indexChange: function(args) {
-      let newIndex = args.value
-      console.log('Current tab index: ' + newIndex)
-  }
-}
+```tsx
+import { SelectedIndexChangedEventData } from "tns-core-modules/ui/tab-view/tab-view";
+
+<$TabView
+  selectedIndex={selectedIndex}
+  onSelectedIndexChange={(args: SelectedIndexChangedEventData) => {
+    const { oldIndex, newIndex } = args;
+    console.log(`Changed from tab index ${oldIndex} -> ${newIndex}.`);
+  }}
+>
+  <$TabViewItem title="Tab 1">
+    <$Label text="Content for Tab 1" />
+  </$TabViewItem>
+  <$TabViewItem title="Tab 2">
+    <$Label text="Content for Tab 2" />
+  </$TabViewItem>
+</$TabView>
 ```
 
 **NOTE:** Currently, `TabViewItem` expects a single child element. In most cases, you might want to wrap your content in a layout.
@@ -34,15 +42,15 @@ methods: {
 
 #### Adding icons to tabs
 
-```html
-<TabView :selectedIndex="selectedIndex" iosIconRenderingMode="alwaysOriginal">
-  <TabViewItem title="Tab 1" iconSource="~/images/icon.png">
-    <Label text="Content for Tab 1" />
-  </TabViewItem>
-  <TabViewItem title="Tab 2" iconSource="~/images/icon.png">
-    <Label text="Content for Tab 2" />
-  </TabViewItem>
-</TabView>
+```tsx
+<$TabView selectedIndex={selectedIndex} iosIconRenderingMode="alwaysOriginal">
+  <$TabViewItem title="Tab 1" iconSource="~/images/icon.png">
+    <$Label text="Content for Tab 1" />
+  </$TabViewItem>
+  <$TabViewItem title="Tab 2" iconSource="~/images/icon.png">
+    <$Label text="Content for Tab 2" />
+  </$TabViewItem>
+</$TabView>
 ```
 **NOTE:** You can use images for tab icons instead of icon fonts. For more information about how to control the size of icons, see [Working with image from resource folders](https://docs.nativescript.org/ui/image-resources).
 
@@ -55,12 +63,7 @@ methods: {
 | `tabBackgroundColor` | `Color` | (Style property) Gets or sets the background color of the tabs.
 | `selectedTabTextColor` | `Color` | (Style property) Gets or sets the text color of the selected tab title.
 | `androidTabsPosition` | `String` | Sets the position of the TabView in Android platform<br/>Valid values: `top` or `bottom`.
-
-## Events
-
-| Name | Description |
-|------|-------------|
-| `selectedIndexChange` | Emits [an event object](https://docs.nativescript.org/api-reference/interfaces/_ui_tab_view_.selectedindexchangedeventdata) containing an `newIndex` property with the index of the tapped `<TabViewItem>` (and an `oldIndex` property with the index of the previous tab).
+| `onSelectedIndexChange`| `(args: `[`SelectedIndexChangedEventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.selectedindexchangedeventdata_4)`) => void` | Emitted when an item on the TabView is tapped.
 
 ## Native component
 
