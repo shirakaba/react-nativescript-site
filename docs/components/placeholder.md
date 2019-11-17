@@ -16,19 +16,21 @@ See also:
 ```tsx
 import { isIOS, isAndroid } from "tns-core-modules/platform/platform";
 
-<$Placeholder onCreatingView={() => {
-  if(isIOS){
-    const nativeView = new UILabel();
-    nativeView.text = "Native View - iOS";
-    args.view = nativeView;
-  } else if(isAndroid) {
-    const nativeView = new android.widget.TextView(args.context);
-    nativeView.setSingleLine(true);
-    nativeView.setEllipsize(android.text.TextUtils.TruncateAt.END);
-    nativeView.setText("Native View - Android");
-    args.view = nativeView;
-  } else {
-    console.warn("Unsupported platform! Did they finally make NativeScript for desktop?");
-  }
-}}} />
+<$Placeholder
+  onCreatingView={() => {
+    if(isIOS){
+      const nativeView = new UILabel();
+      nativeView.text = "Native View - iOS";
+      args.view = nativeView;
+    } else if(isAndroid) {
+      const nativeView = new android.widget.TextView(args.context);
+      nativeView.setSingleLine(true);
+      nativeView.setEllipsize(android.text.TextUtils.TruncateAt.END);
+      nativeView.setText("Native View - Android");
+      args.view = nativeView;
+    } else {
+      console.warn("Unsupported platform! Did they finally make NativeScript for desktop?");
+    }
+  }}
+/>
 ```
