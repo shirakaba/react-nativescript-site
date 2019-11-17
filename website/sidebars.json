@@ -26,7 +26,8 @@
       "components/ScrollView",
       "components/SearchBar",
       "components/SegmentedBar",
-      "components/Slider"
+      "components/Slider",
+      "components/Switch"
     ]
   },
   "docs-other": {
