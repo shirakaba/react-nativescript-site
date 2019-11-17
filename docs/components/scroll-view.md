@@ -34,7 +34,7 @@ See also:
 
 | name | type | description |
 |------|------|-------------|
-| `orientation` | `string` | Gets or sets the direction in which the content can be scrolled: `horizontal` or `vertical`.<br/>Default value: `vertical`.
+| `orientation` | `string` | Sets the direction in which the content can be scrolled: `horizontal` or `vertical`.<br/>Default value: `vertical`.
 | `scrollBarIndicatorVisible` | `boolean` | Specifies if the scrollbar is visible.<br/>Default value: `true`.
 | `onScroll` | `(args: `[`ScrollEventData`](https://docs.nativescript.org/api-reference/interfaces/_ui_scroll_view_.scrolleventdata)`) => void` | Emitted when a scroll event occurs.
 

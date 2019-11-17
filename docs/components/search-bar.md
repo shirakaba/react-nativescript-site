@@ -1,21 +1,20 @@
 ---
+id: SearchBar
 title: SearchBar
-apiRef: https://docs.nativescript.org/api-reference/classes/_ui_search_bar_.searchbar
-contributors: [MisterBrownRSA, rigor789, ikoevska]
+contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska]
 ---
 
-`<SearchBar>` is a UI component that provides a user interface for entering search queries and submitting requests to the search provider.
+`<$SearchBar>` is a UI component that provides a user interface for entering search queries and submitting requests to the search provider.
+
+See also:
+
+* [Official top-level documentation](https://docs.nativescript.org/ui/components/search-bar)
+* [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_search_bar_.searchbar)
 
 ---
 
-```html
-<SearchBar hint="Search hint" :text="searchPhrase" @textChange="onTextChanged" @submit="onSubmit" />
-```
-
-`<SearchBar>` provides two-way data binding using `v-model`.
-
-```html
-<SearchBar v-model="searchQuery" />
+```tsx
+<$SearchBar hint="Search hint" text="searchPhrase" onTextChange={onTextChanged} onSubmit={onSubmit} onClose={onClose} />
 ```
 
 [> screenshots for=SearchBar <]
@@ -24,18 +23,14 @@ contributors: [MisterBrownRSA, rigor789, ikoevska]
 
 | Name | Type | Description |
 |------|------|-------------|
-| `hint` | `String` | Gets or sets placeholder text for the input area.
-| `text` | `String` | Gets or sets the value of the search query.
-| `textFieldBackgroundColor` | `Color` | Gets or sets the background color of the input area.
-| `textFieldHintColor` | `Color` | Gets or sets the color of the placeholder text.
-
-## Events
-
-| name | description |
-|------|-------------|
-| `textChange` | Emitted when the text is changed.
-| `submit` | Emitted when the search input is submitted.
-| `clear` | Emitted when the current search input is cleared through the **X** button in the input area.
+| `hint` | `string` | Sets placeholder text for the input area.
+| `text` | `string` | Sets the value of the search query.
+| `textFieldBackgroundColor` | `Color` | Sets the background color of the input area.
+| `textFieldHintColor` | `Color` | Sets the color of the placeholder text.
+| `onTextChange` | `(args: `[`EventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.eventdata)`) => void` | Emitted when the text is changed.
+| `onSubmit` | `(args: `[`EventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.eventdata)`) => void` | Emitted when the search input is submitted.
+| `onClose` | `(args: `[`EventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.eventdata)`) => void` | Emitted when the search bar is closed.
+| `onClear` | `(args: `[`EventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.eventdata)`) => void` | Emitted when the current search input is cleared through the **X** button in the input area.
 
 ## Native Component
 

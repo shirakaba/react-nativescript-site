@@ -23,7 +23,10 @@
       "components/Page",
       "components/Placeholder",
       "components/Progress",
-      "components/ScrollView"
+      "components/ScrollView",
+      "components/SearchBar",
+      "components/SegmentedBar",
+      "components/Slider"
     ]
   },
   "docs-other": {

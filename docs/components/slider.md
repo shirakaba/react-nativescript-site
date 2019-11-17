@@ -1,22 +1,21 @@
 ---
+id: Slider
 title: Slider
-apiRef: https://docs.nativescript.org/api-reference/classes/_ui_slider_.slider
-contributors: [MisterBrownRSA, rigor789, eddyverbruggen, ikoevska]
+contributors: [shirakaba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska]
 
 ---
 
-`<Slider>` is a UI component that provides a slider control for picking values within a specified numeric range.
+`<$Slider>` is a UI component that provides a slider control for picking values within a specified numeric range.
+
+See also:
+
+* [Official top-level documentation](https://docs.nativescript.org/ui/components/slider)
+* [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_slider_.slider)
 
 ---
 
-```html
-<Slider value="80" @valueChange="onValueChanged" />
-```
-
-`<Slider>` provides two-way data binding using `v-model`:
-
-```html
-<Slider v-model="value" />
+```tsx
+<$Slider value={0} onValueChange={onValueChange} />
 ```
 
 [> screenshots for=Slider <]
@@ -25,15 +24,10 @@ contributors: [MisterBrownRSA, rigor789, eddyverbruggen, ikoevska]
 
 | Name | Type | Description |
 |------|------|-------------|
-| `value` | `Number` | Gets or sets the currently selected value of the slider.<br/>Default value: `0`.
-| `minValue` | `Number` | Gets or sets the minimum value of the slider.<br/>Default value: `0`.
-| `maxValue` | `Number` | Gets or sets the maximum value of the slider.<br/>Default value: `100`.
-
-## Events
-
-| Name | Description |
-|------|-------------|
-| `valueChange`| Emitted when the value of the slider changes.
+| `value` | `number` | Sets the currently selected value of the slider.<br/>Default value: `0`.
+| `minValue` | `number` | Sets the minimum value of the slider.<br/>Default value: `0`.
+| `maxValue` | `number` | Sets the maximum value of the slider.<br/>Default value: `100`.
+| `onValueChange`| `(args: `[`EventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.eventdata)`) => void` | Emitted when the value of the slider changes.
 
 ## Native component
 
