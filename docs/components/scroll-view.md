@@ -28,7 +28,7 @@ See also:
 </ScrollView>
 ```
 
-[> screenshots for=ScrollView <]
+<!-- [> screenshots for=ScrollView <] -->
 
 ## Props
 

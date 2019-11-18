@@ -18,7 +18,7 @@ See also:
 ## Using `<$ListView>` with a single template
 
 ```tsx
-import { ListView, ItemEventData } from "tns-core-modules/ui/list-view/list-view";
+import { ListView, ItemEventData } from "@nativescript-core";
 
 type MyItem = { text: string };;
 const items: MyItem[] = [{ text: "hi" }];
@@ -53,7 +53,7 @@ const items: MyItem[] = [{ text: "hi" }];
 
 ---
 
-[> screenshots for=ListView <]
+<!-- [> screenshots for=ListView <] -->
 
 ## Using `<$ListView>` with multiple templates
 
@@ -64,12 +64,7 @@ Instead, use templates. This allows React to focus on updating individual proper
 See [Alexander Vakrilov's brilliant article](https://medium.com/@alexander.vakrilov/faster-nativescript-listview-with-multiple-item-templates-8f903a32e48f) on why templates optimise ListView performance when multiple different UI trees are required.
 
 ```tsx
-import {
-    ListView as NativeScriptListView,
-    ItemEventData,
-    knownTemplates,
-    ItemsSource,
-} from "tns-core-modules/ui/list-view/list-view";
+import { ListView, ItemEventData } from "@nativescript-core";
 
 type MyEvenItem = { textOdd: string };
 type MyOddItem = { textOdd: string };
@@ -157,7 +152,7 @@ function itemTemplateSelector(item: MyItem, index: number, items: MyItem[]): str
 To update the list of items in the ListView, it is best to use NativeScript's ObservableArray for the list, as this will fire events at the ListView to prompt its model to update. This avoids React re-rendering the ListView altogether (no the below method will not trigger a list re-render).
 
 ```tsx
-import { ListView, ItemEventData } from "tns-core-modules/ui/list-view/list-view";
+import { ListView, ItemEventData } from "@nativescript-core";
 import { ObservableArray } from "tns-core-modules/data/observable-array/observable-array";
 
 type MyItem = { text: string };;
@@ -232,7 +227,7 @@ When accessing an item from an ObservableArray, remember to use the `getItem()` 
 |------|------|-------------|
 | `items` | `Array<any>` | An array of items to be shown in the `<$ListView>`.
 | `separatorColor` | `Color` | Sets the separator line color. Set to `transparent` to remove it.
-| `onItemTap`| `(args: ItemEventData) => void` | Emitted when an item in the `<$ListView>` is tapped. To access the tapped item, use `items[args.index]`.
+| `onItemTap`| `(args: `[`ItemEventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.itemeventdata)`) => void` | Emitted when an item in the `<$ListView>` is tapped. To access the tapped item, use `items[args.index]`.
 
 ## Methods
 

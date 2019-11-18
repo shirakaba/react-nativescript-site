@@ -35,7 +35,7 @@ See also:
 |------|------|-------------|
 | `text` | `string` | (iOS-only) Sets the text of the button.
 | `android.systemIcon` | `string` | (Android-only) The icon to be shown in the button. You can specify any system icon whose name begins with the `ic_` prefix. For a complete list of the available icons, see [the `R.drawable` Android class](https://developer.android.com/reference/android/R.drawable.html).
-| `onTap` | `(args: `[`EventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.eventdata)`) => void` | Emitted when the `ActionItem` is tapped.
+| `onTap` | `(args: `[`EventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.eventdata)`) => void` | Emitted when the `NavigationButton` is tapped.
 
 ## Native component
 

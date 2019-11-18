@@ -27,6 +27,8 @@ If you need to create multiple frames, you can do so by wrapping them in a Layou
 #### A frame with a default page
 
 ```tsx
+import { Frame } from "@nativescript-core";
+
 interface Props {
   forwardedRef: React.RefObject<Frame>;
 }

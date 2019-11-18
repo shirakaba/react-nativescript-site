@@ -19,7 +19,7 @@ See also:
 <$TextView text="Multi\nLine\nText" />
 ```
 
-[> screenshots for=TextView <]
+<!-- [> screenshots for=TextView <] -->
 
 ### Displaying multi-style text
 

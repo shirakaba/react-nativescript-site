@@ -17,13 +17,13 @@ See also:
 <$ActivityIndicator busy={true} />
 ```
 
-[> screenshots for=ActivityIndicator <]
+<!-- [> screenshots for=ActivityIndicator <] -->
 
 ## Props
 
 | Name | Type | Description |
 |------|------|-------------|
-| `busy` | `Boolean` | Gets or sets whether the indicator is active. When `true`, the indicator is active.
+| `busy` | `boolean` | Gets or sets whether the indicator is active. When `true`, the indicator is active.
 
 ## Native component
 

@@ -1,27 +1,25 @@
 ---
-id: TabView
-title: TabView
+id: TabViewItem
+title: TabViewItem
 contributors: [shirakaba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska, kharysharpe, ramsesmoreno]
 ---
 
-`<$TabView>` is a navigation component that shows content grouped into tabs and lets users switch between tabs.
+`<$TabViewItem>` is the view of a `<$TabView>`.
 
 See also:
 
 * [Official top-level documentation](https://docs.nativescript.org/ui/components/tab-view)
-* [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_tab_view_.tabview)
-* [TabViewItem](/docs/components/tab-view-item)
+* [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_tab_view_.tabviewitem)
+* [TabView](/docs/components/tab-view)
 
 ---
 
-<!-- TODO: show how to import SelectedIndexChangedEventData_4 from scoped modules -->
-
 ```tsx
-import { SelectedIndexChangedEventData } from "tns-core-modules/ui/tab-view/tab-view";
+import { SelectedIndexChangedEventData_4 } from "@nativescript-core";
 
 <$TabView
   selectedIndex={selectedIndex}
-  onSelectedIndexChange={(args: SelectedIndexChangedEventData) => {
+  onSelectedIndexChange={(args: SelectedIndexChangedEventData_4) => {
     const { oldIndex, newIndex } = args;
     console.log(`Changed from tab index ${oldIndex} -> ${newIndex}.`);
   }}
@@ -37,7 +35,7 @@ import { SelectedIndexChangedEventData } from "tns-core-modules/ui/tab-view/tab-
 
 **NOTE:** Currently, `TabViewItem` expects a single child element. In most cases, you might want to wrap your content in a layout.
 
-<!-- [> screenshots for=TabView <] -->
+[> screenshots for=TabView <]
 
 #### Adding icons to tabs
 
@@ -62,7 +60,7 @@ import { SelectedIndexChangedEventData } from "tns-core-modules/ui/tab-view/tab-
 | `tabBackgroundColor` | `Color` | (Style property) Gets or sets the background color of the tabs.
 | `selectedTabTextColor` | `Color` | (Style property) Gets or sets the text color of the selected tab title.
 | `androidTabsPosition` | `String` | Sets the position of the TabView in Android platform<br/>Valid values: `top` or `bottom`.
-| `onSelectedIndexChange`| `(args: `[`SelectedIndexChangedEventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.selectedindexchangedeventdata_4)`) => void` | Emitted when an item on the TabView is tapped.
+| `onSelectedIndexChange`| `(args: `[`SelectedIndexChangedEventData_4`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.selectedindexchangedeventdata_4)`) => void` | Emitted when an item on the TabView is tapped.
 
 ## Native component
 

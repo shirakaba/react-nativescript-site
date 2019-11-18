@@ -20,7 +20,7 @@ See also:
 
 `<$TimePicker>` provides two-way data binding using `v-model`.
 
-[> screenshots for=TimePicker <]
+<!-- [> screenshots for=TimePicker <] -->
 
 ## Props
 

@@ -22,7 +22,7 @@ See also:
 <$WebView src="<div><h1>Some static HTML</h1></div>" />
 ```
 
-[> screenshots for=WebView <]
+<!-- [> screenshots for=WebView <] -->
 
 ## Props
 

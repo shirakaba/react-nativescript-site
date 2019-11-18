@@ -15,15 +15,17 @@ See also:
 ---
 
 ```tsx
-import { NarrowedEventData } from "react-nativescript/dist/shared/NativeScriptComponentTypings";
+import { EventData } from "@nativescript-core";
 
 <$DatePicker
   date={new Date()}
-  onDateChange={(args: NarrowedEventData<DatePicker>) => {}}
+  onDateChange={(args: EventData) => {
+    const datePicker = args.object;
+  }}
 />
 ```
 
-[> screenshots for=DatePicker <]
+<!-- [> screenshots for=DatePicker <] -->
 
 ## Props
 

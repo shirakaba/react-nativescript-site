@@ -19,7 +19,7 @@ See also:
 <$Label text="Label" />
 ```
 
-[> screenshots for=Label <]
+<!-- [> screenshots for=Label <] -->
 
 ### Styling the label
 

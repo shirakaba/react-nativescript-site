@@ -17,7 +17,7 @@ See also:
 <$Slider value={0} onValueChange={onValueChange} />
 ```
 
-[> screenshots for=Slider <]
+<!-- [> screenshots for=Slider <] -->
 
 ## Props
 

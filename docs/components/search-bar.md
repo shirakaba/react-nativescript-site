@@ -17,7 +17,7 @@ See also:
 <$SearchBar hint="Search hint" text="searchPhrase" onTextChange={onTextChanged} onSubmit={onSubmit} onClose={onClose} />
 ```
 
-[> screenshots for=SearchBar <]
+<!-- [> screenshots for=SearchBar <] -->
 
 ## Props
 

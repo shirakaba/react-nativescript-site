@@ -18,7 +18,7 @@ See also:
 <$HtmlView html="<div><h1>HtmlView</h1></div>" />
 ```
 
-[> screenshots for=HtmlView <]
+<!-- [> screenshots for=HtmlView <] -->
 
 ## Props
 

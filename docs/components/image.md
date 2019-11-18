@@ -38,7 +38,7 @@ See also:
 <$Image src="data:Image/png;base64,iVBORw..." stretch="none" />
 ```
 
-[> screenshots for=Image <]
+<!-- [> screenshots for=Image <] -->
 
 ## Props
 

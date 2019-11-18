@@ -19,7 +19,7 @@ See also:
 <$Switch checked={true} />
 ```
 
-[> screenshots for=Switch <]
+<!-- [> screenshots for=Switch <] -->
 
 ## Props
 

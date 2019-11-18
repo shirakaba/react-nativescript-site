@@ -23,7 +23,7 @@ function getTaskCompletionPercent(){
 <$Progress value={getTaskCompletionPercent()} maxValue={100} />
 ```
 
-[> screenshots for=Progress <]
+<!-- [> screenshots for=Progress <] -->
 
 ## Props
 

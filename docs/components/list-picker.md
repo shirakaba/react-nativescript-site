@@ -14,6 +14,8 @@ See also:
 ---
 
 ```tsx
+import { EventData, ListPicker } from "@nativescript-core";
+
 <$ListPicker
   items={listOfItems}
   selectedIndex={0}
@@ -25,7 +27,7 @@ See also:
 />
 ```
 
-[> screenshots for=ListPicker <]
+<!-- [> screenshots for=ListPicker <] -->
 
 ## Props
 

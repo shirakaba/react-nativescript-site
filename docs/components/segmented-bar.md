@@ -33,7 +33,7 @@ See also:
 />
 ```
 
-[> screenshots for=SegmentedBar <]
+<!-- [> screenshots for=SegmentedBar <] -->
 
 ## Props
 

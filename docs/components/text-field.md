@@ -21,7 +21,7 @@ See also:
 <$TextField text={textFieldValue} hint="Enter text..." />
 ```
 
-[> screenshots for=TextField <]
+<!-- [> screenshots for=TextField <] -->
 
 ## Props
 

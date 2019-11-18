@@ -15,12 +15,17 @@ See also:
 ---
 
 ```tsx
-import { NarrowedEventData } from "react-nativescript/dist/shared/NativeScriptComponentTypings";
+import { EventData } from "@nativescript-core";
 
-<$Button text="Button" onTap={(args: NarrowedEventData<Button>) => {}} />
+<$Button
+  text="Button"
+  onTap={(args: EventData) => {
+    const button = args.object;
+  }}
+/>
 ```
 
-[> screenshots for=Button <]
+<!-- [> screenshots for=Button <] -->
 
 ## Props
 
@@ -28,12 +33,7 @@ import { NarrowedEventData } from "react-nativescript/dist/shared/NativeScriptCo
 |------|------|-------------|
 | `text` | `string` | Sets the label of the button.
 | `textWrap` | `boolean` | Sets whether the widget wraps the text of the label. Useful for longer labels. Default value is `false`.
-
-## Events
-
-| Name | Description |
-|------|-------------|
-| `onTap` | Emitted when the button is tapped.
+| `onTap` | `(args: `[`EventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.eventdata)`) => void` | Emitted when the `Button` is tapped.
 
 ## Native component
 
