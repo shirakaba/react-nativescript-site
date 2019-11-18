@@ -32,6 +32,7 @@
       "components/Slider",
       "components/Switch",
       "components/TabView",
+      "components/TabViewItem",
       "components/TextField",
       "components/TextView",
       "components/TimePicker",
