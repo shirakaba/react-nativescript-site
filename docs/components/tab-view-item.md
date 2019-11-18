@@ -15,7 +15,7 @@ See also:
 ---
 
 ```tsx
-import { SelectedIndexChangedEventData_4 } from "@nativescript-core";
+import { SelectedIndexChangedEventData } from "tns-core-modules/ui/tab-view/tab-view";
 
 <$TabView
   selectedIndex={selectedIndex}

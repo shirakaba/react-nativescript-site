@@ -14,7 +14,7 @@ See also:
 ---
 
 ```tsx
-import { EventData, ListPicker } from "@nativescript-core";
+import { EventData, ListPicker } from "@nativescript/core";
 
 <$ListPicker
   items={listOfItems}

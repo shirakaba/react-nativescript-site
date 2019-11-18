@@ -15,7 +15,7 @@ See also:
 ---
 
 ```tsx
-import { EventData } from "@nativescript-core";
+import { EventData } from "@nativescript/core";
 
 <$DatePicker
   date={new Date()}

@@ -18,7 +18,8 @@ See also:
 ## Using `<$ListView>` with a single template
 
 ```tsx
-import { ListView, ItemEventData } from "@nativescript-core";
+import { ListView } from "@nativescript/core";
+import { ItemEventData } from "tns-core-modules/ui/list-view/list-view";
 
 type MyItem = { text: string };;
 const items: MyItem[] = [{ text: "hi" }];
@@ -64,7 +65,8 @@ Instead, use templates. This allows React to focus on updating individual proper
 See [Alexander Vakrilov's brilliant article](https://medium.com/@alexander.vakrilov/faster-nativescript-listview-with-multiple-item-templates-8f903a32e48f) on why templates optimise ListView performance when multiple different UI trees are required.
 
 ```tsx
-import { ListView, ItemEventData } from "@nativescript-core";
+import { ListView } from "@nativescript/core";
+import { ItemEventData } from "tns-core-modules/ui/list-view/list-view";
 
 type MyEvenItem = { textOdd: string };
 type MyOddItem = { textOdd: string };
@@ -152,8 +154,8 @@ function itemTemplateSelector(item: MyItem, index: number, items: MyItem[]): str
 To update the list of items in the ListView, it is best to use NativeScript's ObservableArray for the list, as this will fire events at the ListView to prompt its model to update. This avoids React re-rendering the ListView altogether (no the below method will not trigger a list re-render).
 
 ```tsx
-import { ListView, ItemEventData } from "@nativescript-core";
-import { ObservableArray } from "tns-core-modules/data/observable-array/observable-array";
+import { ListView } from "@nativescript/core";
+import { ItemEventData, ObservableArray } from "tns-core-modules/ui/list-view/list-view";
 
 type MyItem = { text: string };;
 const itemsToLoad: number = 100;
