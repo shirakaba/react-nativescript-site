@@ -27,13 +27,13 @@ See also:
 
 | Name | Type | Description |
 |------|------|-------------|
-| `text` | `string` | Gets or sets the value of the field.
-| `hint` | `string` | Gets or sets the placeholder text.
+| `text` | `string` | Sets the value of the field.
+| `hint` | `string` | Sets the placeholder text.
 | `editable` | `boolean` | When `true`, indicates that the user can edit the value of the field.
 | `maxLength` | `number` | Limits input to the spcified number of characters.
 | `secure` | `boolean` | Hides the entered text when `true`. Use this property to create password input fields.<br/>Default value: `false`.
-| `keyboardType` | `KeyboardType` | Shows a custom keyboard for easier text input.<br/>Valid values: `datetime`, `phone`, `number`, `url`, or `email`.
-| `returnKeyType` | `ReturnKeyType` | Gets or sets the label of the return key.<br/>Valid values: `done`, `next`, `go`, `search`, or `send`.
+| `keyboardType` | [`KeyboardType`](https://docs.nativescript.org/api-reference/modules/__nativescript_core_#keyboardtype) | Shows a custom keyboard for easier text input.<br/>Valid values: `datetime`, `phone`, `number`, `url`, or `email`.
+| `returnKeyType` | [`ReturnKeyType`](https://docs.nativescript.org/api-reference/modules/__nativescript_core_#returnkeytype) | Sets the label of the return key.<br/>Valid values: `done`, `next`, `go`, `search`, or `send`.
 | `autocorrect` | `boolean` | Enables or disables autocorrect.
 | `onBlur` | `(args: `[`EventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.eventdata)`) => void` | Emitted when the field loses focus.
 | `onFocus` | `(args: `[`EventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.eventdata)`) => void` | Emitted when the field gains focus.

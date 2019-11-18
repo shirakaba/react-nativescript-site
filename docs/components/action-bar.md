@@ -57,9 +57,10 @@ To remove this styling from your app, you can set the `flat` property to `true`.
 | Name | Type | Description |
 |------|------|-------------|
 | `title` | `string` | Sets the title shown in the bar.
-<!-- | `android.icon` | `string` | Sets the icon to be shown on Android devices.
-| `android.iconVisibility` | `string` | Sets icon visibility on Android devices. -->
 | `flat` | `boolean` | Removes the border on Android and the translucency on iOS. Default value is `false`.
+
+<!-- | `android.icon` | `string` | Sets the icon to be shown on Android devices. -->
+<!-- | `android.iconVisibility` | `string` | Sets icon visibility on Android devices. -->
 
 ## Native component
 

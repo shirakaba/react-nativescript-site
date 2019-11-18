@@ -35,7 +35,7 @@ import { SelectedIndexChangedEventData } from "tns-core-modules/ui/tab-view/tab-
 
 **NOTE:** Currently, `TabViewItem` expects a single child element. In most cases, you might want to wrap your content in a layout.
 
-[> screenshots for=TabView <]
+<!-- [> screenshots for=TabView <] -->
 
 #### Adding icons to tabs
 

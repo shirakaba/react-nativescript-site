@@ -14,8 +14,6 @@ See also:
 
 ---
 
-<!-- TODO: show how to import SelectedIndexChangedEventData_4 from scoped modules -->
-
 ```tsx
 import { SelectedIndexChangedEventData } from "tns-core-modules/ui/tab-view/tab-view";
 

@@ -4,7 +4,7 @@ title: Progress
 ---
 <!-- contributors: [shirakaba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska] -->
 
-`<Progress>` is a UI component that shows a bar to indicate the progress of a task.
+`<$Progress>` is a UI component that shows a bar to indicate the progress of a task.
 
 See also:
 

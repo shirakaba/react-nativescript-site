@@ -43,17 +43,18 @@ To apply multiple styles to the text in your `<$TextView>`, you can use `<$Forma
 
 | Name | Type | Description |
 |------|------|-------------|
-| `text` | `string` | Gets or sets the value of the component.
-| `hint` | `string` | Gets or sets the placeholder text when the component is editable.
+| `text` | `string` | Sets the value of the component.
+| `hint` | `string` | Sets the placeholder text when the component is editable.
 | `editable` | `boolean` | When `true`, indicates that the user can edit the contents of the container.
 | `maxLength` | `number` | Sets the maximum number of characters that can be entered in the container.
-| `keyboardType` | `KeyboardType` | Shows a custom keyboard for easier text input.<br/>Valid values: `datetime`, `phone`, `number`, `url`, or `email`.
-| `returnKeyType` | Gets or sets the label of the return key. Currently supported only on iOS.<br/>Valid values: `done`, `next`, `go`, `search`, or `send`.
+| `keyboardType` | [`KeyboardType`](https://docs.nativescript.org/api-reference/modules/__nativescript_core_#keyboardtype) | Shows a custom keyboard for easier text input.<br/>Valid values: `datetime`, `phone`, `number`, `url`, or `email`.
+| `returnKeyType` | [`ReturnKeyType`](https://docs.nativescript.org/api-reference/modules/__nativescript_core_#returnkeytype) | Sets the label of the return key.<br/>Valid values: `done`, `next`, `go`, `search`, or `send`.
 | `autocorrect` | `boolean` | Enables or disables autocorrect.
 | `onBlur` | `(args: `[`EventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.eventdata)`) => void` | Emitted when the text view loses focus.
 | `onFocus` | `(args: `[`EventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.eventdata)`) => void` | Emitted when the text view gains focus.
-<!-- | `onReturnPress` | `(args: `[`EventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.eventdata)`) => void` | Emitted when the return key is pressed. -->
 | `onTextChange` | `(args: `[`EventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.eventdata)`) => void` | Emitted when the text changes.
+
+<!-- | `onReturnPress` | `(args: `[`EventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.eventdata)`) => void` | Emitted when the return key is pressed. -->
 
 ## Native component
 
