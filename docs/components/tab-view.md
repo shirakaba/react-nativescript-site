@@ -55,11 +55,11 @@ import { SelectedIndexChangedEventData } from "tns-core-modules/ui/tab-view/tab-
 
 | Name | Type | Description |
 |------|------|-------------|
-| `selectedIndex` | `Number` | Gets or sets the currently selected tab. Default is `0`.
-| `tabTextColor` | `Color` | (Style property) Gets or sets the text color of the tabs titles.
-| `tabBackgroundColor` | `Color` | (Style property) Gets or sets the background color of the tabs.
-| `selectedTabTextColor` | `Color` | (Style property) Gets or sets the text color of the selected tab title.
-| `androidTabsPosition` | `String` | Sets the position of the TabView in Android platform<br/>Valid values: `top` or `bottom`.
+| `selectedIndex` | `number` | Sets the currently selected tab. Default is `0`.
+| `tabTextColor` | [`Color`](https://docs.nativescript.org/api-reference/classes/__nativescript_core_.color) | (Style property) Sets the text color of the tabs titles.
+| `tabBackgroundColor` | [`Color`](https://docs.nativescript.org/api-reference/classes/__nativescript_core_.color) | (Style property) Sets the background color of the tabs.
+| `selectedTabTextColor` | [`Color`](https://docs.nativescript.org/api-reference/classes/__nativescript_core_.color) | (Style property) Sets the text color of the selected tab title.
+| `androidTabsPosition` | `string` | Sets the position of the TabView in Android platform<br/>Valid values: `top` or `bottom`.
 | `onSelectedIndexChange`| `(args: `[`SelectedIndexChangedEventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.selectedindexchangedeventdata_4)`) => void` | Emitted when an item on the TabView is tapped.
 
 ## Native component

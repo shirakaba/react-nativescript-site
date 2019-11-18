@@ -25,8 +25,8 @@ See also:
 |------|------|-------------|
 | `hint` | `string` | Sets placeholder text for the input area.
 | `text` | `string` | Sets the value of the search query.
-| `textFieldBackgroundColor` | `Color` | Sets the background color of the input area.
-| `textFieldHintColor` | `Color` | Sets the color of the placeholder text.
+| `textFieldBackgroundColor` | [`Color`](https://docs.nativescript.org/api-reference/classes/__nativescript_core_.color) | Sets the background color of the input area.
+| `textFieldHintColor` | [`Color`](https://docs.nativescript.org/api-reference/classes/__nativescript_core_.color) | Sets the color of the placeholder text.
 | `onTextChange` | `(args: `[`EventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.eventdata)`) => void` | Emitted when the text is changed.
 | `onSubmit` | `(args: `[`EventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.eventdata)`) => void` | Emitted when the search input is submitted.
 | `onClose` | `(args: `[`EventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.eventdata)`) => void` | Emitted when the search bar is closed.

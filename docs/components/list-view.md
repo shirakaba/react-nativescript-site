@@ -228,7 +228,7 @@ When accessing an item from an ObservableArray, remember to use the `getItem()` 
 | Name | Type | Description |
 |------|------|-------------|
 | `items` | `Array<any>` | An array of items to be shown in the `<$ListView>`.
-| `separatorColor` | `Color` | Sets the separator line color. Set to `transparent` to remove it.
+| `separatorColor` | [`Color`](https://docs.nativescript.org/api-reference/classes/__nativescript_core_.color) | Sets the separator line color. Set to `transparent` to remove it.
 | `onItemTap`| `(args: `[`ItemEventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.itemeventdata)`) => void` | Emitted when an item in the `<$ListView>` is tapped. To access the tapped item, use `items[args.index]`.
 
 ## Methods

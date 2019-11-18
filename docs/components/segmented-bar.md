@@ -41,7 +41,7 @@ See also:
 |------|------|-------------|
 | `items` | `Array<SegmentedBarItem>` | An array of items to be displayed in the segmented bar. Represents the button labels or icons of the segmented bar.<br/>The array must be created in advance. 
 | `selectedIndex` | `number` | Sets the index of the selected item.
-| `selectedBackgroundColor` | `Color` | (Style property) Sets the background color of the selected item. To set the background color of the entire bar, use `backgroundColor`.
+| `selectedBackgroundColor` | [`Color`](https://docs.nativescript.org/api-reference/classes/__nativescript_core_.color) | (Style property) Sets the background color of the selected item. To set the background color of the entire bar, use `backgroundColor`.
 | `onSelectedIndexChange`| `(args: `[`SelectedIndexChangedEventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.selectedindexchangedeventdata_3)`) => void` | Emitted when the an item on the segmented bar is tapped.
 
 ## Native component
