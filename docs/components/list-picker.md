@@ -14,13 +14,11 @@ See also:
 ---
 
 ```tsx
-import { NarrowedEventData } from "react-nativescript/dist/shared/NativeScriptComponentTypings";
-
 <$ListPicker
   items={listOfItems}
   selectedIndex={0}
-  onSelectedIndexChange={(args: NarrowedEventData<ListPicker>) => {
-    const listPicker: ListPicker = args.object;
+  onSelectedIndexChange={(args: EventData) => {
+    const listPicker: ListPicker = args.object as ListPicker;
     const index: number = listPicker.selectedIndex;
     const item = listPicker.items[index];
   }}
@@ -35,12 +33,7 @@ import { NarrowedEventData } from "react-nativescript/dist/shared/NativeScriptCo
 |------|------|-------------|
 | `items` | `Array<string>` | Gets or sets the items displayed as options in the list picker.
 | `selectedIndex` | `number` | Gets or sets the index of the currently selected item.
-
-## Events
-
-| Name | Description |
-|------|-------------|
-| `onSelectedIndexChange`| Emitted when the currently selected option (index) changes. The new index can be retrieved via `args.object.selectedIndex`.
+| `onSelectedIndexChange` | `(args: `[`EventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.eventdata)`) => void` | Emitted when the selected time changes. The new index can be retrieved via `args.object.selectedIndex`.
 
 ## Native component
 

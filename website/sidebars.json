@@ -12,6 +12,8 @@
     ],
     "ELEMENTS: COMPONENTS": [
       "components/ActivityIndicator",
+      "components/ActionBar",
+      "components/ActionItem",
       "components/Button",
       "components/DatePicker",
       "components/Frame",
@@ -20,6 +22,7 @@
       "components/Label",
       "components/ListView",
       "components/ListPicker",
+      "components/NavigationButton",
       "components/Page",
       "components/Placeholder",
       "components/Progress",

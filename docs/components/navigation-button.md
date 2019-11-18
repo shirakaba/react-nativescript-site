@@ -1,33 +1,41 @@
 ---
+id: NavigationButton
 title: NavigationButton
-apiRef: https://docs.nativescript.org/api-reference/classes/_ui_action_bar_.navigationbutton
-contributors: [rigor789, ikoevska]
+contributors: [shirakaba, rigor789, ikoevska]
 ---
 
-`<NavigationButton>` is a UI component that provides an abstraction for the Android navigation button and the iOS back button.
+`<$NavigationButton>` is a UI component that provides an abstraction for the Android navigation button and the iOS back button.
 
-Extends [`<ActionItem>`](/en/docs/elements/action-bar/action-item).
+Extends [`<$ActionItem>`](/docs/components/action-item).
+
+See also:
+
+* [Official top-level documentation](https://docs.nativescript.org/ui/components/action-bar#navigationbutton)
+* [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_action_bar_.navigationbutton)
+* [ActionBar](/docs/components/action-bar)
+* [ActionItem](/docs/components/action-item)
 
 ---
 
-```html
-<ActionBar title="My App">
-  <NavigationButton text="Go back" android.systemIcon="ic_menu_back" @tap="goBack" />
-</ActionBar>
+```tsx
+<A$ctionBar title="My App">
+  <$NavigationButton
+    text="Go back"
+    android={{
+      systemIcon: "ic_menu_back"
+    }}
+    onTap={goBack}
+  />
+</$ActionBar>
 ```
 
 ## Props
 
 | Name | Type | Description |
 |------|------|-------------|
-| `text` | `String` | (iOS-only) Sets the text of the button.
-| `android.systemIcon` | `String` | (Android-only) The icon to be shown in the button. You can specify any system icon whose name begins with the `ic_` prefix. For a complete list of the available icons, see [the `R.drawable` Android class](https://developer.android.com/reference/android/R.drawable.html).
-
-## Events
-
-| Name | Description |
-|------|-------------|
-| `tap`| Emitted when the `<NavigationButton>` is tapped.
+| `text` | `string` | (iOS-only) Sets the text of the button.
+| `android.systemIcon` | `string` | (Android-only) The icon to be shown in the button. You can specify any system icon whose name begins with the `ic_` prefix. For a complete list of the available icons, see [the `R.drawable` Android class](https://developer.android.com/reference/android/R.drawable.html).
+| `onTap` | `(args: `[`EventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.eventdata)`) => void` | Emitted when the `ActionItem` is tapped.
 
 ## Native component
 
