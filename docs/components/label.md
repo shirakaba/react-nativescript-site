@@ -1,8 +1,8 @@
 ---
 id: Label
 title: Label
-contributors: [shirakaba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska]
 ---
+<!-- contributors: [shirakaba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska] -->
 
 `<$Label>` is a UI component that displays read-only text.
 

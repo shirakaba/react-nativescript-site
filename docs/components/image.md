@@ -1,8 +1,8 @@
 ---
 id: Image
 title: Image
-contributors: [MisterBrownRSA, rigor789, ikoevska]
 ---
+<!-- contributors: [MisterBrownRSA, rigor789, ikoevska] -->
 
 `<$Image>` is a UI component that shows an image from an [ImageSource](https://docs.nativescript.org/api-reference/modules/_image_source_) or from a URL.
 

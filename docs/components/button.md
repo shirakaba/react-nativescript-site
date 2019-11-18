@@ -1,8 +1,8 @@
 ---
 id: Button
 title: Button
-contributors: [shirakaba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska]
 ---
+<!-- contributors: [shirakaba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska] -->
 
 `<Button>` is a UI component that displays a button which reacts to a user gesture.
 

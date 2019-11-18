@@ -1,8 +1,8 @@
 ---
 id: ActionItem
 title: ActionItem
-contributors: [shirakaba, rigor789, ikoevska]
 ---
+<!-- contributors: [shirakaba, rigor789, ikoevska] -->
 
 `<$ActionItem>` is a UI component that lets you add action buttons to the `<$ActionBar>` component.
 

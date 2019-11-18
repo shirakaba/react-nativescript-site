@@ -1,8 +1,8 @@
 ---
 id: ActionBar
 title: ActionBar
-contributors: [shirakaba, rigor789, eddyverbruggen, ikoevska]
 ---
+<!-- contributors: [shirakaba, rigor789, eddyverbruggen, ikoevska] -->
 
 `<$ActionBar>` is a UI component that provides a toolbar at the top of the activity window. 
 

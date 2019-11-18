@@ -1,8 +1,8 @@
 ---
 id: Switch
 title: Switch
-contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska]
 ---
+<!-- contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska] -->
 
 `<$Switch>` is a UI component that lets users toggle between two states.
 

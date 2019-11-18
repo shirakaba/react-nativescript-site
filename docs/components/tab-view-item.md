@@ -1,8 +1,8 @@
 ---
 id: TabViewItem
 title: TabViewItem
-contributors: [shirakaba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska, kharysharpe, ramsesmoreno]
 ---
+<!-- contributors: [shirakaba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska, kharysharpe, ramsesmoreno] -->
 
 `<$TabViewItem>` is the view of a `<$TabView>`.
 

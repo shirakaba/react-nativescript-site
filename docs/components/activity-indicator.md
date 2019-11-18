@@ -1,8 +1,8 @@
 ---
 id: ActivityIndicator
 title: ActivityIndicator
-contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska]
 ---
+<!-- contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska] -->
 
 `<$ActivityIndicator>` is a UI component that shows a progress indicator signaling to the user of an operation running in the background.
 

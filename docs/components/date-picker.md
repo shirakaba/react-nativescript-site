@@ -1,8 +1,8 @@
 ---
 id: DatePicker
 title: DatePicker
-contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska]
 ---
+<!-- contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska] -->
 
 `<$DatePicker>` is a UI component that lets users select a date from a pre-configured range.
 

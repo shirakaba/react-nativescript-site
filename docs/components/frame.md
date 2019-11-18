@@ -1,8 +1,8 @@
 ---
 id: Frame
 title: Frame
-contributors: [shirakaba, rigor789, PieterHartzer]
 ---
+<!-- contributors: [shirakaba, rigor789, PieterHartzer] -->
 
 `<$Frame>` is a UI component used to display [`<$Page>`](/en/docs/elements/components/page) elements. Every app needs at least a single `<$Frame>`  element, usually set as the root element.
 

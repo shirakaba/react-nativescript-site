@@ -1,8 +1,8 @@
 ---
 id: SegmentedBar
 title: SegmentedBar
-contributors: [shirakba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska]
 ---
+<!-- contributors: [shirakba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska] -->
 
 `<$SegmentedBar>` is a UI bar component that displays a set of buttons for discrete selection. Can show text or images.
 

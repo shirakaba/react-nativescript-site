@@ -1,8 +1,8 @@
 ---
 id: NavigationButton
 title: NavigationButton
-contributors: [shirakaba, rigor789, ikoevska]
 ---
+<!-- contributors: [shirakaba, rigor789, ikoevska] -->
 
 `<$NavigationButton>` is a UI component that provides an abstraction for the Android navigation button and the iOS back button.
 

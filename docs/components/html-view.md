@@ -1,8 +1,8 @@
 ---
 id: HtmlView
 title: HtmlView
-contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska]
 ---
+<!-- contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska] -->
 
 `<$HtmlView>` is a UI component that lets you show static HTML content.
 

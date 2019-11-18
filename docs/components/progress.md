@@ -1,8 +1,8 @@
 ---
 id: Progress
 title: Progress
-contributors: [shirakaba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska]
 ---
+<!-- contributors: [shirakaba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska] -->
 
 `<Progress>` is a UI component that shows a bar to indicate the progress of a task.
 

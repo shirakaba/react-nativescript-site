@@ -1,8 +1,8 @@
 ---
 id: TextField
 title: TextField
-contributors: [shirakaba, MisterBrownRSA, rigor789, TheOriginalJosh, eddyverbruggen, ikoevska]
 ---
+<!-- contributors: [shirakaba, MisterBrownRSA, rigor789, TheOriginalJosh, eddyverbruggen, ikoevska] -->
 
 `<$TextField>` is an input component that creates an editable single-line box.
 

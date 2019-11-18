@@ -1,8 +1,8 @@
 ---
 id: TimePicker
 title: TimePicker
-contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska]
 ---
+<!-- contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska] -->
 
 `<$TimePicker>` is a UI component that lets users select time. 
 

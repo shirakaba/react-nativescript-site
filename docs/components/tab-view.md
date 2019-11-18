@@ -1,8 +1,8 @@
 ---
 id: TabView
 title: TabView
-contributors: [shirakaba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska, kharysharpe, ramsesmoreno]
 ---
+<!-- contributors: [shirakaba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska, kharysharpe, ramsesmoreno] -->
 
 `<$TabView>` is a navigation component that shows content grouped into tabs and lets users switch between tabs.
 

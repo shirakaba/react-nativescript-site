@@ -1,8 +1,8 @@
 ---
 id: Page
 title: Page
-contributors: [shirakaba, rigor789, ikoevska]
 ---
+<!-- contributors: [shirakaba, rigor789, ikoevska] -->
 
 `<$Page>` is a UI component that represents an application screen. NativeScript apps typically consist of one or more `<$Page>` that wrap content such as an [`<$ActionBar>`](/docs/components/action-bar) and other UI widgets.
 

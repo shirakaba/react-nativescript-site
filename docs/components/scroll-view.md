@@ -1,8 +1,8 @@
 ---
 id: ScrollView
 title: ScrollView
-contributors: [shirakaba, eddyverbruggen, ikoevska, misterbrownza]
 ---
+<!-- contributors: [shirakaba, eddyverbruggen, ikoevska, misterbrownza] -->
 
 `<$ScrollView>` is a UI component that shows a scrollable content area. Content can be scrolled vertically or horizontally.
 

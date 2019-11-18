@@ -1,8 +1,8 @@
 ---
 id: SearchBar
 title: SearchBar
-contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska]
 ---
+<!-- contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska] -->
 
 `<$SearchBar>` is a UI component that provides a user interface for entering search queries and submitting requests to the search provider.
 
