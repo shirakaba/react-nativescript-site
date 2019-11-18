@@ -4,7 +4,13 @@ title: Quick Start
 sidebar_label: Quick Start
 ---
 
-<!-- If you don't want the hassle of installing and configuring your system before you can have a taste of React NativeScript, the NativeScript Playground has you covered. -->
+## Developing online (in the Playground)
+
+If you don't want the hassle of installing and configuring your system before you can have a taste of React NativeScript, the [NativeScript Playground](https://play.nativescript.org) has you covered.
+
+But if you [already have your system ready for native development](/docs/installation), you can start by using the `tns-template-blank-react` detailed in the next section.
+
+## Developing on desktop (via NativeScript CLI)
 
 Provided you already have your system ready for native development (see [Getting Started with NativeScript](https://www.nativescript.org/getting-started-with-nativescript) from the NativeScript official documentation), you can start by using the `tns-template-blank-react` starter boilerplate:
 
