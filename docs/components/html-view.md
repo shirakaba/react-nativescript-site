@@ -10,7 +10,7 @@ See also:
 
 * [Official top-level documentation](https://docs.nativescript.org/ui/components/html-view)
 * [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_html_view_.htmlview)
-* [WebView](/docs/components/web-view)
+* [`<$WebView>`](/docs/components/web-view)
 
 ---
 

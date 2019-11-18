@@ -10,7 +10,7 @@ See also:
 
 * [Official top-level documentation](https://docs.nativescript.org/ui/components/progress)
 * [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_progress_.progress)
-* [ActivityIndicator](/docs/components/activity-indicator)
+* [`<$ActivityIndicator>`](/docs/components/activity-indicator)
 
 ---
 

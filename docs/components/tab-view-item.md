@@ -10,7 +10,7 @@ See also:
 
 * [Official top-level documentation](https://docs.nativescript.org/ui/components/tab-view)
 * [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_tab_view_.tabviewitem)
-* [TabView](/docs/components/tab-view)
+* [`<$TabView>`](/docs/components/tab-view)
 
 ---
 

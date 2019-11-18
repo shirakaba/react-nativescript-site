@@ -10,8 +10,8 @@ See also:
 
 * [Official top-level documentation](https://docs.nativescript.org/ui/components/action-bar#actionitem)
 * [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_action_bar_.actionitem)
-* [ActionBar](/docs/components/action-bar)
-* [NavigationButton](/docs/components/navigation-button)
+* [`<$ActionBar>`](/docs/components/action-bar)
+* [`<$NavigationButton>`](/docs/components/navigation-button)
 
 ---
 

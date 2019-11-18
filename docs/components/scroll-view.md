@@ -12,7 +12,7 @@ See also:
 
 * [Official top-level documentation](https://docs.nativescript.org/ui/components/scroll-view)
 * [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_scroll_view_.scrollview)
-* [ActivityIndicator](/docs/components/activity-indicator)
+* [`<$ActivityIndicator>`](/docs/components/activity-indicator)
 
 ---
 
