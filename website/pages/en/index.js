@@ -96,8 +96,8 @@ class Index extends React.Component {
       <div
         className="productShowcaseSection paddingBottom"
         style={{textAlign: 'center'}}>
-        <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
+        <h2>Based on NativeScript</h2>
+        <MarkdownBlock>Create apps for iOS and Android from a single JS or TS codebase.</MarkdownBlock>
       </div>
     );
 
@@ -105,13 +105,16 @@ class Index extends React.Component {
       <Block id="try">
         {[
           {
-            content:
-              'To make your landing page more attractive, use illustrations! Check out ' +
-              '[**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. ' +
-              'The illustrations you see on this page are from unDraw.',
-            image: `${baseUrl}img/undraw_code_review.svg`,
+            content: 
+              'Supports hot module replacement (HMR) for rapid development.\n\n' +
+
+              'Apps build quickly, and version updates are trivial.\n\n' +
+
+              'Written from the ground up in TypeScript.'
+              ,
+            image: `${baseUrl}img/undraw_start_building.svg`,
             imageAlign: 'left',
-            title: 'Wonderful SVG Illustrations',
+            title: 'Sublime developer experience',
           },
         ]}
       </Block>
@@ -136,10 +139,10 @@ class Index extends React.Component {
         {[
           {
             content:
-              'Each new Docusaurus project has **randomly-generated** theme colors.',
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+              'React NativeScript UIs are made up of native views, just like NativeScript\'s. So you can be assured of excellent user experience and blazing performance.',
+            image: `${baseUrl}img/undraw_fast_loading.svg`,
             imageAlign: 'right',
-            title: 'Randomly Generated Theme Colors',
+            title: 'Truly native apps',
           },
         ]}
       </Block>
@@ -198,9 +201,9 @@ class Index extends React.Component {
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           <Features />
-          {/* <FeatureCallout /> */}
-          {/* <LearnHow /> */}
-          {/* <TryOut /> */}
+          <FeatureCallout />
+          <LearnHow />
+          <TryOut />
           {/* <Description /> */}
           <Showcase />
         </div>
