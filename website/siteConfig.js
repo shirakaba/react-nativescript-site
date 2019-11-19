@@ -8,6 +8,7 @@
 // See https://docusaurus.io/docs/site-config for all the possible
 // site configuration options.
 
+// List of projects/orgs using your project for the users page.
 const users = [
   // {
   //   caption: 'User1',
@@ -19,7 +20,6 @@ const users = [
   // },
 ];
 
-// List of projects/orgs using your project for the users page.
 const contributors = [
   {
     caption: 'shirakaba',
@@ -141,7 +141,7 @@ const siteConfig = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-  //   repoUrl: 'https://github.com/facebook/test-site',
+    repoUrl: 'https://github.com/shirakaba/react-nativescript',
 };
 
 module.exports = siteConfig;
