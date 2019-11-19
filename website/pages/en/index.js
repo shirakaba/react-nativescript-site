@@ -155,7 +155,7 @@ class Index extends React.Component {
           },
           {
             content: 'Enjoy synchronous JS access to 100% of the platform\'s APIs.',
-            image: `${baseUrl}img/undraw_operating_system.svg`,
+            image: `${baseUrl}img/undraw_code_typing.svg`,
             imageAlign: 'top',
             title: 'Write native code in-line in JS',
           },
