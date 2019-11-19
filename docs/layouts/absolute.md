@@ -25,6 +25,8 @@ See also:
 The following example creates a simple grid. For more information about creating grid layouts, see [GridLayout](/en/docs/elements/layouts/grid-layout).
 
 ```tsx
+import { $AbsoluteLayout, $Label } from "react-nativescript";
+
 <$AbsoluteLayout backgroundColor="#3c495e">
   <$Label text="10,10" left={10} top={10} width={100} height={100} backgroundColor="#43b883"/>
   <$Label text="120,10" left={120} top={10} width={100} height={100} backgroundColor="#43b883"/>
@@ -39,6 +41,8 @@ The following example creates a simple grid. For more information about creating
 The following example creates a group of overlapping items.
 
 ```tsx
+import { $AbsoluteLayout, $Label } from "react-nativescript";
+
 <$AbsoluteLayout backgroundColor="#3c495e">
   <$Label text="10,10" left={10} top={10} width={100} height={100} backgroundColor="#289062"/>
   <$Label text="30,40" left={30} top={40} width={100} height={100} backgroundColor="#43b883"/>

@@ -19,10 +19,12 @@ See also:
 The following example creates a row of three equally-sized elements that span across the entire height of the screen.
 
 ```tsx
-<$FlexboxLayout backgroundColor={new Color("#3c495e")}>
-  <$Label text="first" width={70} backgroundColor={new Color("#43b883")}/>
-  <$Label text="second" width={70} backgroundColor={new Color("#1c6b48")}/>
-  <$Label text="third" width={70} backgroundColor={new Color("#289062")}/>
+import { $FlexboxLayout, $Label } from "react-nativescript";
+
+<$FlexboxLayout backgroundColor="#3c495e">
+  <$Label text="first" width={70} backgroundColor="#43b883"/>
+  <$Label text="second" width={70} backgroundColor="#1c6b48"/>
+  <$Label text="third" width={70} backgroundColor="#289062"/>
 </$FlexboxLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/flexbox_layout_row_stretch.svg" />
@@ -32,10 +34,12 @@ The following example creates a row of three equally-sized elements that span ac
 The following example creates a column of three equally-sized elements that span across the entire width of the screen.
 
 ```tsx
-<$FlexboxLayout flexDirection="column" backgroundColor={new Color("#3c495e")}>
-  <$Label text="first" height={70} backgroundColor={new Color("#43b883")}/>
-  <$Label text="second" height={70} backgroundColor={new Color("#1c6b48")}/>
-  <$Label text="third" height={70} backgroundColor={new Color("#289062")}/>
+import { $FlexboxLayout, $Label } from "react-nativescript";
+
+<$FlexboxLayout flexDirection="column" backgroundColor="#3c495e">
+  <$Label text="first" height={70} backgroundColor="#43b883"/>
+  <$Label text="second" height={70} backgroundColor="#1c6b48"/>
+  <$Label text="third" height={70} backgroundColor="#289062"/>
 </$FlexboxLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/flexbox_layout_column_stretch.svg" />
@@ -45,10 +49,12 @@ The following example creates a column of three equally-sized elements that span
 The following example creates a row of three items placed at the top of the screen. Items are placed in the order they were declared in.
 
 ```tsx
-<$FlexboxLayout alignItems="flex-start" backgroundColor={new Color("#3c495e")}>
-  <$Label text="first" width={70} height={70} backgroundColor={new Color("#43b883")}/>
-  <$Label text="second" width={70} height={70} backgroundColor={new Color("#1c6b48")}/>
-  <$Label text="third" width={70} height={70} backgroundColor={new Color("#289062")}/>
+import { $FlexboxLayout, $Label } from "react-nativescript";
+
+<$FlexboxLayout alignItems="flex-start" backgroundColor="#3c495e">
+  <$Label text="first" width={70} height={70} backgroundColor="#43b883"/>
+  <$Label text="second" width={70} height={70} backgroundColor="#1c6b48"/>
+  <$Label text="third" width={70} height={70} backgroundColor="#289062"/>
 </$FlexboxLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/flexbox_layout_row_flex-start.svg" />
@@ -58,10 +64,12 @@ The following example creates a row of three items placed at the top of the scre
 The following example creates a row of three items placed at the top of the screen. Items are placed in a customized order.
 
 ```tsx
-<$FlexboxLayout alignItems="flex-start" backgroundColor={new Color("#3c495e")}>
-  <$Label text="first" order={2} width={70} height={70} backgroundColor={new Color("#43b883")}/>
-  <$Label text="second" order={3} width={70} height={70} backgroundColor={new Color("#1c6b48")}/>
-  <$Label text="third" order={1} width={70} height={70} backgroundColor={new Color("#289062")}/>
+import { $FlexboxLayout, $Label } from "react-nativescript";
+
+<$FlexboxLayout alignItems="flex-start" backgroundColor="#3c495e">
+  <$Label text="first" order={2} width={70} height={70} backgroundColor="#43b883"/>
+  <$Label text="second" order={3} width={70} height={70} backgroundColor="#1c6b48"/>
+  <$Label text="third" order={1} width={70} height={70} backgroundColor="#289062"/>
 </$FlexboxLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/flexbox_layout_row_custom_order.svg" />
@@ -71,11 +79,13 @@ The following example creates a row of three items placed at the top of the scre
 The following example creates four items with enabled line wrapping. When the row runs out of space, the container wraps the last item on a new line.
 
 ```tsx
-<$FlexboxLayout flexWrap="wrap" backgroundColor={new Color("#3c495e")}>
-  <$Label text="first" width={30} backgroundColor={new Color("#43b883")}/>
-  <$Label text="second" width={30} backgroundColor={new Color("#1c6b48")}/>
-  <$Label text="third" width={30} backgroundColor={new Color("#289062")}/>
-  <$Label text="fourth" width={30} backgroundColor={new Color("#289062")}/>
+import { $FlexboxLayout, $Label } from "react-nativescript";
+
+<$FlexboxLayout flexWrap="wrap" backgroundColor="#3c495e">
+  <$Label text="first" width={30} backgroundColor="#43b883"/>
+  <$Label text="second" width={30} backgroundColor="#1c6b48"/>
+  <$Label text="third" width={30} backgroundColor="#289062"/>
+  <$Label text="fourth" width={30} backgroundColor="#289062"/>
 </$FlexboxLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/flexbox_layout_wrap.svg" />
@@ -89,27 +99,29 @@ The following example shows how to use:
 * `alignSelf` to modify the position of items across the main axis.
 
 ```tsx
+import { $FlexboxLayout, $Label } from "react-nativescript";
+
 <$FlexboxLayout
   flexDirection="column-reverse"
   justifyContent="space-around"
-  backgroundColor={new Color("#3c495e")}
+  backgroundColor="#3c495e"
 >
-  <$Label text="first" height={70} backgroundColor={new Color("#43b883")}/>
+  <$Label text="first" height={70} backgroundColor="#43b883"/>
   <$Label
     text="second"
     alignSelf="center"
     width={70}
     height={70}
-    backgroundColor={new Color("#1c6b48")}
+    backgroundColor="#1c6b48"
   />
   <$Label
     text="third\nflex-end"
     alignSelf="flex-end"
     width={70}
     height={70}
-    backgroundColor={new Color("#289062")}
+    backgroundColor="#289062"
   />
-  <$Label text="fourth" height={70} backgroundColor={new Color("#289062")}/>
+  <$Label text="fourth" height={70} backgroundColor="#289062"/>
 </$FlexboxLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/flexbox_layout_column_reverse_space_around_align_self.svg" />

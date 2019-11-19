@@ -16,6 +16,8 @@ See also:
 ---
 
 ```tsx
+import { $Switch } from "react-nativescript";
+
 <$Switch checked={true} />
 ```
 

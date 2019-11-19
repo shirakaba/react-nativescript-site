@@ -19,30 +19,32 @@ See also:
 The following example creates a row of equally-sized items. When the row runs out of space, the container wraps the last item on a new row.
 
 ```tsx
-<$WrapLayout backgroundColor={new Color("#3c495e">)}>
+import { $WrapLayout, $Label } from "react-nativescript";
+
+<$WrapLayout backgroundColor="#3c495e">
   <$Label
     text="first"
     width={{ value: 30, unit: "%" }}
     height={{ value: 30, unit: "%" }}
-    backgroundColor={new Color("#43b883")}
+    backgroundColor="#43b883"}
   />
   <$Label
     text="second"
     width={{ value: 30, unit: "%" }}
     height={{ value: 30, unit: "%" }}
-    backgroundColor={new Color("#1c6b48")}
+    backgroundColor="#1c6b48"}
   />
   <$Label
     text="third"
     width={{ value: 30, unit: "%" }}
     height={{ value: 30, unit: "%" }}
-    backgroundColor={new Color("#289062")}
+    backgroundColor="#289062"}
   />
   <$Label
     text="fourth"
     width={{ value: 30, unit: "%" }}
     height={{ value: 30, unit: "%" }}
-    backgroundColor={new Color("#289062")}
+    backgroundColor="#289062"}
   />
 </$WrapLayout>
 ```
@@ -54,30 +56,32 @@ The following example creates a row of equally-sized items. When the row runs ou
 The following example creates a column of equally-sized items. When the row runs out of space, the container wraps the last item on a new column.
 
 ```tsx
-<$WrapLayout orientation="vertical" backgroundColor={new Color("#3c495e">)}>
+import { $WrapLayout, $Label } from "react-nativescript";
+
+<$WrapLayout orientation="vertical" backgroundColor="#3c495e">
   <$Label
     text="first"
     width={{ value: 30, unit: "%" }}
     height={{ value: 30, unit: "%" }}
-    backgroundColor={new Color("#43b883")}
+    backgroundColor="#43b883"}
   />
   <$Label
     text="second"
     width={{ value: 30, unit: "%" }}
     height={{ value: 30, unit: "%" }}
-    backgroundColor={new Color("#1c6b48")}
+    backgroundColor="#1c6b48"}
   />
   <$Label
     text="third"
     width={{ value: 30, unit: "%" }}
     height={{ value: 30, unit: "%" }}
-    backgroundColor={new Color("#289062")}
+    backgroundColor="#289062"}
   />
   <$Label
     text="fourth"
     width={{ value: 30, unit: "%" }}
     height={{ value: 30, unit: "%" }}
-    backgroundColor={new Color("#289062")}
+    backgroundColor="#289062"}
   />
 </$WrapLayout>
 ```

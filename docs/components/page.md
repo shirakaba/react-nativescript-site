@@ -14,6 +14,8 @@ See also:
 ---
 
 ```tsx
+import { $Page, $ActionBar, $GridLayout, $Label } from "react-nativescript";
+
 <$Page>
   <$ActionBar title="My App" />
   <$GridLayout>

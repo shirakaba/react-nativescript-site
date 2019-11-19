@@ -15,6 +15,8 @@ See also:
 ---
 
 ```tsx
+import { $WebView } from "react-nativescript";
+
 <$WebView src="http://nativescript-vue.org/" />
 
 <$WebView src="~/html/index.html" />

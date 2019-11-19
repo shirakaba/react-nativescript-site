@@ -15,9 +15,11 @@ See also:
 
 #### Multiple Frames
 
-If you need to create multiple frames, you can do so by wrapping them in a Layout, for example if you want to have 2 frames side-by-side
+If you need to create multiple frames, you can do so by wrapping them in a Layout, for example if you want to have 2 frames side-by-side:
 
 ```tsx
+import { $GridLayout, $Frame } from "react-nativescript";
+
 <$GridLayout columns={[new ItemSpec(1, "star"), new ItemSpec(1, "star")]} rows={[]}>
   <$Frame col={0}/>
   <$Frame col={1}/>
@@ -27,6 +29,7 @@ If you need to create multiple frames, you can do so by wrapping them in a Layou
 #### A frame with a default page
 
 ```tsx
+import { $Frame, $ActionBar, $Label, $GridLayout } from "react-nativescript";
 import { Frame } from "@nativescript/core";
 
 interface Props {
@@ -66,6 +69,7 @@ class AppContainer extends React.Component<Props, State> {
 #### A frame with a default page from an external component
 
 ```tsx
+import { $Frame } from "react-nativescript";
 import HomePage from './HomePage';
 
 <$Frame>

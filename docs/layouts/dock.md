@@ -25,6 +25,8 @@ See also:
 The following example creates a frame-like layout consisting of 4 elements, position at the 4 edges of the screen.
 
 ```tsx
+import { $DockLayout, $Label } from "react-nativescript";
+
 <$DockLayout stretchLastChild={false} backgroundColor="#3c495e">
   <$Label text="left" dock="left" width={40} backgroundColor="#43b883"/>
   <$Label text="top" dock="top" height={40} backgroundColor="#289062"/>
@@ -39,6 +41,8 @@ The following example creates a frame-like layout consisting of 4 elements, posi
 The following example shows how `stretchLastChild` affects the positioning of child elements in a `<$DockLayout>` container. The last child (`bottom`) is stretched to take up all the remaining space after positioning the first three elements.
 
 ```tsx
+import { $DockLayout, $Label } from "react-nativescript";
+
 <$DockLayout stretchLastChild={true} backgroundColor="#3c495e">
   <$Label text="left" dock="left" width={40} backgroundColor="#43b883"/>
   <$Label text="top" dock="top" height={40} backgroundColor="#289062"/>
@@ -53,6 +57,8 @@ The following example shows how `stretchLastChild` affects the positioning of ch
 The following example creates a `<$DockLayout>` of 5 elements. The first four wrap the center element in a frame. 
 
 ```tsx
+import { $DockLayout, $Label } from "react-nativescript";
+
 <$DockLayout stretchLastChild={true} backgroundColor="#3c495e">
   <$Label text="left" dock="left" width={40} backgroundColor="#43b883"/>
   <$Label text="top" dock="top" height={40} backgroundColor="#289062"/>
@@ -68,6 +74,8 @@ The following example creates a `<$DockLayout>` of 5 elements. The first four wr
 The following example creates a single line of 4 elements that stretch across the entire height and width of the screen.
  
 ```tsx
+import { $DockLayout, $Label } from "react-nativescript";
+
 <$DockLayout stretchLastChild={true} backgroundColor="#3c495e">
   <$Label text="left 1" dock="left" width={40} backgroundColor="#43b883"/>
   <$Label text="left 2" dock="left" width={40} backgroundColor="#289062"/>

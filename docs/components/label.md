@@ -16,6 +16,8 @@ See also:
 ---
 
 ```tsx
+import { $Label } from "react-nativescript";
+
 <$Label text="Label" />
 ```
 
@@ -26,6 +28,8 @@ See also:
 If you need to style parts of the text, you can use a combination of a [`FormattedString`](https://docs.nativescript.org/angular/ui/ng-ui-widgets/formatted-string) and [`Span`](https://docs.nativescript.org/api-reference/classes/_text_span_.span) elements.
 
 ```tsx
+import { $Label, $FormattedString, $Span } from "react-nativescript";
+
 <$Label textWrap={true}>
   <$FormattedString>
     <$Span text="This text has a " />

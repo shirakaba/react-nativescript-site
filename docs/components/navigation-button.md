@@ -18,7 +18,9 @@ See also:
 ---
 
 ```tsx
-<A$ctionBar title="My App">
+import { $ActionBar, $NavigationButton } from "react-nativescript";
+
+<$ActionBar title="My App">
   <$NavigationButton
     text="Go back"
     android={{

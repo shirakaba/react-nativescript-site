@@ -28,8 +28,10 @@ To apply multiple styles to the text in your `<$TextView>`, you can use `<$Forma
 <!-- TODO: check whether strings (rather than enums) are accepted for each of the attributes in <$Span> in TypeScript -->
 
 ```tsx
+import { $TextView, $FormattedString, $Span } from "react-nativescript";
+
 <$TextView editable="false">
-  <$ormattedString>
+  <$FormattedString>
     <$Span text="You can use text attributes such as " />
     <$Span text="bold, " fontWeight="Bold" />
     <$Span text="italic " fontStyle="Italic" />

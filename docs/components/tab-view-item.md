@@ -15,6 +15,7 @@ See also:
 ---
 
 ```tsx
+import { $TabView, $TabViewItem, $Label } from "react-nativescript";
 import { SelectedIndexChangedEventData } from "tns-core-modules/ui/tab-view/tab-view";
 
 <$TabView
@@ -40,6 +41,8 @@ import { SelectedIndexChangedEventData } from "tns-core-modules/ui/tab-view/tab-
 #### Adding icons to tabs
 
 ```tsx
+import { $TabView, $TabViewItem, $Label } from "react-nativescript";
+
 <$TabView selectedIndex={selectedIndex} iosIconRenderingMode="alwaysOriginal">
   <$TabViewItem title="Tab 1" iconSource="~/images/icon.png">
     <$Label text="Content for Tab 1" />

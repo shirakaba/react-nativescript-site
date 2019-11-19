@@ -15,6 +15,8 @@ See also:
 ---
 
 ```tsx
+import { $TimePicker } from "react-nativescript";
+
 <$TimePicker hour={selectedHour} minute={selectedMinute} />
 ```
 

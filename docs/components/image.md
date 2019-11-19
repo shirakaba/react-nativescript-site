@@ -16,24 +16,32 @@ See also:
 #### Displaying an image relative to the `app` directory
 
 ```tsx
+import { $Image } from "react-nativescript";
+
 <$Image src="~/logo.png" stretch="none" />
 ```
 
 #### Displaying an image from a URL
 
 ```tsx
+import { $Image } from "react-nativescript";
+
 <$Image src="https://art.nativescript-vue.org/NativeScript-Vue-White-Green.png" stretch="none" />
 ```
 
 #### Displaying an image from `App_Resources`
 
 ```tsx
+import { $Image } from "react-nativescript";
+
 <$Image src="res://icon" stretch="none" />
 ```
 
 #### Displaying a `base64`-encoded image
 
 ```tsx
+import { $Image } from "react-nativescript";
+
 <$Image src="data:Image/png;base64,iVBORw..." stretch="none" />
 ```
 

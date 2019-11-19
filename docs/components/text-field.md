@@ -18,6 +18,8 @@ See also:
 <!-- TODO: explain that setState must be performed (e.g. on blur) to sync native text value with that of React state. -->
 
 ```tsx
+import { $TextField } from "react-nativescript";
+
 <$TextField text={textFieldValue} hint="Enter text..." />
 ```
 

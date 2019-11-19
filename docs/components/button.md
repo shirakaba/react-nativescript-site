@@ -15,6 +15,7 @@ See also:
 ---
 
 ```tsx
+import { $Button } from "react-nativescript";
 import { EventData } from "@nativescript/core";
 
 <$Button

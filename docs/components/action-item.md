@@ -18,6 +18,8 @@ See also:
 #### Basic use
 
 ```tsx
+import { $ActionBar, $ActionItem } from "react-nativescript";
+
 <$ActionBar title="My App">
   <$ActionItem
     onTap={onTapShare}
@@ -49,6 +51,8 @@ See also:
 You can use the `visibility` prop (inherited from `View`) to show `<$ActionItem>` components based on a condition.
 
 ```tsx
+import { $ActionBar, $ActionItem } from "react-nativescript";
+
 <$ActionBar title="My App">
   <$ActionItem
     onTap={onTapEdit}

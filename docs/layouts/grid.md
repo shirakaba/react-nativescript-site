@@ -30,6 +30,9 @@ See also:
 The following example creates a simple 2-by-2 grid with fixed column widths and row heights.
 
 ```tsx
+import { $GridLayout, $Label } from "react-nativescript";
+import { ItemSpec } from "tns-core-modules/ui/layouts/grid-layout/grid-layout";
+
 <$GridLayout
   columns={[new ItemSpec(115, "px"), new ItemSpec(115, "px")]}
   rows={[new ItemSpec(115, "px"), new ItemSpec(115, "px")]}
@@ -47,6 +50,9 @@ The following example creates a simple 2-by-2 grid with fixed column widths and 
 The following example creates a grid with responsive design, where space is alotted proportionally to child elements.
 
 ```tsx
+import { $GridLayout, $Label } from "react-nativescript";
+import { ItemSpec } from "tns-core-modules/ui/layouts/grid-layout/grid-layout";
+
 <$GridLayout
   columns={[new ItemSpec(1, "star"), new ItemSpec(2, "star")]}
   rows={[new ItemSpec(2, "star"), new ItemSpec(3, "star")]}
@@ -64,6 +70,9 @@ The following example creates a grid with responsive design, where space is alot
 The following example create a grid with one auto-sized column and one column with fixed size. Rows have a fixed height.
 
 ```tsx
+import { $GridLayout, $Label } from "react-nativescript";
+import { ItemSpec } from "tns-core-modules/ui/layouts/grid-layout/grid-layout";
+
 <$GridLayout
   columns={[new ItemSpec(80, "pixel"), new ItemSpec(1, "auto")]}
   rows={[new ItemSpec(80, "pixel"), new ItemSpec(80, "pixel")]}
@@ -81,6 +90,9 @@ The following example create a grid with one auto-sized column and one column wi
 The following example creates a complex grid with responsive design, mixed width and height settings, and some merged cells.
 
 ```tsx
+import { $GridLayout, $Label } from "react-nativescript";
+import { ItemSpec } from "tns-core-modules/ui/layouts/grid-layout/grid-layout";
+
 <$GridLayout
   columns={[new ItemSpec(40, "pixel"), new ItemSpec(1, "auto"), new ItemSpec(1, "star")]}
   rows={[new ItemSpec(40, "pixel"), new ItemSpec(1, "auto"), new ItemSpec(1, "star")]}

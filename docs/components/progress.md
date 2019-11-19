@@ -15,6 +15,8 @@ See also:
 ---
 
 ```tsx
+import { $Progress } from "react-nativescript";
+
 function getTaskCompletionPercent(){
     // Just a stub method to illustrate the concept.
     return 10;

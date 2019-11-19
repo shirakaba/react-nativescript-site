@@ -18,6 +18,8 @@ See also:
 
 ---
 ```tsx
+import { $SegmentedBar, $SegmentedBarItem } from "react-nativescript";
+
 <$SegmentedBar>
   <$SegmentedBarItem title="First" />
   <$SegmentedBarItem title="Second" />
