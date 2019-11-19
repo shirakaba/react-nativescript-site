@@ -11,7 +11,7 @@ sidebar_label: Introduction
 
 ## What is [NativeScript](https://www.nativescript.org/)?
 
-NativeScript is an open source framework for building truly native mobile applications using JavaScript (or TypeScript), created by Jamie Birch ([GitHub](https://github.com/shirakaba), [Twitter](https://twitter.com/LinguaBrowse)).
+NativeScript is an open source framework for building truly native mobile applications using JavaScript (or TypeScript).
 
 ## What is [React.js](https://reactjs.org/)?
 
@@ -20,6 +20,8 @@ React is an industry-standard library for developing user interfaces.
 ## What is React NativeScript?
 
 React NativeScript is a React custom renderer that allows you to describe a NativeScript app using the familiar React 'way of thinking'.
+
+It was created by Jamie Birch ([GitHub](https://github.com/shirakaba), [Twitter](https://twitter.com/LinguaBrowse)).
 
 ## Did you say [React Native](https://react-native.org/)?
 
