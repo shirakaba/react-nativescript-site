@@ -4,6 +4,8 @@ title: Using React Devtools
 sidebar_label: Using React Devtools
 ---
 
+<!-- contributors: [shirakaba, rigor789, ikoevska] -->
+
 You can debug React NativeScript applications using the standalone version of React DevTools.
 
 However, as these depend upon a WebSockets implementation (which NativeScript doesn't natively support), you'll need to supply that yourself.

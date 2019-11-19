@@ -3,6 +3,8 @@ id: quick-start
 title: Quick Start
 sidebar_label: Quick Start
 ---
+<!-- contributors: [shirakaba, rigor789, eddyverbruggen, damain, ikoevska, jlooper]
+ -->
 
 ## Developing online (in the Playground)
 

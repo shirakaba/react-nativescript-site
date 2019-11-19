@@ -3,6 +3,8 @@ id: installation
 title: Environment Setup
 sidebar_label: Environment Setup
 ---
+<!-- contributors: [shirakaba, rigor789, TheOriginalJosh, eddyverbruggen, ikoevska] -->
+
 
 To use React NativeScript, you'll need to set up your system with NativeScript CLI and its dependencies (as well as any tooling for native app development, if not yet installed).
 

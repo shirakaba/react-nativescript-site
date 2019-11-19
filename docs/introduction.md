@@ -3,6 +3,9 @@ id: introduction
 title: Introduction
 sidebar_label: Introduction
 ---
+<!-- contributors: [shirakaba, rigor789, tjvantoll, charles-salmon] -->
+
+*Note: This documentation is adapted from the sublime [NativeScript Vue docs](https://nativescript-vue.org), so first of all, a big thank you to the NativeScript Vue community for their hard work providing the foundation for this documentation. Contributors are credited in the source.*
 
 <!-- Check the [documentation](https://docusaurus.io) for how to use Docusaurus. -->
 
