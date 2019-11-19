@@ -18,6 +18,7 @@ See also:
 #### Basic use
 
 ```tsx
+import * as React from "react";
 import { $ActionBar, $ActionItem } from "react-nativescript";
 
 <$ActionBar title="My App">
@@ -51,6 +52,7 @@ import { $ActionBar, $ActionItem } from "react-nativescript";
 You can use the `visibility` prop (inherited from `View`) to show `<$ActionItem>` components based on a condition.
 
 ```tsx
+import * as React from "react";
 import { $ActionBar, $ActionItem } from "react-nativescript";
 
 <$ActionBar title="My App">

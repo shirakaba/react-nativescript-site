@@ -14,6 +14,7 @@ See also:
 ---
 
 ```tsx
+import * as React from "react";
 import { $ListPicker } from "react-nativescript";
 import { EventData, ListPicker } from "@nativescript/core";
 

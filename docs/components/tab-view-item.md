@@ -15,6 +15,7 @@ See also:
 ---
 
 ```tsx
+import * as React from "react";
 import { $TabView, $TabViewItem, $Label } from "react-nativescript";
 import { SelectedIndexChangedEventData } from "tns-core-modules/ui/tab-view/tab-view";
 

@@ -14,6 +14,7 @@ See also:
 ---
 
 ```tsx
+import * as React from "react";
 import { $SearchBar } from "react-nativescript";
 
 <$SearchBar hint="Search hint" text="searchPhrase" onTextChange={onTextChanged} onSubmit={onSubmit} onClose={onClose} />

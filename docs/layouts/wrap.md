@@ -19,6 +19,7 @@ See also:
 The following example creates a row of equally-sized items. When the row runs out of space, the container wraps the last item on a new row.
 
 ```tsx
+import * as React from "react";
 import { $WrapLayout, $Label } from "react-nativescript";
 
 <$WrapLayout backgroundColor="#3c495e">
@@ -56,6 +57,7 @@ import { $WrapLayout, $Label } from "react-nativescript";
 The following example creates a column of equally-sized items. When the row runs out of space, the container wraps the last item on a new column.
 
 ```tsx
+import * as React from "react";
 import { $WrapLayout, $Label } from "react-nativescript";
 
 <$WrapLayout orientation="vertical" backgroundColor="#3c495e">

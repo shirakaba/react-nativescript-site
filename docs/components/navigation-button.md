@@ -18,6 +18,7 @@ See also:
 ---
 
 ```tsx
+import * as React from "react";
 import { $ActionBar, $NavigationButton } from "react-nativescript";
 
 <$ActionBar title="My App">

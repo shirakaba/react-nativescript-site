@@ -14,6 +14,7 @@ See also:
 ---
 
 ```tsx
+import * as React from "react";
 import { $Slider } from "react-nativescript";
 
 <$Slider value={0} onValueChange={onValueChange} />

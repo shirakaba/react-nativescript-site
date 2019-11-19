@@ -20,6 +20,7 @@ See also:
 #### Using a title
 
 ```tsx
+import * as React from "react";
 import { $ActionBar } from "react-nativescript";
 
 <$ActionBar title="MyApp" />
@@ -28,6 +29,7 @@ import { $ActionBar } from "react-nativescript";
 #### Using a custom title view
 
 ```tsx
+import * as React from "react";
 import { $ActionBar, $StackLayout, $Image, $Label } from "react-nativescript";
 
 <$ActionBar>
@@ -53,6 +55,7 @@ By default, a border is drawn at the bottom of the `<$ActionBar>`. In addition t
 To remove this styling from your app, you can set the `flat` property to `true`.
 
 ```tsx
+import * as React from "react";
 import { $ActionBar } from "react-nativescript";
 
 <$ActionBar title="My App" flat={true} />

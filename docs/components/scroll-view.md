@@ -17,6 +17,7 @@ See also:
 ---
 
 ```tsx
+import * as React from "react";
 import { $ScrollView, $StackLayout, $Label } from "react-nativescript";
 
 <$ScrollView orientation="horizontal">

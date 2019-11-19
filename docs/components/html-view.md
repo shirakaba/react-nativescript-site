@@ -15,6 +15,7 @@ See also:
 ---
 
 ```tsx
+import * as React from "react";
 import { $HtmlView } from "react-nativescript";
 
 <$HtmlView html="<div><h1>HtmlView</h1></div>" />

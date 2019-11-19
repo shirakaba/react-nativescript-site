@@ -15,6 +15,7 @@ See also:
 ---
 
 ```tsx
+import * as React from "react";
 import { $Progress } from "react-nativescript";
 
 function getTaskCompletionPercent(){

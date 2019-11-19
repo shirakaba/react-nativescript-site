@@ -25,6 +25,7 @@ See also:
 The following example creates a frame-like layout consisting of 4 elements, position at the 4 edges of the screen.
 
 ```tsx
+import * as React from "react";
 import { $DockLayout, $Label } from "react-nativescript";
 
 <$DockLayout stretchLastChild={false} backgroundColor="#3c495e">
@@ -41,6 +42,7 @@ import { $DockLayout, $Label } from "react-nativescript";
 The following example shows how `stretchLastChild` affects the positioning of child elements in a `<$DockLayout>` container. The last child (`bottom`) is stretched to take up all the remaining space after positioning the first three elements.
 
 ```tsx
+import * as React from "react";
 import { $DockLayout, $Label } from "react-nativescript";
 
 <$DockLayout stretchLastChild={true} backgroundColor="#3c495e">
@@ -57,6 +59,7 @@ import { $DockLayout, $Label } from "react-nativescript";
 The following example creates a `<$DockLayout>` of 5 elements. The first four wrap the center element in a frame. 
 
 ```tsx
+import * as React from "react";
 import { $DockLayout, $Label } from "react-nativescript";
 
 <$DockLayout stretchLastChild={true} backgroundColor="#3c495e">
@@ -74,6 +77,7 @@ import { $DockLayout, $Label } from "react-nativescript";
 The following example creates a single line of 4 elements that stretch across the entire height and width of the screen.
  
 ```tsx
+import * as React from "react";
 import { $DockLayout, $Label } from "react-nativescript";
 
 <$DockLayout stretchLastChild={true} backgroundColor="#3c495e">

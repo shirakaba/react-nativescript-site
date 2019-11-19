@@ -15,6 +15,7 @@ See also:
 ---
 
 ```tsx
+import * as React from "react";
 import { $TimePicker } from "react-nativescript";
 
 <$TimePicker hour={selectedHour} minute={selectedMinute} />

@@ -19,6 +19,7 @@ See also:
 The following example creates a row of three equally-sized elements that span across the entire height of the screen.
 
 ```tsx
+import * as React from "react";
 import { $FlexboxLayout, $Label } from "react-nativescript";
 
 <$FlexboxLayout backgroundColor="#3c495e">
@@ -34,6 +35,7 @@ import { $FlexboxLayout, $Label } from "react-nativescript";
 The following example creates a column of three equally-sized elements that span across the entire width of the screen.
 
 ```tsx
+import * as React from "react";
 import { $FlexboxLayout, $Label } from "react-nativescript";
 
 <$FlexboxLayout flexDirection="column" backgroundColor="#3c495e">
@@ -49,6 +51,7 @@ import { $FlexboxLayout, $Label } from "react-nativescript";
 The following example creates a row of three items placed at the top of the screen. Items are placed in the order they were declared in.
 
 ```tsx
+import * as React from "react";
 import { $FlexboxLayout, $Label } from "react-nativescript";
 
 <$FlexboxLayout alignItems="flex-start" backgroundColor="#3c495e">
@@ -64,6 +67,7 @@ import { $FlexboxLayout, $Label } from "react-nativescript";
 The following example creates a row of three items placed at the top of the screen. Items are placed in a customized order.
 
 ```tsx
+import * as React from "react";
 import { $FlexboxLayout, $Label } from "react-nativescript";
 
 <$FlexboxLayout alignItems="flex-start" backgroundColor="#3c495e">
@@ -79,6 +83,7 @@ import { $FlexboxLayout, $Label } from "react-nativescript";
 The following example creates four items with enabled line wrapping. When the row runs out of space, the container wraps the last item on a new line.
 
 ```tsx
+import * as React from "react";
 import { $FlexboxLayout, $Label } from "react-nativescript";
 
 <$FlexboxLayout flexWrap="wrap" backgroundColor="#3c495e">
@@ -99,6 +104,7 @@ The following example shows how to use:
 * `alignSelf` to modify the position of items across the main axis.
 
 ```tsx
+import * as React from "react";
 import { $FlexboxLayout, $Label } from "react-nativescript";
 
 <$FlexboxLayout

@@ -17,7 +17,9 @@ See also:
 * [Detailed API specification](http://docs.nativescript.org/api-reference/modules/_ui_segmented_bar_.html)
 
 ---
+
 ```tsx
+import * as React from "react";
 import { $SegmentedBar, $SegmentedBarItem } from "react-nativescript";
 
 <$SegmentedBar>

@@ -14,6 +14,7 @@ See also:
 ---
 
 ```tsx
+import * as React from "react";
 import { $ActivityIndicator } from "react-nativescript";
 
 <$ActivityIndicator busy={true} />

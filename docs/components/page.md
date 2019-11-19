@@ -14,6 +14,7 @@ See also:
 ---
 
 ```tsx
+import * as React from "react";
 import { $Page, $ActionBar, $GridLayout, $Label } from "react-nativescript";
 
 <$Page>

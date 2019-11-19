@@ -23,20 +23,19 @@ See also:
 
 ### Displaying multi-style text
 
-To apply multiple styles to the text in your `<$TextView>`, you can use `<$FormattedString>`
-
-<!-- TODO: check whether strings (rather than enums) are accepted for each of the attributes in <$Span> in TypeScript -->
+To apply multiple styles to the text in your `<$TextView>`, you can use `<$FormattedString>`:
 
 ```tsx
+import * as React from "react";
 import { $TextView, $FormattedString, $Span } from "react-nativescript";
 
-<$TextView editable="false">
+<$TextView editable={false}>
   <$FormattedString>
     <$Span text="You can use text attributes such as " />
-    <$Span text="bold, " fontWeight="Bold" />
-    <$Span text="italic " fontStyle="Italic" />
+    <$Span text="bold, " fontWeight="bold" />
+    <$Span text="italic " fontStyle="italic" />
     <$Span text="and " />
-    <$Span text="underline." textDecoration="Underline" />
+    <$Span text="underline." textDecoration="underline" />
   </$FormattedString>
 </$TextView>
 ```

@@ -14,6 +14,7 @@ See also:
 ---
 
 ```tsx
+import * as React from "react";
 import { $Placeholder } from "react-nativescript";
 import { isIOS, isAndroid } from "tns-core-modules/platform/platform";
 

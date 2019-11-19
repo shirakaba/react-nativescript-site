@@ -15,6 +15,7 @@ See also:
 ---
 
 ```tsx
+import * as React from "react";
 import { $DatePicker } from "react-nativescript";
 import { EventData } from "@nativescript/core";
 
