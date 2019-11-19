@@ -8,7 +8,7 @@ sidebar_label: Introduction
 
 ## What is [NativeScript](https://www.nativescript.org/)?
 
-NativeScript is an open source framework for building truly native mobile applications using JavaScript (or TypeScript).
+NativeScript is an open source framework for building truly native mobile applications using JavaScript (or TypeScript), created by Jamie Birch ([GitHub](https://github.com/shirakaba), [Twitter](https://twitter.com/LinguaBrowse)).
 
 ## What is [React.js](https://reactjs.org/)?
 
@@ -35,7 +35,7 @@ NativeScript (and therefore React NativeScript), by comparison, runs its JS VM o
 ## How is its compatibility with the React ecosystem?
 ​
 React NativeScript can use anything that isn't coupled to a particular React renderer. So, for example, Redux will work (as it is simply a state store), but React Navigation (which depends upon React DOM or React Native) won't.
-​
+
 React NativeScript *cannot* consume code from React Native projects – that's a whole large-scale separate project. Support for non-UI plugins from the React Native ecosystem is a long-term area of interest, however.
 
 ## Want to get involved?
@@ -48,4 +48,4 @@ Nobody; it's purely been a labour of love. A donation page may pop up at some po
 
 ## Is it production-ready?
 ​
-It is feature-equivalent with NativeScript Core, which itself is production-ready (as is React); the question is how well that implementation has been achiever. Until users start picking it up and identifying holes in it, we can't be sure.
+It is feature-equivalent with NativeScript Core, which itself is production-ready (as is React); the question is how well that implementation has been achieved. Until users start picking it up and identifying holes in it, we can't be sure.
