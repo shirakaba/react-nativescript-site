@@ -68,10 +68,10 @@ const siteConfig = {
   // users,
 
   /* TODO */
-  // algolia: {
-  //   apiKey: '0f9f28b9ab9efae89810921a351753b5',
-  //   indexName: 'github',
-  // },
+  algolia: {
+    apiKey: '16edafa1a5d6e60125dc2681f6a8d3d0',
+    indexName: 'react-nativescript',
+  },
 
   /* path to images for header/footer */
   headerIcon: 'img/react-nativescript.svg',
