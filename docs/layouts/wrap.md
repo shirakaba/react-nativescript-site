@@ -52,6 +52,8 @@ import { $WrapLayout, $Label } from "react-nativescript";
 
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/wrap_layout_horizontal.svg" />
 
+*Licence: [NativeScript Vue Artwork](/docs/licences/licences#Nativescript_Vue_Artwork).*
+
 ### Vertical wrap layout
 
 The following example creates a column of equally-sized items. When the row runs out of space, the container wraps the last item on a new column.
@@ -89,6 +91,8 @@ import { $WrapLayout, $Label } from "react-nativescript";
 ```
 
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/wrap_layout_vertical.svg" />
+
+*Licence: [NativeScript Vue Artwork](/docs/licences/licences#Nativescript_Vue_Artwork).*
 
 ## Props
 

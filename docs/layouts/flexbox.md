@@ -30,6 +30,8 @@ import { $FlexboxLayout, $Label } from "react-nativescript";
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/flexbox_layout_row_stretch.svg" />
 
+*Licence: [NativeScript Vue Artwork](/docs/licences/licences#Nativescript_Vue_Artwork).*
+
 ### Column flex layout
 
 The following example creates a column of three equally-sized elements that span across the entire width of the screen.
@@ -45,6 +47,8 @@ import { $FlexboxLayout, $Label } from "react-nativescript";
 </$FlexboxLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/flexbox_layout_column_stretch.svg" />
+
+*Licence: [NativeScript Vue Artwork](/docs/licences/licences#Nativescript_Vue_Artwork).*
 
 ### Row flex layout with items aligned to `flex-start`
 
@@ -62,6 +66,8 @@ import { $FlexboxLayout, $Label } from "react-nativescript";
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/flexbox_layout_row_flex-start.svg" />
 
+*Licence: [NativeScript Vue Artwork](/docs/licences/licences#Nativescript_Vue_Artwork).*
+
 ### Row flex layout with custom order
 
 The following example creates a row of three items placed at the top of the screen. Items are placed in a customized order.
@@ -77,6 +83,8 @@ import { $FlexboxLayout, $Label } from "react-nativescript";
 </$FlexboxLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/flexbox_layout_row_custom_order.svg" />
+
+*Licence: [NativeScript Vue Artwork](/docs/licences/licences#Nativescript_Vue_Artwork).*
 
 ### Row flex layout with wrapping
 
@@ -94,6 +102,8 @@ import { $FlexboxLayout, $Label } from "react-nativescript";
 </$FlexboxLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/flexbox_layout_wrap.svg" />
+
+*Licence: [NativeScript Vue Artwork](/docs/licences/licences#Nativescript_Vue_Artwork).*
 
 ### Column flex layout with reverse order and items with a different `alignSelf`
 
@@ -131,6 +141,8 @@ import { $FlexboxLayout, $Label } from "react-nativescript";
 </$FlexboxLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/flexbox_layout_column_reverse_space_around_align_self.svg" />
+
+*Licence: [NativeScript Vue Artwork](/docs/licences/licences#Nativescript_Vue_Artwork).*
 
 ## Props
 

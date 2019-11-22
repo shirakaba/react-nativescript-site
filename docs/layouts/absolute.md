@@ -37,6 +37,8 @@ import { $AbsoluteLayout, $Label } from "react-nativescript";
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/absolute_layout_grid.svg" />
 
+*Licence: [NativeScript Vue Artwork](/docs/licences/licences#Nativescript_Vue_Artwork).*
+
 ### Overlapping elements
 
 The following example creates a group of overlapping items.
@@ -51,6 +53,8 @@ import { $AbsoluteLayout, $Label } from "react-nativescript";
 </$AbsoluteLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/absolute_layout_overlap.svg" />
+
+*Licence: [NativeScript Vue Artwork](/docs/licences/licences#Nativescript_Vue_Artwork).*
 
 ## Extra props for child elements
 

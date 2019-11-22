@@ -30,6 +30,8 @@ import { $StackLayout, $Label } from "react-nativescript";
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/stack_layout_vertical.svg" />
 
+*Licence: [NativeScript Vue Artwork](/docs/licences/licences#Nativescript_Vue_Artwork).*
+
 ### Horizontal stacking
 
 The following example creates a horizontal stack of 3 equally-sized elements. Items are stretched to cover the entire height of the screen. Items are placed in the order they were declared in.
@@ -45,6 +47,8 @@ import { $StackLayout, $Label } from "react-nativescript";
 </$StackLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/stack_layout_horizontal.svg" />
+
+*Licence: [NativeScript Vue Artwork](/docs/licences/licences#Nativescript_Vue_Artwork).*
 
 ### Stack layout with horizontally aligned children
 
@@ -86,6 +90,8 @@ import { $StackLayout, $Label } from "react-nativescript";
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/stack_layout_vertical_align_children.svg" />
 
+*Licence: [NativeScript Vue Artwork](/docs/licences/licences#Nativescript_Vue_Artwork).*
+
 ### Horizontal stack layout with vertically aligned children
 
 The following example creates a diagonal stack of items with responsive sizes. Items are horizontally stacked.
@@ -124,6 +130,8 @@ import { $StackLayout, $Label } from "react-nativescript";
 </$StackLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/stack_layout_horizontal_align_children.svg" />
+
+*Licence: [NativeScript Vue Artwork](/docs/licences/licences#Nativescript_Vue_Artwork).*
 
 ## Props
 

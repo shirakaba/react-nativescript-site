@@ -47,11 +47,11 @@
       "components/TextView",
       "components/TimePicker",
       "components/WebView"
+    ],
+    "LICENCES": [
+      "licences/licences"
     ]
   },
-  "LICENCES": [
-    "licences/licences"
-  ],
   "docs-other": {
     "First Category": ["doc4", "doc5"]
   }

@@ -46,6 +46,8 @@ import { ItemSpec } from "tns-core-modules/ui/layouts/grid-layout/grid-layout";
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/grid_layout.svg" />
 
+*Licence: [NativeScript Vue Artwork](/docs/licences/licences#Nativescript_Vue_Artwork).*
+
 ### Grid layout with star sizing
 
 The following example creates a grid with responsive design, where space is alotted proportionally to child elements.
@@ -67,6 +69,8 @@ import { ItemSpec } from "tns-core-modules/ui/layouts/grid-layout/grid-layout";
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/grid_layout_star_sizing.svg" />
 
+*Licence: [NativeScript Vue Artwork](/docs/licences/licences#Nativescript_Vue_Artwork).*
+
 ### Grid layout with fixed and auto sizing
 
 The following example create a grid with one auto-sized column and one column with fixed size. Rows have a fixed height.
@@ -87,6 +91,8 @@ import { ItemSpec } from "tns-core-modules/ui/layouts/grid-layout/grid-layout";
 </$GridLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/grid_layout_fixed_auto.svg" />
+
+*Licence: [NativeScript Vue Artwork](/docs/licences/licences#Nativescript_Vue_Artwork).*
 
 ### Grid layout with mixed sizing and merged cells
 
@@ -112,6 +118,8 @@ import { ItemSpec } from "tns-core-modules/ui/layouts/grid-layout/grid-layout";
 </$GridLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/grid_layout_complex.svg" />
+
+*Licence: [NativeScript Vue Artwork](/docs/licences/licences#Nativescript_Vue_Artwork).*
 
 ## Props
 

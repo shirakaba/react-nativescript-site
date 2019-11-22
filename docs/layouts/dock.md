@@ -37,6 +37,8 @@ import { $DockLayout, $Label } from "react-nativescript";
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/dock_layout_no_stretch.svg" />
 
+*Licence: [NativeScript Vue Artwork](/docs/licences/licences#Nativescript_Vue_Artwork).*
+
 ### Dock to every side and stretch the last child
 
 The following example shows how `stretchLastChild` affects the positioning of child elements in a `<$DockLayout>` container. The last child (`bottom`) is stretched to take up all the remaining space after positioning the first three elements.
@@ -53,6 +55,8 @@ import { $DockLayout, $Label } from "react-nativescript";
 </$DockLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/dock_layout_stretch.svg" />
+
+*Licence: [NativeScript Vue Artwork](/docs/licences/licences#Nativescript_Vue_Artwork).*
 
 ### Dock to every side and the center
 
@@ -72,6 +76,8 @@ import { $DockLayout, $Label } from "react-nativescript";
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/dock_layout_all_sides_and_stretch.svg" />
 
+*Licence: [NativeScript Vue Artwork](/docs/licences/licences#Nativescript_Vue_Artwork).*
+
 ### Dock multiple children to the same side
 
 The following example creates a single line of 4 elements that stretch across the entire height and width of the screen.
@@ -88,6 +94,8 @@ import { $DockLayout, $Label } from "react-nativescript";
 </$DockLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/dock_layout_multiple_on_same_side.svg" />
+
+*Licence: [NativeScript Vue Artwork](/docs/licences/licences#Nativescript_Vue_Artwork).*
 
 
 ## Extra props for child elements
