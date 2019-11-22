@@ -1,7 +1,13 @@
 {
   "docs": {
-    "INTRODUCTION": ["introduction"],
-    "GETTING STARTED": ["quick-start", "installation", "devtools"],
+    "INTRODUCTION": [
+      "introduction/introduction"
+    ],
+    "GETTING STARTED": [
+      "getting-started/quick-start",
+      "getting-started/installation",
+      "getting-started/devtools"
+    ],
     "ELEMENTS: LAYOUT": [
     	"layouts/absolute",
     	"layouts/dock",
