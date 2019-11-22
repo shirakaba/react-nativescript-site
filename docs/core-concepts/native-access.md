@@ -148,3 +148,11 @@ export class BrowserExample extends React.Component<Props, State> {
   }
 }
 ```
+
+## See also
+
+There is far more to be said than I can cover here, so, from the official NativeScript Core docs:
+
+* [Accessing native APIs through Javascript](https://docs.nativescript.org/core-concepts/accessing-native-apis-with-javascript)
+* [iOS runtime overview](https://docs.nativescript.org/core-concepts/ios-runtime/Overview)
+* [Android runtime overview](https://docs.nativescript.org/core-concepts/android-runtime/overview)
