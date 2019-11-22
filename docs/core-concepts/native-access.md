@@ -53,11 +53,11 @@ JS/NATIVE UI HIERARCHY
 
 ... And they each have their own lifecycle. Note that both the JS UI components are *invisible* in themselves – they merely provide the logic to manage an underlying native view.
 
-Here's what happens upon React's render when you insert a `<$WebView>` component into your JSX tree.
+Here's what happens during React's render cycle when you insert a `<$WebView>` component into your JSX tree.
 
 1. `<$WebView>` is rendered.
-2. The `WebView` instance managed by the is subsequently mounted into the NativeScript UI hierarchy as a child of another NativeScript UI element (for example a `StackLayout`, as in the below example).
-3. The underlying native element (`WKWebView` for iOS; or `android.webkit.WebView` for Android) is "loaded".
+2. Upon the subsequent `componentDidMount` lifecycle event, the `WebView` is mounted into the NativeScript UI hierarchy as a child of another NativeScript UI element (for example a `StackLayout`, as in the below example).
+3. **Soon after**, a `"loaded"` event will fire, whereupon the underlying native element (`WKWebView` for iOS; or `android.webkit.WebView` for Android) is "loaded" (explained below). This event can be handled by passing a callback into React NativeScript's corresponding `onLoaded` prop.
 
 When a native element is "loaded", it exists in the native application and you can perform native operations on it. So to actually interact with a native element, you have to get a reference to it **no sooner than** the `onLoaded` event! And conversely, don't try to interact with it after the `onUnloaded` event (as it will have been removed from the app's view tree, and may be deallocated from that event onwards).
 
