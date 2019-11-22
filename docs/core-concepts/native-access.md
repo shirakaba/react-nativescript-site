@@ -133,7 +133,17 @@ export class BrowserExample extends React.Component<Props, State> {
   render() {
     return (
       <$StackLayout>
-        <$SearchBar text={this.state.searchText} onLoaded={this.onSearchbarLoaded} />
+        <$SearchBar
+          text={this.state.searchText}
+          onLoaded={this.onSearchbarLoaded}
+          onTextChange={(args) => {
+            this.setState({ searchText: (args.object as SearchBar).text });
+          }}
+          onSubmit={(args) => {
+            const text: string = (args.object as SearchBar).text;
+            this.setState({ searchText: text, src: text });
+          }}
+        />
         <$WebView
           width={{ value: 100, unit: "%" }}
           height={{ value: 100, unit: "%" }}
@@ -148,6 +158,8 @@ export class BrowserExample extends React.Component<Props, State> {
   }
 }
 ```
+
+[Run this example](https://play.nativescript.org/?template=play-react&id=ldhajG) in the Playground.
 
 ## See also
 
