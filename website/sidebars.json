@@ -8,6 +8,10 @@
       "getting-started/installation",
       "getting-started/devtools"
     ],
+    "CORE CONCEPTS": [
+      "core-concepts/native-access",
+      "core-concepts/navigation"
+    ],
     "ELEMENTS: LAYOUT": [
     	"layouts/absolute",
     	"layouts/dock",
@@ -45,6 +49,9 @@
       "components/WebView"
     ]
   },
+  "LICENCES": [
+    "licences/licences"
+  ],
   "docs-other": {
     "First Category": ["doc4", "doc5"]
   }
