@@ -31,11 +31,12 @@ If you need to style parts of the text, you can use a combination of a [`Formatt
 ```tsx
 import * as React from "react";
 import { $Label, $FormattedString, $Span } from "react-nativescript";
+import { Color } from "@nativescript/core";
 
 <$Label textWrap={true}>
   <$FormattedString>
     <$Span text="This text has a " />
-    <$Span text="red " style="color: red" />
+    <$Span text="red " color={new Color("red")} />
     <$Span text="piece of text. " />
     <$Span text="Also, this bit is italic, " fontStyle="italic" />
     <$Span text="and this bit is bold." fontWeight="bold" />
