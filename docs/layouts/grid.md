@@ -5,11 +5,11 @@ sidebar_label: GridLayout
 ---
 <!-- contributors: [shirakaba, rigor789, ikoevska] -->
 
-`<$GridLayout>` is a React wrapper around `GridLayout`, a layout container that lets you arrange its child elements in a table-like manner.
+`<gridLayout>` is a React wrapper around `GridLayout`, a layout container that lets you arrange its child elements in a table-like manner.
 
 The grid consists of rows, columns, and cells. A cell can span one or more rows and one or more columns. It can contain multiple child elements which can span over multiple rows and columns, and even overlap each other. 
 
-By default, `<$GridLayout>` has one column and one row. You can add columns and rows by configuring the `columns` and the `rows` properties (which take an array of `ItemSpec` instances to describe their dimensionality).
+By default, `<gridLayout>` has one column and one row. You can add columns and rows by configuring the `columns` and the `rows` properties (which take an array of `ItemSpec` instances to describe their dimensionality).
 
 You can set a fixed size for column width and row height or you can create them in a responsive manner:
 
@@ -31,18 +31,17 @@ The following example creates a simple 2-by-2 grid with fixed column widths and 
 
 ```tsx
 import * as React from "react";
-import { $GridLayout, $Label } from "react-nativescript";
 import { ItemSpec } from "tns-core-modules/ui/layouts/grid-layout/grid-layout";
 
-<$GridLayout
+<gridLayout
   columns={[new ItemSpec(115, "px"), new ItemSpec(115, "px")]}
   rows={[new ItemSpec(115, "px"), new ItemSpec(115, "px")]}
 >
-  <$Label text="0,0" row={0} col={0} backgroundColor="#43b883"/>
-  <$Label text="0,1" row={0} col={1} backgroundColor="#1c6b48"/>
-  <$Label text="1,0" row={1} col={0} backgroundColor="#289062"/>
-  <$Label text="1,1" row={1} col={1} backgroundColor="#43b883"/>
-</$GridLayout>
+  <label text="0,0" row={0} col={0} backgroundColor="#43b883"/>
+  <label text="0,1" row={0} col={1} backgroundColor="#1c6b48"/>
+  <label text="1,0" row={1} col={0} backgroundColor="#289062"/>
+  <label text="1,1" row={1} col={1} backgroundColor="#43b883"/>
+</gridLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/grid_layout.svg" />
 
@@ -54,18 +53,17 @@ The following example creates a grid with responsive design, where space is alot
 
 ```tsx
 import * as React from "react";
-import { $GridLayout, $Label } from "react-nativescript";
 import { ItemSpec } from "tns-core-modules/ui/layouts/grid-layout/grid-layout";
 
-<$GridLayout
+<gridLayout
   columns={[new ItemSpec(1, "star"), new ItemSpec(2, "star")]}
   rows={[new ItemSpec(2, "star"), new ItemSpec(3, "star")]}
 >
-  <$Label text="0,0" row={0} col={0} backgroundColor="#43b883"/>
-  <$Label text="0,1" row={0} col={1} backgroundColor="#1c6b48"/>
-  <$Label text="1,0" row={1} col={0} backgroundColor="#289062"/>
-  <$Label text="1,1" row={1} col={1} backgroundColor="#43b883"/>
-</$GridLayout>
+  <label text="0,0" row={0} col={0} backgroundColor="#43b883"/>
+  <label text="0,1" row={0} col={1} backgroundColor="#1c6b48"/>
+  <label text="1,0" row={1} col={0} backgroundColor="#289062"/>
+  <label text="1,1" row={1} col={1} backgroundColor="#43b883"/>
+</gridLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/grid_layout_star_sizing.svg" />
 
@@ -77,18 +75,17 @@ The following example create a grid with one auto-sized column and one column wi
 
 ```tsx
 import * as React from "react";
-import { $GridLayout, $Label } from "react-nativescript";
 import { ItemSpec } from "tns-core-modules/ui/layouts/grid-layout/grid-layout";
 
-<$GridLayout
+<gridLayout
   columns={[new ItemSpec(80, "pixel"), new ItemSpec(1, "auto")]}
   rows={[new ItemSpec(80, "pixel"), new ItemSpec(80, "pixel")]}
 >
-  <$Label text="0,0" row={0} col={0} backgroundColor="#43b883"/>
-  <$Label text="0,1" row={0} col={1} backgroundColor="#1c6b48"/>
-  <$Label text="1,0" row={1} col={0} backgroundColor="#289062"/>
-  <$Label text="1,1" row={1} col={1} backgroundColor="#43b883"/>
-</$GridLayout>
+  <label text="0,0" row={0} col={0} backgroundColor="#43b883"/>
+  <label text="0,1" row={0} col={1} backgroundColor="#1c6b48"/>
+  <label text="1,0" row={1} col={0} backgroundColor="#289062"/>
+  <label text="1,1" row={1} col={1} backgroundColor="#43b883"/>
+</gridLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/grid_layout_fixed_auto.svg" />
 
@@ -100,22 +97,21 @@ The following example creates a complex grid with responsive design, mixed width
 
 ```tsx
 import * as React from "react";
-import { $GridLayout, $Label } from "react-nativescript";
 import { ItemSpec } from "tns-core-modules/ui/layouts/grid-layout/grid-layout";
 
-<$GridLayout
+<gridLayout
   columns={[new ItemSpec(40, "pixel"), new ItemSpec(1, "auto"), new ItemSpec(1, "star")]}
   rows={[new ItemSpec(40, "pixel"), new ItemSpec(1, "auto"), new ItemSpec(1, "star")]}
   backgroundColor="#3c495e"
 >
-  <$Label text="0,0" row={0} col={0} backgroundColor="#43b883"/>
-  <$Label text="0,1" row={0} col={1} colSpan="2" backgroundColor="#1c6b48"/>
-  <$Label text="1,0" row={1} col={0} rowSpan="2" backgroundColor="#289062"/>
-  <$Label text="1,1" row={1} col={1} backgroundColor="#43b883"/>
-  <$Label text="1,2" row={1} col={2} backgroundColor="#289062"/>
-  <$Label text="2,1" row={2} col={1} backgroundColor="#1c6b48"/>
-  <$Label text="2,2" row={2} col={2} backgroundColor="#43b883"/>
-</$GridLayout>
+  <label text="0,0" row={0} col={0} backgroundColor="#43b883"/>
+  <label text="0,1" row={0} col={1} colSpan="2" backgroundColor="#1c6b48"/>
+  <label text="1,0" row={1} col={0} rowSpan="2" backgroundColor="#289062"/>
+  <label text="1,1" row={1} col={1} backgroundColor="#43b883"/>
+  <label text="1,2" row={1} col={2} backgroundColor="#289062"/>
+  <label text="2,1" row={2} col={1} backgroundColor="#1c6b48"/>
+  <label text="2,2" row={2} col={2} backgroundColor="#43b883"/>
+</gridLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/grid_layout_complex.svg" />
 
@@ -141,4 +137,4 @@ Applies to direct children (not, e.g. grandchildren).
 
 ## React NativeScript-specific props
 
-None for `<$GridLayout>`, nor for any of its children.
+None for `<gridLayout>`, nor for any of its children.

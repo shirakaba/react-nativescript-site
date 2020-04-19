@@ -5,9 +5,9 @@ sidebar_label: AbsoluteLayout
 ---
 <!-- contributors: [shirakaba, rigor789, ikoevska] -->
 
-`<$AbsoluteLayout>` is a React wrapper around `AbsoluteLayout`, the simplest layout container in NativeScript.
+`<absoluteLayout>` is a React wrapper around `AbsoluteLayout`, the simplest layout container in NativeScript.
 
-`<$AbsoluteLayout>` has the following behaviour:
+`<absoluteLayout>` has the following behaviour:
 
 * Uses a pair of absolute left/top coordinates to position its children.
 * Doesn't enforce any layout constraints on its children.
@@ -26,14 +26,13 @@ The following example creates a simple grid. For more information about creating
 
 ```tsx
 import * as React from "react";
-import { $AbsoluteLayout, $Label } from "react-nativescript";
 
-<$AbsoluteLayout backgroundColor="#3c495e">
-  <$Label text="10,10" left={10} top={10} width={100} height={100} backgroundColor="#43b883"/>
-  <$Label text="120,10" left={120} top={10} width={100} height={100} backgroundColor="#43b883"/>
-  <$Label text="10,120" left={10} top={120} width={100} height={100} backgroundColor="#43b883"/>
-  <$Label text="120,120" left={120} top={120} width={100} height={100} backgroundColor="#43b883"/>
-</$AbsoluteLayout>
+<absoluteLayout backgroundColor="#3c495e">
+  <label text="10,10" left={10} top={10} width={100} height={100} backgroundColor="#43b883"/>
+  <label text="120,10" left={120} top={10} width={100} height={100} backgroundColor="#43b883"/>
+  <label text="10,120" left={10} top={120} width={100} height={100} backgroundColor="#43b883"/>
+  <label text="120,120" left={120} top={120} width={100} height={100} backgroundColor="#43b883"/>
+</absoluteLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/absolute_layout_grid.svg" />
 
@@ -45,12 +44,11 @@ The following example creates a group of overlapping items.
 
 ```tsx
 import * as React from "react";
-import { $AbsoluteLayout, $Label } from "react-nativescript";
 
-<$AbsoluteLayout backgroundColor="#3c495e">
-  <$Label text="10,10" left={10} top={10} width={100} height={100} backgroundColor="#289062"/>
-  <$Label text="30,40" left={30} top={40} width={100} height={100} backgroundColor="#43b883"/>
-</$AbsoluteLayout>
+<absoluteLayout backgroundColor="#3c495e">
+  <label text="10,10" left={10} top={10} width={100} height={100} backgroundColor="#289062"/>
+  <label text="30,40" left={30} top={40} width={100} height={100} backgroundColor="#43b883"/>
+</absoluteLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/absolute_layout_overlap.svg" />
 
@@ -62,4 +60,4 @@ None.
 
 ## React NativeScript-specific props
 
-None for `<$AbsoluteLayout>`, nor for any of its children.
+None for `<absoluteLayout>`, nor for any of its children.

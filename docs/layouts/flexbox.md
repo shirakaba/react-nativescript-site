@@ -5,7 +5,7 @@ sidebar_label: FlexboxLayout
 ---
 <!-- contributors: [shirakaba, rigor789, ikoevska] -->
 
-`<$FlexboxLayout>` is a React wrapper around `FlexboxLayout`, a layout container that provides a non-exact implementation of the [CSS Flexbox layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox). This layout lets you arrange child components both horizontally and vertically.
+`<flexboxLayout>` is a React wrapper around `FlexboxLayout`, a layout container that provides a non-exact implementation of the [CSS Flexbox layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox). This layout lets you arrange child components both horizontally and vertically.
 
 See also:
 
@@ -20,13 +20,12 @@ The following example creates a row of three equally-sized elements that span ac
 
 ```tsx
 import * as React from "react";
-import { $FlexboxLayout, $Label } from "react-nativescript";
 
-<$FlexboxLayout backgroundColor="#3c495e">
-  <$Label text="first" width={70} backgroundColor="#43b883"/>
-  <$Label text="second" width={70} backgroundColor="#1c6b48"/>
-  <$Label text="third" width={70} backgroundColor="#289062"/>
-</$FlexboxLayout>
+<flexboxLayout backgroundColor="#3c495e">
+  <label text="first" width={70} backgroundColor="#43b883"/>
+  <label text="second" width={70} backgroundColor="#1c6b48"/>
+  <label text="third" width={70} backgroundColor="#289062"/>
+</flexboxLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/flexbox_layout_row_stretch.svg" />
 
@@ -38,13 +37,12 @@ The following example creates a column of three equally-sized elements that span
 
 ```tsx
 import * as React from "react";
-import { $FlexboxLayout, $Label } from "react-nativescript";
 
-<$FlexboxLayout flexDirection="column" backgroundColor="#3c495e">
-  <$Label text="first" height={70} backgroundColor="#43b883"/>
-  <$Label text="second" height={70} backgroundColor="#1c6b48"/>
-  <$Label text="third" height={70} backgroundColor="#289062"/>
-</$FlexboxLayout>
+<flexboxLayout flexDirection="column" backgroundColor="#3c495e">
+  <label text="first" height={70} backgroundColor="#43b883"/>
+  <label text="second" height={70} backgroundColor="#1c6b48"/>
+  <label text="third" height={70} backgroundColor="#289062"/>
+</flexboxLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/flexbox_layout_column_stretch.svg" />
 
@@ -56,13 +54,12 @@ The following example creates a row of three items placed at the top of the scre
 
 ```tsx
 import * as React from "react";
-import { $FlexboxLayout, $Label } from "react-nativescript";
 
-<$FlexboxLayout alignItems="flex-start" backgroundColor="#3c495e">
-  <$Label text="first" width={70} height={70} backgroundColor="#43b883"/>
-  <$Label text="second" width={70} height={70} backgroundColor="#1c6b48"/>
-  <$Label text="third" width={70} height={70} backgroundColor="#289062"/>
-</$FlexboxLayout>
+<flexboxLayout alignItems="flex-start" backgroundColor="#3c495e">
+  <label text="first" width={70} height={70} backgroundColor="#43b883"/>
+  <label text="second" width={70} height={70} backgroundColor="#1c6b48"/>
+  <label text="third" width={70} height={70} backgroundColor="#289062"/>
+</flexboxLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/flexbox_layout_row_flex-start.svg" />
 
@@ -74,13 +71,12 @@ The following example creates a row of three items placed at the top of the scre
 
 ```tsx
 import * as React from "react";
-import { $FlexboxLayout, $Label } from "react-nativescript";
 
-<$FlexboxLayout alignItems="flex-start" backgroundColor="#3c495e">
-  <$Label text="first" order={2} width={70} height={70} backgroundColor="#43b883"/>
-  <$Label text="second" order={3} width={70} height={70} backgroundColor="#1c6b48"/>
-  <$Label text="third" order={1} width={70} height={70} backgroundColor="#289062"/>
-</$FlexboxLayout>
+<flexboxLayout alignItems="flex-start" backgroundColor="#3c495e">
+  <label text="first" order={2} width={70} height={70} backgroundColor="#43b883"/>
+  <label text="second" order={3} width={70} height={70} backgroundColor="#1c6b48"/>
+  <label text="third" order={1} width={70} height={70} backgroundColor="#289062"/>
+</flexboxLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/flexbox_layout_row_custom_order.svg" />
 
@@ -92,14 +88,13 @@ The following example creates four items with enabled line wrapping. When the ro
 
 ```tsx
 import * as React from "react";
-import { $FlexboxLayout, $Label } from "react-nativescript";
 
-<$FlexboxLayout flexWrap="wrap" backgroundColor="#3c495e">
-  <$Label text="first" width={30} backgroundColor="#43b883"/>
-  <$Label text="second" width={30} backgroundColor="#1c6b48"/>
-  <$Label text="third" width={30} backgroundColor="#289062"/>
-  <$Label text="fourth" width={30} backgroundColor="#289062"/>
-</$FlexboxLayout>
+<flexboxLayout flexWrap="wrap" backgroundColor="#3c495e">
+  <label text="first" width={30} backgroundColor="#43b883"/>
+  <label text="second" width={30} backgroundColor="#1c6b48"/>
+  <label text="third" width={30} backgroundColor="#289062"/>
+  <label text="fourth" width={30} backgroundColor="#289062"/>
+</flexboxLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/flexbox_layout_wrap.svg" />
 
@@ -115,30 +110,29 @@ The following example shows how to use:
 
 ```tsx
 import * as React from "react";
-import { $FlexboxLayout, $Label } from "react-nativescript";
 
-<$FlexboxLayout
+<flexboxLayout
   flexDirection="column-reverse"
   justifyContent="space-around"
   backgroundColor="#3c495e"
 >
-  <$Label text="first" height={70} backgroundColor="#43b883"/>
-  <$Label
+  <label text="first" height={70} backgroundColor="#43b883"/>
+  <label
     text="second"
     alignSelf="center"
     width={70}
     height={70}
     backgroundColor="#1c6b48"
   />
-  <$Label
+  <label
     text="third\nflex-end"
     alignSelf="flex-end"
     width={70}
     height={70}
     backgroundColor="#289062"
   />
-  <$Label text="fourth" height={70} backgroundColor="#289062"/>
-</$FlexboxLayout>
+  <label text="fourth" height={70} backgroundColor="#289062"/>
+</flexboxLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/flexbox_layout_column_reverse_space_around_align_self.svg" />
 
@@ -156,7 +150,7 @@ import { $FlexboxLayout, $Label } from "react-nativescript";
 
 ## Extra props for child elements
 
-When an element is a direct child of `<$FlexboxLayout>`, you can work with the following additional properties.
+When an element is a direct child of `<flexboxLayout>`, you can work with the following additional properties.
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -170,4 +164,4 @@ When an element is a direct child of `<$FlexboxLayout>`, you can work with the f
 
 ## React NativeScript-specific props
 
-None for `<$FlexboxLayout>`, nor for any of its children.
+None for `<flexboxLayout>`, nor for any of its children.

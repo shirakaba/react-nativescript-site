@@ -5,7 +5,7 @@ sidebar_label: WrapLayout
 ---
 <!-- contributors: [shirakaba, rigor789, ikoevska] -->
 
-`<$WrapLayout>` is a React wrapper around `WrapLayout`, a layout container that lets you position items in rows or columns, based on the orientation property. When the space is filled, the container automatically wraps items onto a new row or column.
+`<wrapLayout>` is a React wrapper around `WrapLayout`, a layout container that lets you position items in rows or columns, based on the orientation property. When the space is filled, the container automatically wraps items onto a new row or column.
 
 See also:
 
@@ -20,34 +20,33 @@ The following example creates a row of equally-sized items. When the row runs ou
 
 ```tsx
 import * as React from "react";
-import { $WrapLayout, $Label } from "react-nativescript";
 
-<$WrapLayout backgroundColor="#3c495e">
-  <$Label
+<wrapLayout backgroundColor="#3c495e">
+  <label
     text="first"
     width={{ value: 30, unit: "%" }}
     height={{ value: 30, unit: "%" }}
     backgroundColor="#43b883"}
   />
-  <$Label
+  <label
     text="second"
     width={{ value: 30, unit: "%" }}
     height={{ value: 30, unit: "%" }}
     backgroundColor="#1c6b48"}
   />
-  <$Label
+  <label
     text="third"
     width={{ value: 30, unit: "%" }}
     height={{ value: 30, unit: "%" }}
     backgroundColor="#289062"}
   />
-  <$Label
+  <label
     text="fourth"
     width={{ value: 30, unit: "%" }}
     height={{ value: 30, unit: "%" }}
     backgroundColor="#289062"}
   />
-</$WrapLayout>
+</wrapLayout>
 ```
 
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/wrap_layout_horizontal.svg" />
@@ -60,34 +59,34 @@ The following example creates a column of equally-sized items. When the row runs
 
 ```tsx
 import * as React from "react";
-import { $WrapLayout, $Label } from "react-nativescript";
+import { wrapLayout, label } from "react-nativescript";
 
-<$WrapLayout orientation="vertical" backgroundColor="#3c495e">
-  <$Label
+<wrapLayout orientation="vertical" backgroundColor="#3c495e">
+  <label
     text="first"
     width={{ value: 30, unit: "%" }}
     height={{ value: 30, unit: "%" }}
     backgroundColor="#43b883"}
   />
-  <$Label
+  <label
     text="second"
     width={{ value: 30, unit: "%" }}
     height={{ value: 30, unit: "%" }}
     backgroundColor="#1c6b48"}
   />
-  <$Label
+  <label
     text="third"
     width={{ value: 30, unit: "%" }}
     height={{ value: 30, unit: "%" }}
     backgroundColor="#289062"}
   />
-  <$Label
+  <label
     text="fourth"
     width={{ value: 30, unit: "%" }}
     height={{ value: 30, unit: "%" }}
     backgroundColor="#289062"}
   />
-</$WrapLayout>
+</wrapLayout>
 ```
 
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/wrap_layout_vertical.svg" />
@@ -108,4 +107,4 @@ None.
 
 ## React NativeScript-specific props
 
-None for `<$WrapLayout>`, nor for any of its children.
+None for `<wrapLayout>`, nor for any of its children.

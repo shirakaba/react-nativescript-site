@@ -45,7 +45,7 @@ An important thing to keep in mind when dealing with the native context is that 
 ```
 JS/NATIVE UI HIERARCHY
 
-- React NativeScript's `<$WebView>` component (JS)
+- React NativeScript's `<webView>` component (JS)
     - NativeScript Core UI's `WebView` component (JS)
         - iOS's WKWebView element (native), or;
         - Android's android.webkit.WebView element (native).
@@ -53,9 +53,9 @@ JS/NATIVE UI HIERARCHY
 
 ... And they each have their own lifecycle. Note that both the JS UI components are *invisible* in themselves – they merely provide the logic to manage an underlying native view.
 
-Here's what happens during React's render cycle when you insert a `<$WebView>` component into your JSX tree.
+Here's what happens during React's render cycle when you insert a `<webView>` component into your JSX tree.
 
-1. `<$WebView>` is rendered.
+1. `<webView>` is rendered.
 2. Upon the subsequent `componentDidMount` lifecycle event, the `WebView` is mounted into the NativeScript UI hierarchy as a child of another NativeScript UI element (for example a `StackLayout`, as in the below example).
 3. **Soon after**, a `"loaded"` event will fire, whereupon the underlying native element (`WKWebView` for iOS; or `android.webkit.WebView` for Android) is "loaded" (explained below). This event can be handled by passing a callback into React NativeScript's corresponding `onLoaded` prop.
 
@@ -77,7 +77,6 @@ You'll see that any modules that are globally accessible in the iOS runtime are 
 
 import * as React from "react";
 import { WebView, SearchBar, EventData, isIOS } from "@nativescript/core";
-import { $WebView, $SearchBar, $StackLayout } from "react-nativescript";
 
 interface Props {
 }
@@ -132,8 +131,8 @@ export class BrowserExample extends React.Component<Props, State> {
 
   render() {
     return (
-      <$StackLayout>
-        <$SearchBar
+      <stackLayout>
+        <searchBar
           text={this.state.searchText}
           onLoaded={this.onSearchbarLoaded}
           onTextChange={(args) => {
@@ -144,7 +143,7 @@ export class BrowserExample extends React.Component<Props, State> {
             this.setState({ searchText: text, src: text });
           }}
         />
-        <$WebView
+        <webView
           width={{ value: 100, unit: "%" }}
           height={{ value: 100, unit: "%" }}
           src={this.state.src}
@@ -153,7 +152,7 @@ export class BrowserExample extends React.Component<Props, State> {
           }}
           onLoaded={this.onWebViewLoaded}
         />
-      </$StackLayout>
+      </stackLayout>
     );
   }
 }

@@ -5,7 +5,7 @@ sidebar_label: StackLayout
 ---
 <!-- contributors: [shirakaba, rigor789, ikoevska] -->
 
-`<$StackLayout>` is a React wrapper around `StackLayout`, a layout container that lets you stack the child elements vertically (default) or horizontally.
+`<stackLayout>` is a React wrapper around `StackLayout`, a layout container that lets you stack the child elements vertically (default) or horizontally.
 
 See also:
 
@@ -20,13 +20,12 @@ The following example creates a vertical stack of 3 equally-sized elements. Item
 
 ```tsx
 import * as React from "react";
-import { $StackLayout, $Label } from "react-nativescript";
 
-<$StackLayout backgroundColor="#3c495e">
-  <$Label text="first" height={70} backgroundColor="#43b883"/>
-  <$Label text="second" height={70} backgroundColor="#289062"/>
-  <$Label text="third" height={70} backgroundColor="#1c6b48"/>
-</$StackLayout>
+<stackLayout backgroundColor="#3c495e">
+  <label text="first" height={70} backgroundColor="#43b883"/>
+  <label text="second" height={70} backgroundColor="#289062"/>
+  <label text="third" height={70} backgroundColor="#1c6b48"/>
+</stackLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/stack_layout_vertical.svg" />
 
@@ -38,13 +37,12 @@ The following example creates a horizontal stack of 3 equally-sized elements. It
 
 ```tsx
 import * as React from "react";
-import { $StackLayout, $Label } from "react-nativescript";
 
-<$StackLayout orientation="horizontal" backgroundColor="#3c495e">
-  <$Label text="first" width={70} backgroundColor="#43b883"/>
-  <$Label text="second" width={70} backgroundColor="#289062"/>
-  <$Label text="third" width={70} backgroundColor="#1c6b48"/>
-</$StackLayout>
+<stackLayout orientation="horizontal" backgroundColor="#3c495e">
+  <label text="first" width={70} backgroundColor="#43b883"/>
+  <label text="second" width={70} backgroundColor="#289062"/>
+  <label text="third" width={70} backgroundColor="#1c6b48"/>
+</stackLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/stack_layout_horizontal.svg" />
 
@@ -56,37 +54,36 @@ The following example creates a diagonal stack of items with responsive sizes. I
 
 ```tsx
 import * as React from "react";
-import { $StackLayout, $Label } from "react-nativescript";
 
-<$StackLayout backgroundColor="#3c495e">
-  <$Label
+<stackLayout backgroundColor="#3c495e">
+  <label
     text="left"
     horizontalAlignment="left"
     width={33}
     height={70}
     backgroundColor="#43b883"
   />
-  <$Label
+  <label
     text="center"
     horizontalAlignment="center"
     width={33}
     height={70}
     backgroundColor="#289062"
   />
-  <$Label
+  <label
     text="right"
     horizontalAlignment="right"
     width={33}
     height={70}
     backgroundColor="#1c6b48"
   />
-  <$Label
+  <label
     text="stretch"
     horizontalAlignment="stretch"
     height={70}
     backgroundColor="#43b883"
   />
-</$StackLayout>
+</stackLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/stack_layout_vertical_align_children.svg" />
 
@@ -98,36 +95,35 @@ The following example creates a diagonal stack of items with responsive sizes. I
 
 ```tsx
 import * as React from "react";
-import { $StackLayout, $Label } from "react-nativescript";
 
-<$StackLayout orientation="horizontal" backgroundColor="#3c495e">
-  <$Label
+<stackLayout orientation="horizontal" backgroundColor="#3c495e">
+  <label
     text="top"
     verticalAlignment="top"
     width={70}
     height={33}
     backgroundColor="#43b883"
   />
-  <$Label
+  <label
     text="center"
     verticalAlignment="center"
     width={70}
     height={33}
     backgroundColor="#289062"
   />
-  <$Label
+  <label
     text="bottom"
     verticalAlignment="bottom"
     width={70}
     height={33}
     backgroundColor="#1c6b48"
   />
-  <$Label
+  <label
     text="stretch"
     verticalAlignment="stretch"
     width={70}
     backgroundColor="#43b883"/>
-</$StackLayout>
+</stackLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/stack_layout_horizontal_align_children.svg" />
 
@@ -145,4 +141,4 @@ None.
 
 ## React NativeScript-specific props
 
-None for `<$StackLayout>`, nor for any of its children.
+None for `<stackLayout>`, nor for any of its children.

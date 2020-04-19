@@ -10,7 +10,7 @@ See also:
 
 * [Official top-level documentation](https://docs.nativescript.org/ui/components/date-picker)
 * [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_date_picker_.datepicker)
-* [`<$TimePicker>`](/docs/components/time-picker)
+* [`<timePicker>`](/docs/components/time-picker)
 
 ---
 

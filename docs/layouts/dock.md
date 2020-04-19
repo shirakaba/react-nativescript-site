@@ -5,9 +5,9 @@ sidebar_label: DockLayout
 ---
 <!-- contributors: [shirakaba, rigor789, ikoevska] -->
 
-`<$DockLayout>` is a React wrapper around `DockLayout`, a layout container that lets you dock child elements to the sides or the center of the layout.
+`<dockLayout>` is a React wrapper around `DockLayout`, a layout container that lets you dock child elements to the sides or the center of the layout.
 
-`<$DockLayout>` has the following behaviour:
+`<dockLayout>` has the following behaviour:
 
 * Uses the `dock` property to dock its children to the `left`, `right`, `top`, `bottom` or center of the layout.<br/>To dock a child element to the center, it must be the **last child** of the container and you must set the `stretchLastChild` property of the parent to `true`.
 * Enforces layout constraints to its children.
@@ -26,14 +26,13 @@ The following example creates a frame-like layout consisting of 4 elements, posi
 
 ```tsx
 import * as React from "react";
-import { $DockLayout, $Label } from "react-nativescript";
 
-<$DockLayout stretchLastChild={false} backgroundColor="#3c495e">
-  <$Label text="left" dock="left" width={40} backgroundColor="#43b883"/>
-  <$Label text="top" dock="top" height={40} backgroundColor="#289062"/>
-  <$Label text="right" dock="right" width={40} backgroundColor="#43b883"/>
-  <$Label text="bottom" dock="bottom" height={40} backgroundColor="#289062"/>
-</$DockLayout>
+<dockLayout stretchLastChild={false} backgroundColor="#3c495e">
+  <label text="left" dock="left" width={40} backgroundColor="#43b883"/>
+  <label text="top" dock="top" height={40} backgroundColor="#289062"/>
+  <label text="right" dock="right" width={40} backgroundColor="#43b883"/>
+  <label text="bottom" dock="bottom" height={40} backgroundColor="#289062"/>
+</dockLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/dock_layout_no_stretch.svg" />
 
@@ -41,18 +40,17 @@ import { $DockLayout, $Label } from "react-nativescript";
 
 ### Dock to every side and stretch the last child
 
-The following example shows how `stretchLastChild` affects the positioning of child elements in a `<$DockLayout>` container. The last child (`bottom`) is stretched to take up all the remaining space after positioning the first three elements.
+The following example shows how `stretchLastChild` affects the positioning of child elements in a `<dockLayout>` container. The last child (`bottom`) is stretched to take up all the remaining space after positioning the first three elements.
 
 ```tsx
 import * as React from "react";
-import { $DockLayout, $Label } from "react-nativescript";
 
-<$DockLayout stretchLastChild={true} backgroundColor="#3c495e">
-  <$Label text="left" dock="left" width={40} backgroundColor="#43b883"/>
-  <$Label text="top" dock="top" height={40} backgroundColor="#289062"/>
-  <$Label text="right" dock="right" width={40} backgroundColor="#43b883"/>
-  <$Label text="bottom" dock="bottom" backgroundColor="#1c6b48"/>
-</$DockLayout>
+<dockLayout stretchLastChild={true} backgroundColor="#3c495e">
+  <label text="left" dock="left" width={40} backgroundColor="#43b883"/>
+  <label text="top" dock="top" height={40} backgroundColor="#289062"/>
+  <label text="right" dock="right" width={40} backgroundColor="#43b883"/>
+  <label text="bottom" dock="bottom" backgroundColor="#1c6b48"/>
+</dockLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/dock_layout_stretch.svg" />
 
@@ -60,19 +58,18 @@ import { $DockLayout, $Label } from "react-nativescript";
 
 ### Dock to every side and the center
 
-The following example creates a `<$DockLayout>` of 5 elements. The first four wrap the center element in a frame. 
+The following example creates a `<dockLayout>` of 5 elements. The first four wrap the center element in a frame. 
 
 ```tsx
 import * as React from "react";
-import { $DockLayout, $Label } from "react-nativescript";
 
-<$DockLayout stretchLastChild={true} backgroundColor="#3c495e">
-  <$Label text="left" dock="left" width={40} backgroundColor="#43b883"/>
-  <$Label text="top" dock="top" height={40} backgroundColor="#289062"/>
-  <$Label text="right" dock="right" width={40} backgroundColor="#43b883"/>
-  <$Label text="bottom" dock="bottom" height={40} backgroundColor="#289062"/>
-  <$Label text="center" backgroundColor="#1c6b48" />
-</$DockLayout>
+<dockLayout stretchLastChild={true} backgroundColor="#3c495e">
+  <label text="left" dock="left" width={40} backgroundColor="#43b883"/>
+  <label text="top" dock="top" height={40} backgroundColor="#289062"/>
+  <label text="right" dock="right" width={40} backgroundColor="#43b883"/>
+  <label text="bottom" dock="bottom" height={40} backgroundColor="#289062"/>
+  <label text="center" backgroundColor="#1c6b48" />
+</dockLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/dock_layout_all_sides_and_stretch.svg" />
 
@@ -84,14 +81,13 @@ The following example creates a single line of 4 elements that stretch across th
  
 ```tsx
 import * as React from "react";
-import { $DockLayout, $Label } from "react-nativescript";
 
-<$DockLayout stretchLastChild={true} backgroundColor="#3c495e">
-  <$Label text="left 1" dock="left" width={40} backgroundColor="#43b883"/>
-  <$Label text="left 2" dock="left" width={40} backgroundColor="#289062"/>
-  <$Label text="left 3" dock="left" width={40} backgroundColor="#1c6b48"/>
-  <$Label text="last child" backgroundColor="#43b883"/>
-</$DockLayout>
+<dockLayout stretchLastChild={true} backgroundColor="#3c495e">
+  <label text="left 1" dock="left" width={40} backgroundColor="#43b883"/>
+  <label text="left 2" dock="left" width={40} backgroundColor="#289062"/>
+  <label text="left 3" dock="left" width={40} backgroundColor="#1c6b48"/>
+  <label text="last child" backgroundColor="#43b883"/>
+</dockLayout>
 ```
 <img class="md:w-1/2 lg:w-1/3" src="https://art.nativescript-vue.org/layouts/dock_layout_multiple_on_same_side.svg" />
 
@@ -108,4 +104,4 @@ Applies to direct children (not, e.g. grandchildren).
 
 ## React NativeScript-specific props
 
-None for `<$DockLayout>`, nor for any of its children.
+None for `<dockLayout>`, nor for any of its children.
