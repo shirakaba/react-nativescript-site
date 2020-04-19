@@ -4,7 +4,7 @@ title: Progress
 ---
 <!-- contributors: [shirakaba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska] -->
 
-`<$Progress>` is a UI component that shows a bar to indicate the progress of a task.
+`<progress>` is a UI component that shows a bar to indicate the progress of a task.
 
 See also:
 
@@ -16,14 +16,13 @@ See also:
 
 ```tsx
 import * as React from "react";
-import { $Progress } from "react-nativescript";
 
 function getTaskCompletionPercent(){
     // Just a stub method to illustrate the concept.
     return 10;
 }
 
-<$Progress value={getTaskCompletionPercent()} maxValue={100} />
+<progress value={getTaskCompletionPercent()} maxValue={100} />
 ```
 
 <!-- [> screenshots for=Progress <] -->

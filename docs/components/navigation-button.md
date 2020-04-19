@@ -4,32 +4,31 @@ title: NavigationButton
 ---
 <!-- contributors: [shirakaba, rigor789, ikoevska] -->
 
-`<$NavigationButton>` is a UI component that provides an abstraction for the Android navigation button and the iOS back button.
+`<navigationButton>` is a UI component that provides an abstraction for the Android navigation button and the iOS back button.
 
-Extends [`<$ActionItem>`](/docs/components/action-item).
+Extends [`<actionItem>`](/docs/components/action-item).
 
 See also:
 
 * [Official top-level documentation](https://docs.nativescript.org/ui/components/action-bar#navigationbutton)
 * [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_action_bar_.navigationbutton)
-* [`<$ActionBar>`](/docs/components/action-bar)
-* [`<$ActionItem>`](/docs/components/action-item)
+* [`<actionBar>`](/docs/components/action-bar)
+* [`<actionItem>`](/docs/components/action-item)
 
 ---
 
 ```tsx
 import * as React from "react";
-import { $ActionBar, $NavigationButton } from "react-nativescript";
 
-<$ActionBar title="My App">
-  <$NavigationButton
+<actionBar title="My App">
+  <navigationButton
     text="Go back"
     android={{
       systemIcon: "ic_menu_back"
     }}
     onTap={goBack}
   />
-</$ActionBar>
+</actionBar>
 ```
 
 ## Props

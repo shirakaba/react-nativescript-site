@@ -4,35 +4,34 @@ title: TabView
 ---
 <!-- contributors: [shirakaba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska, kharysharpe, ramsesmoreno] -->
 
-`<$TabView>` is a navigation component that shows content grouped into tabs and lets users switch between tabs.
+`<tabView>` is a navigation component that shows content grouped into tabs and lets users switch between tabs.
 
 See also:
 
 * [Official top-level documentation](https://docs.nativescript.org/ui/components/tab-view)
 * [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_tab_view_.tabview)
-* [`<$TabViewItem>`](/docs/components/tab-view-item)
+* [`<tabViewItem>`](/docs/components/tab-view-item)
 
 ---
 
 ```tsx
 import * as React from "react";
-import { $TabView, $TabViewItem, $Label } from "react-nativescript";
 import { SelectedIndexChangedEventData } from "tns-core-modules/ui/tab-view/tab-view";
 
-<$TabView
+<tabView
   selectedIndex={selectedIndex}
   onSelectedIndexChange={(args: SelectedIndexChangedEventData) => {
     const { oldIndex, newIndex } = args;
     console.log(`Changed from tab index ${oldIndex} -> ${newIndex}.`);
   }}
 >
-  <$TabViewItem title="Tab 1">
-    <$Label text="Content for Tab 1" />
-  </$TabViewItem>
-  <$TabViewItem title="Tab 2">
-    <$Label text="Content for Tab 2" />
-  </$TabViewItem>
-</$TabView>
+  <tabViewItem title="Tab 1">
+    <label text="Content for Tab 1" />
+  </tabViewItem>
+  <tabViewItem title="Tab 2">
+    <label text="Content for Tab 2" />
+  </tabViewItem>
+</tabView>
 ```
 
 **NOTE:** Currently, `TabViewItem` expects a single child element. In most cases, you might want to wrap your content in a layout.
@@ -42,16 +41,16 @@ import { SelectedIndexChangedEventData } from "tns-core-modules/ui/tab-view/tab-
 #### Adding icons to tabs
 
 ```tsx
-import { $TabView, $TabViewItem, $Label } from "react-nativescript";
+import * as React from "react";
 
-<$TabView selectedIndex={selectedIndex} iosIconRenderingMode="alwaysOriginal">
-  <$TabViewItem title="Tab 1" iconSource="~/images/icon.png">
-    <$Label text="Content for Tab 1" />
-  </$TabViewItem>
-  <$TabViewItem title="Tab 2" iconSource="~/images/icon.png">
-    <$Label text="Content for Tab 2" />
-  </$TabViewItem>
-</$TabView>
+<tabView selectedIndex={selectedIndex} iosIconRenderingMode="alwaysOriginal">
+  <tabViewItem title="Tab 1" iconSource="~/images/icon.png">
+    <label text="Content for Tab 1" />
+  </tabViewItem>
+  <tabViewItem title="Tab 2" iconSource="~/images/icon.png">
+    <label text="Content for Tab 2" />
+  </tabViewItem>
+</tabView>
 ```
 **NOTE:** You can use images for tab icons instead of icon fonts. For more information about how to control the size of icons, see [Working with image from resource folders](https://docs.nativescript.org/ui/image-resources).
 

@@ -4,9 +4,9 @@ title: TextField
 ---
 <!-- contributors: [shirakaba, MisterBrownRSA, rigor789, TheOriginalJosh, eddyverbruggen, ikoevska] -->
 
-`<$TextField>` is an input component that creates an editable single-line box.
+`<textField>` is an input component that creates an editable single-line box.
 
-`<$TextField>` extends [`TextBase`](https://docs.nativescript.org/api-reference/classes/_ui_text_base_.textbase) and [`EditableTextBase`](https://docs.nativescript.org/api-reference/classes/_ui_editor_text_base_.editabletextbase) which provide additional properties and events.
+`<textField>` extends [`TextBase`](https://docs.nativescript.org/api-reference/classes/_ui_text_base_.textbase) and [`EditableTextBase`](https://docs.nativescript.org/api-reference/classes/_ui_editor_text_base_.editabletextbase) which provide additional properties and events.
 
 See also:
 
@@ -19,9 +19,8 @@ See also:
 
 ```tsx
 import * as React from "react";
-import { $TextField } from "react-nativescript";
 
-<$TextField text={textFieldValue} hint="Enter text..." />
+<textField text={textFieldValue} hint="Enter text..." />
 ```
 
 <!-- [> screenshots for=TextField <] -->

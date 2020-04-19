@@ -4,7 +4,7 @@ title: Placeholder
 ---
 <!-- contributors: [shirakaba, moeddami] -->
 
-`<$Placeholder>` allows you to add any native widget to your application. To do that, you need to put a Placeholder somewhere in the UI hierarchy and then create and configure the native widget that you want to appear there. Finally, pass your native widget to the event arguments of the creatingView event.
+`<placeholder>` allows you to add any native widget to your application. To do that, you need to put a Placeholder somewhere in the UI hierarchy and then create and configure the native widget that you want to appear there. Finally, pass your native widget to the event arguments of the creatingView event.
 
 See also:
 
@@ -15,10 +15,9 @@ See also:
 
 ```tsx
 import * as React from "react";
-import { $Placeholder } from "react-nativescript";
 import { isIOS, isAndroid } from "tns-core-modules/platform/platform";
 
-<$Placeholder
+<placeholder
   onCreatingView={() => {
     if(isIOS){
       const nativeView = new UILabel();

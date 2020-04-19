@@ -39,7 +39,7 @@ const items: MyItem[] = [{ text: "hi" }];
   cellFactory={(item: MyItem, ref: React.RefObject<any>) => {
     return (
       // You MUST pass the ref in to the component.
-      <$Label ref={ref} text={item.text} />
+      <label ref={ref} text={item.text} />
     );
   }}
   onitemTap={(args: ItemEventData) => {
@@ -104,7 +104,7 @@ function itemTemplateSelector(item: MyItem, index: number, items: MyItem[]): str
         // The render function for each cell. Takes a MyOddItem.
         cellFactory: (item: MyOddItem, ref: React.RefObject<any>) => {
           return (
-            <$Label
+            <label
               // You MUST pass the ref in to the component.
               ref={ref}
               text={item.textOdd}
@@ -125,7 +125,7 @@ function itemTemplateSelector(item: MyItem, index: number, items: MyItem[]): str
         // The render function for each cell. Takes a MyEvenItem.
         cellFactory: (item: MyEvenItem, ref: React.RefObject<any>) => {
           return (
-            <$TextView
+            <textView
               // You MUST pass the ref in to the component.
               ref={ref}
               text={item.textEven}
@@ -185,7 +185,7 @@ let loadMoreTimeout?: any;
   cellFactory={(item: MyItem, ref: React.RefObject<any>) => {
     return (
       // You MUST pass the ref in to the component.
-      <$Label ref={ref} text={item.text} />
+      <label ref={ref} text={item.text} />
     );
   }}
   onitemTap={(args: ItemEventData) => {

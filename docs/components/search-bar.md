@@ -4,7 +4,7 @@ title: SearchBar
 ---
 <!-- contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska] -->
 
-`<$SearchBar>` is a UI component that provides a user interface for entering search queries and submitting requests to the search provider.
+`<searchBar>` is a UI component that provides a user interface for entering search queries and submitting requests to the search provider.
 
 See also:
 
@@ -15,9 +15,8 @@ See also:
 
 ```tsx
 import * as React from "react";
-import { $SearchBar } from "react-nativescript";
 
-<$SearchBar hint="Search hint" text="searchPhrase" onTextChange={onTextChanged} onSubmit={onSubmit} onClose={onClose} />
+<searchBar hint="Search hint" text="searchPhrase" onTextChange={onTextChanged} onSubmit={onSubmit} onClose={onClose} />
 ```
 
 <!-- [> screenshots for=SearchBar <] -->

@@ -4,7 +4,7 @@ title: Switch
 ---
 <!-- contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska] -->
 
-`<$Switch>` is a UI component that lets users toggle between two states.
+`<switch>` is a UI component that lets users toggle between two states.
 
 The default state is `false` or OFF.
 
@@ -17,9 +17,8 @@ See also:
 
 ```tsx
 import * as React from "react";
-import { $Switch } from "react-nativescript";
 
-<$Switch checked={true} />
+<switch checked={true} />
 ```
 
 <!-- [> screenshots for=Switch <] -->

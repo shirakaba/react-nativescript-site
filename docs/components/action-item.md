@@ -4,14 +4,14 @@ title: ActionItem
 ---
 <!-- contributors: [shirakaba, rigor789, ikoevska] -->
 
-`<$ActionItem>` is a UI component that lets you add action buttons to the `<$ActionBar>` component.
+`<actionItem>` is a UI component that lets you add action buttons to the `<actionBar>` component.
 
 See also:
 
 * [Official top-level documentation](https://docs.nativescript.org/ui/components/action-bar#actionitem)
 * [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_action_bar_.actionitem)
-* [`<$ActionBar>`](/docs/components/action-bar)
-* [`<$NavigationButton>`](/docs/components/navigation-button)
+* [`<actionBar>`](/docs/components/action-bar)
+* [`<navigationButton>`](/docs/components/navigation-button)
 
 ---
 
@@ -19,10 +19,9 @@ See also:
 
 ```tsx
 import * as React from "react";
-import { $ActionBar, $ActionItem } from "react-nativescript";
 
-<$ActionBar title="My App">
-  <$ActionItem
+<actionBar title="My App">
+  <actionItem
     onTap={onTapShare}
     ios={{
       systemIcon: 9,
@@ -33,7 +32,7 @@ import { $ActionBar, $ActionItem } from "react-nativescript";
       position: "actionBar"
     }}
   />
-  <$ActionItem
+  <actionItem
     onTap={onTapDelete}
     ios={{
       systemIcon: 16,
@@ -44,19 +43,18 @@ import { $ActionBar, $ActionItem } from "react-nativescript";
     }}
     text="delete"
   />
-</$ActionBar>
+</actionBar>
 ```
 
 #### Conditionally showing action items
 
-You can use the `visibility` prop (inherited from `View`) to show `<$ActionItem>` components based on a condition.
+You can use the `visibility` prop (inherited from `View`) to show `<actionItem>` components based on a condition.
 
 ```tsx
 import * as React from "react";
-import { $ActionBar, $ActionItem } from "react-nativescript";
 
-<$ActionBar title="My App">
-  <$ActionItem
+<actionBar title="My App">
+  <actionItem
     onTap={onTapEdit}
     visibility={isEditing ? "hidden" : "visible"}
     ios={{
@@ -67,7 +65,7 @@ import { $ActionBar, $ActionItem } from "react-nativescript";
       systemIcon: "ic_menu_edit"
     }}
   />
-  <$ActionItem
+  <actionItem
     onTap={onTapSave}
     visibility={isEditing ? "visible" : "hidden"}
     ios={{
@@ -77,7 +75,7 @@ import { $ActionBar, $ActionItem } from "react-nativescript";
     android={{
       systemIcon: "ic_menu_save"
     }} />
-  <$ActionItem
+  <actionItem
     onTap={onTapCancel}
     visibility={isEditing ? "visible" : "hidden"}
     ios={{
@@ -85,7 +83,7 @@ import { $ActionBar, $ActionItem } from "react-nativescript";
       position: "ic_menu_close_clear_cancel"
     }}
   />
-</$ActionBar>
+</actionBar>
 ```
 
 ## Props

@@ -4,7 +4,7 @@ title: WebView
 ---
 <!-- contributors: [shirakaba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska] -->
 
-`<$WebView>` is a UI component that lets you show web content in your app. You can pull and show content from a URL or a local HTML file, or you can render static HTML content.
+`<webView>` is a UI component that lets you show web content in your app. You can pull and show content from a URL or a local HTML file, or you can render static HTML content.
 
 See also:
 
@@ -16,13 +16,12 @@ See also:
 
 ```tsx
 import * as React from "react";
-import { $WebView } from "react-nativescript";
 
-<$WebView src="http://nativescript-vue.org/" />
+<webView src="http://nativescript-vue.org/" />
 
-<$WebView src="~/html/index.html" />
+<webView src="~/html/index.html" />
 
-<$WebView src="<div><h1>Some static HTML</h1></div>" />
+<webView src="<div><h1>Some static HTML</h1></div>" />
 ```
 
 <!-- [> screenshots for=WebView <] -->
@@ -32,8 +31,8 @@ import { $WebView } from "react-nativescript";
 | Name | Type | Description |
 |------|------|-------------|
 | `src` | `string` | Gets or sets the displayed web content.<br/>Valid values: an absolute URL, the path to a local HTML file, or static HTML.
-| `onLoadStarted` | `(args: `[`LoadEventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.loadeventdata)`) => void` | Emitted when the page has started loading in the `<$WebView>`.
-| `onLoadFinished` | `(args: `[`LoadEventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.loadeventdata)`) => void` | Emitted when the page has finished loading in the `<$WebView>`.
+| `onLoadStarted` | `(args: `[`LoadEventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.loadeventdata)`) => void` | Emitted when the page has started loading in the `<webView>`.
+| `onLoadFinished` | `(args: `[`LoadEventData`](https://docs.nativescript.org/api-reference/interfaces/__nativescript_core_.loadeventdata)`) => void` | Emitted when the page has finished loading in the `<webView>`.
 
 ## Native component
 

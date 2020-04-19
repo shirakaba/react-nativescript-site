@@ -4,10 +4,10 @@ title: SegmentedBar
 ---
 <!-- contributors: [shirakba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska] -->
 
-`<$SegmentedBar>` is a UI bar component that displays a set of buttons for discrete selection. Can show text or images.
+`<segmentedBar>` is a UI bar component that displays a set of buttons for discrete selection. Can show text or images.
 
-As opposed to `<$TabView>`:
-* The position of `<$SegmentedBar>` is not fixed. 
+As opposed to `<tabView>`:
+* The position of `<segmentedBar>` is not fixed. 
 * You can place and style it as needed on the page or inside additional app elements such as hamburger menus.
 * You need to handle the content shown after selection separately.
 
@@ -20,17 +20,16 @@ See also:
 
 ```tsx
 import * as React from "react";
-import { $SegmentedBar, $SegmentedBarItem } from "react-nativescript";
 
-<$SegmentedBar>
-  <$SegmentedBarItem title="First" />
-  <$SegmentedBarItem title="Second" />
-  <$SegmentedBarItem title="Third" />
+<segmentedBar>
+  <segmentedBarItem title="First" />
+  <segmentedBarItem title="Second" />
+  <segmentedBarItem title="Third" />
 </SegmentedBar>
 ```
 
 ```tsx
-<$SegmentedBar
+<segmentedBar
   items={listOfItems}
   selectedIndex={0}
   selectedIndexChange={onSelectedIndexChange}

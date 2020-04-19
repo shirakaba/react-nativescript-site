@@ -4,7 +4,7 @@ title: Frame
 ---
 <!-- contributors: [shirakaba, rigor789, PieterHartzer] -->
 
-`<$Frame>` is a UI component used to display [`<$Page>`](/en/docs/elements/components/page) elements. Every app needs at least a single `<$Frame>`  element, usually set as the root element.
+`<frame>` is a UI component used to display [`<page>`](/en/docs/elements/components/page) elements. Every app needs at least a single `<frame>`  element, usually set as the root element.
 
 See also:
 
@@ -19,19 +19,17 @@ If you need to create multiple frames, you can do so by wrapping them in a Layou
 
 ```tsx
 import * as React from "react";
-import { $GridLayout, $Frame } from "react-nativescript";
 
-<$GridLayout columns={[new ItemSpec(1, "star"), new ItemSpec(1, "star")]} rows={[]}>
-  <$Frame col={0}/>
-  <$Frame col={1}/>
-</$GridLayout>
+<gridLayout columns={[new ItemSpec(1, "star"), new ItemSpec(1, "star")]} rows={[]}>
+  <frame col={0}/>
+  <frame col={1}/>
+</gridLayout>
 ```
 
 #### A frame with a default page
 
 ```tsx
 import * as React from "react";
-import { $Frame, $ActionBar, $Label, $GridLayout } from "react-nativescript";
 import { Frame } from "@nativescript/core";
 
 interface Props {
@@ -55,14 +53,14 @@ class AppContainer extends React.Component<Props, State> {
     const { forwardedRef } = this.props;
 
     return (
-      <$Frame ref={forwardedRef}>
-        <$Page ref={this.pageRef}>
-          <$ActionBar title="Default Page Title" />
-          <$GridLayout>
-            <$Label text="Default Page Content" />
-          </$GridLayout>
-        </$Page>
-      </$Frame>
+      <frame ref={forwardedRef}>
+        <page ref={this.pageRef}>
+          <actionBar title="Default Page Title" />
+          <gridLayout>
+            <label text="Default Page Content" />
+          </gridLayout>
+        </page>
+      </frame>
     );
   }
 }
@@ -72,12 +70,11 @@ class AppContainer extends React.Component<Props, State> {
 
 ```tsx
 import * as React from "react";
-import { $Frame } from "react-nativescript";
 import HomePage from './HomePage';
 
-<$Frame>
+<frame>
   <HomePage />
-</$Frame>
+</frame>
 ```
 
 ## Native component

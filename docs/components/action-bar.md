@@ -4,7 +4,7 @@ title: ActionBar
 ---
 <!-- contributors: [shirakaba, rigor789, eddyverbruggen, ikoevska] -->
 
-`<$ActionBar>` is a UI component that provides a toolbar at the top of the activity window. 
+`<actionBar>` is a UI component that provides a toolbar at the top of the activity window. 
 
 This component is the NativeScript abstraction for the Android [app bar](https://developer.android.com/training/appbar/) and the iOS [navigation bar](https://developer.apple.com/design/human-interface-guidelines/ios/bars/navigation-bars/).
 
@@ -21,23 +21,21 @@ See also:
 
 ```tsx
 import * as React from "react";
-import { $ActionBar } from "react-nativescript";
 
-<$ActionBar title="MyApp" />
+<actionBar title="MyApp" />
 ```
 
 #### Using a custom title view
 
 ```tsx
 import * as React from "react";
-import { $ActionBar, $StackLayout, $Image, $Label } from "react-nativescript";
 
-<$ActionBar>
-  <$StackLayout orientation="horizontal">
-    <$Image src="res://icon" width={40} height={40} verticalAlignment="center" />
-    <$Label text="NativeScript" fontSize={24} verticalAlignment="center" />
-  </$StackLayout>
-</$ActionBar>
+<actionBar>
+  <stackLayout orientation="horizontal">
+    <image src="res://icon" width={40} height={40} verticalAlignment="center" />
+    <label text="NativeScript" fontSize={24} verticalAlignment="center" />
+  </stackLayout>
+</actionBar>
 ```
 
 <!-- TODO: check whether android.*attributes are strictly settable only on ActionItem as I had previously thought. -->
@@ -45,20 +43,19 @@ import { $ActionBar, $StackLayout, $Image, $Label } from "react-nativescript";
 <!-- #### Setting an app icon for Android
 
 ```tsx
-<$ActionBar title="My App" android.icon="res://icon" android.iconVisibility="always" />
+<actionBar title="My App" android.icon="res://icon" android.iconVisibility="always" />
 ``` -->
 
 #### Removing the border
 
-By default, a border is drawn at the bottom of the `<$ActionBar>`. In addition to the border, on iOS devices a translucency filter is also applied over the `<$ActionBar>`.
+By default, a border is drawn at the bottom of the `<actionBar>`. In addition to the border, on iOS devices a translucency filter is also applied over the `<actionBar>`.
 
 To remove this styling from your app, you can set the `flat` property to `true`.
 
 ```tsx
 import * as React from "react";
-import { $ActionBar } from "react-nativescript";
 
-<$ActionBar title="My App" flat={true} />
+<actionBar title="My App" flat={true} />
 ```
 
 ## Props

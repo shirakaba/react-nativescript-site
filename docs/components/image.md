@@ -4,7 +4,7 @@ title: Image
 ---
 <!-- contributors: [MisterBrownRSA, rigor789, ikoevska] -->
 
-`<$Image>` is a UI component that shows an image from an [ImageSource](https://docs.nativescript.org/api-reference/modules/_image_source_) or from a URL.
+`<image>` is a UI component that shows an image from an [ImageSource](https://docs.nativescript.org/api-reference/modules/_image_source_) or from a URL.
 
 See also:
 
@@ -17,36 +17,32 @@ See also:
 
 ```tsx
 import * as React from "react";
-import { $Image } from "react-nativescript";
 
-<$Image src="~/logo.png" stretch="none" />
+<image src="~/logo.png" stretch="none" />
 ```
 
 #### Displaying an image from a URL
 
 ```tsx
 import * as React from "react";
-import { $Image } from "react-nativescript";
 
-<$Image src="https://art.nativescript-vue.org/NativeScript-Vue-White-Green.png" stretch="none" />
+<image src="https://art.nativescript-vue.org/NativeScript-Vue-White-Green.png" stretch="none" />
 ```
 
 #### Displaying an image from `App_Resources`
 
 ```tsx
 import * as React from "react";
-import { $Image } from "react-nativescript";
 
-<$Image src="res://icon" stretch="none" />
+<image src="res://icon" stretch="none" />
 ```
 
 #### Displaying a `base64`-encoded image
 
 ```tsx
 import * as React from "react";
-import { $Image } from "react-nativescript";
 
-<$Image src="data:Image/png;base64,iVBORw..." stretch="none" />
+<image src="data:Image/png;base64,iVBORw..." stretch="none" />
 ```
 
 <!-- [> screenshots for=Image <] -->

@@ -4,7 +4,7 @@ title: HtmlView
 ---
 <!-- contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska] -->
 
-`<$HtmlView>` is a UI component that lets you show static HTML content.
+`<htmlView>` is a UI component that lets you show static HTML content.
 
 See also:
 
@@ -16,9 +16,8 @@ See also:
 
 ```tsx
 import * as React from "react";
-import { $HtmlView } from "react-nativescript";
 
-<$HtmlView html="<div><h1>HtmlView</h1></div>" />
+<htmlView html="<div><h1>HtmlView</h1></div>" />
 ```
 
 <!-- [> screenshots for=HtmlView <] -->

@@ -4,7 +4,7 @@ title: ActivityIndicator
 ---
 <!-- contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska] -->
 
-`<$ActivityIndicator>` is a UI component that shows a progress indicator signaling to the user of an operation running in the background.
+`<activityIndicator>` is a UI component that shows a progress indicator signaling to the user of an operation running in the background.
 
 See also:
 
@@ -15,9 +15,8 @@ See also:
 
 ```tsx
 import * as React from "react";
-import { $ActivityIndicator } from "react-nativescript";
 
-<$ActivityIndicator busy={true} />
+<activityIndicator busy={true} />
 ```
 
 <!-- [> screenshots for=ActivityIndicator <] -->

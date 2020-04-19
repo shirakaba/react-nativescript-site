@@ -4,7 +4,7 @@ title: DatePicker
 ---
 <!-- contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska] -->
 
-`<$DatePicker>` is a UI component that lets users select a date from a pre-configured range.
+`<datePicker>` is a UI component that lets users select a date from a pre-configured range.
 
 See also:
 
@@ -16,10 +16,9 @@ See also:
 
 ```tsx
 import * as React from "react";
-import { $DatePicker } from "react-nativescript";
 import { EventData } from "@nativescript/core";
 
-<$DatePicker
+<datePicker
   date={new Date()}
   onDateChange={(args: EventData) => {
     const datePicker = args.object;

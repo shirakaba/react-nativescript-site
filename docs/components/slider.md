@@ -4,7 +4,7 @@ title: Slider
 ---
 <!-- contributors: [shirakaba, MisterBrownRSA, rigor789, eddyverbruggen, ikoevska] -->
 
-`<$Slider>` is a UI component that provides a slider control for picking values within a specified numeric range.
+`<slider>` is a UI component that provides a slider control for picking values within a specified numeric range.
 
 See also:
 
@@ -15,9 +15,8 @@ See also:
 
 ```tsx
 import * as React from "react";
-import { $Slider } from "react-nativescript";
 
-<$Slider value={0} onValueChange={onValueChange} />
+<slider value={0} onValueChange={onValueChange} />
 ```
 
 <!-- [> screenshots for=Slider <] -->

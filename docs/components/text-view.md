@@ -4,9 +4,9 @@ title: TextView
 ---
 <!-- contributors: [shirakaba, MisterBrownRSA, rigor789, TheOriginalJosh, eddyverbruggen, ikoevska] -->
 
-`<$TextView>` is a UI component that shows an editable or a read-only multi-line text container. You can use it to let users type large text in your app or to show longer, multi-line text on the screen.
+`<textView>` is a UI component that shows an editable or a read-only multi-line text container. You can use it to let users type large text in your app or to show longer, multi-line text on the screen.
 
-`<$TextView>` extends [`TextBase`](https://docs.nativescript.org/api-reference/classes/_ui_text_base_.textbase) and [`EditableTextBase`](https://docs.nativescript.org/api-reference/classes/_ui_editor_text_base_.editabletextbase) which provide additional properties and events.
+`<textView>` extends [`TextBase`](https://docs.nativescript.org/api-reference/classes/_ui_text_base_.textbase) and [`EditableTextBase`](https://docs.nativescript.org/api-reference/classes/_ui_editor_text_base_.editabletextbase) which provide additional properties and events.
 
 See also:
 
@@ -16,28 +16,27 @@ See also:
 ---
 
 ```tsx
-<$TextView text="Multi\nLine\nText" />
+<textView text="Multi\nLine\nText" />
 ```
 
 <!-- [> screenshots for=TextView <] -->
 
 ### Displaying multi-style text
 
-To apply multiple styles to the text in your `<$TextView>`, you can use `<$FormattedString>`:
+To apply multiple styles to the text in your `<textView>`, you can use `<formattedString>`:
 
 ```tsx
 import * as React from "react";
-import { $TextView, $FormattedString, $Span } from "react-nativescript";
 
-<$TextView editable={false}>
-  <$FormattedString>
-    <$Span text="You can use text attributes such as " />
-    <$Span text="bold, " fontWeight="bold" />
-    <$Span text="italic " fontStyle="italic" />
-    <$Span text="and " />
-    <$Span text="underline." textDecoration="underline" />
-  </$FormattedString>
-</$TextView>
+<textView editable={false}>
+  <formattedString>
+    <span text="You can use text attributes such as " />
+    <span text="bold, " fontWeight="bold" />
+    <span text="italic " fontStyle="italic" />
+    <span text="and " />
+    <span text="underline." textDecoration="underline" />
+  </formattedString>
+</textView>
 ```
 
 ## Props

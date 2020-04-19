@@ -4,24 +4,23 @@ title: TimePicker
 ---
 <!-- contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska] -->
 
-`<$TimePicker>` is a UI component that lets users select time. 
+`<timePicker>` is a UI component that lets users select time. 
 
 See also:
 
 * [Official top-level documentation](https://docs.nativescript.org/ui/components/time-picker)
 * [Detailed API specification](https://docs.nativescript.org/api-reference/classes/_ui_time_picker_.timepicker)
-* [`<$DatePicker>`](/docs/components/date-picker)
+* [`<datePicker>`](/docs/components/date-picker)
 
 ---
 
 ```tsx
 import * as React from "react";
-import { $TimePicker } from "react-nativescript";
 
-<$TimePicker hour={selectedHour} minute={selectedMinute} />
+<timePicker hour={selectedHour} minute={selectedMinute} />
 ```
 
-`<$TimePicker>` provides two-way data binding using `v-model`.
+`<timePicker>` provides two-way data binding using `v-model`.
 
 <!-- [> screenshots for=TimePicker <] -->
 

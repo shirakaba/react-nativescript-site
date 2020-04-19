@@ -4,7 +4,7 @@ title: ListPicker
 ---
 <!-- contributors: [shirakaba, MisterBrownRSA, rigor789, ikoevska] -->
 
-`<$ListPicker>` is a UI component that lets the user select a value from a pre-configured list.
+`<listPicker>` is a UI component that lets the user select a value from a pre-configured list.
 
 See also:
 
@@ -15,10 +15,9 @@ See also:
 
 ```tsx
 import * as React from "react";
-import { $ListPicker } from "react-nativescript";
 import { EventData, ListPicker } from "@nativescript/core";
 
-<$ListPicker
+<listPicker
   items={listOfItems}
   selectedIndex={0}
   onSelectedIndexChange={(args: EventData) => {

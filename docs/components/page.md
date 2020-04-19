@@ -4,7 +4,7 @@ title: Page
 ---
 <!-- contributors: [shirakaba, rigor789, ikoevska] -->
 
-`<$Page>` is a UI component that represents an application screen. NativeScript apps typically consist of one or more `<$Page>` that wrap content such as an [`<$ActionBar>`](/docs/components/action-bar) and other UI widgets.
+`<page>` is a UI component that represents an application screen. NativeScript apps typically consist of one or more `<page>` that wrap content such as an [`<actionBar>`](/docs/components/action-bar) and other UI widgets.
 
 See also:
 
@@ -15,21 +15,20 @@ See also:
 
 ```tsx
 import * as React from "react";
-import { $Page, $ActionBar, $GridLayout, $Label } from "react-nativescript";
 
-<$Page>
-  <$ActionBar title="My App" />
-  <$GridLayout>
-    <$Label text="My Content"/>
-  </$GridLayout>
-</$Page>
+<page>
+  <actionBar title="My App" />
+  <gridLayout>
+    <label>My Content</label>
+  </gridLayout>
+</page>
 ```
 
 ## Props
 
 | Name | Type | Description |
 |------|------|-------------|
-| `actionBarHidden` | `boolean` | Shows or hides the `<$ActionBar>` for the page.<br/>Default value: `false`.
+| `actionBarHidden` | `boolean` | Shows or hides the `<actionBar>` for the page.<br/>Default value: `false`.
 | `backgroundSpanUnderStatusBar` | `boolean` | Gets or sets whether the background of the page spans under the status bar.<br/>Default value: `false`.
 | `androidStatusBarBackground` | [`Color`](https://docs.nativescript.org/api-reference/classes/__nativescript_core_.color) | (Android-only) Gets or sets the color of the status bar on Android devices.
 | `enableSwipeBackNavigation` | `boolean` | (iOS-only) Gets or sets whether the page can be swiped back on iOS.<br/>Default value: `true`.
