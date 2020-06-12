@@ -5,7 +5,15 @@ sidebar_label: Apps
 ---
 <!-- contributors: [shirakaba] -->
 
-## RPS Project Tracker 2.0
+## React NativeScript v1
+
+There are no sample apps for React NativeScript v1 yet, as it has only recently been released! Please have patience 🙇‍♂️
+
+## React NativeScript v0
+
+🚨　The samples in this section were made using React NativeScript v0. APIs for components and plugins have changed greatly since then!*
+
+### RPS Project Tracker 2.0
 
 <table>
     <tbody>
@@ -34,13 +42,13 @@ sidebar_label: Apps
     </tbody>
 </table>
 
-This app serves as the real-world sample app for React NativeScript. It's a port of a port; based on Shiva Prasad's `rpstrackertnsts` NativeScript Core implementation of Alex Ziskind's "RPS Project Tracker 2.0" series of apps.
+This app serves as the real-world sample app for React NativeScript. It's a port of a port; based on Shiva Prasad's `rpstrackertnsts` NativeScript Core implementation of Alex Ziskind's "RPS Project Tracker 2.0" series of apps. Supports both iOS and Android.
 
 *Made by Jamie Birch ([@LinguaBrowse](https://twitter.com/LinguaBrowse)).*
 
 * GitHub [Source](https://github.com/shirakaba/rpstrackerrns)
 
-## NS:IDE
+### NS:IDE
 
 <table>
     <tbody>
@@ -63,7 +71,7 @@ This app serves as the real-world sample app for React NativeScript. It's a port
     </tbody>
 </table>
 
-A REPL for experimenting with NativeScript code at runtime.
+A REPL for experimenting with NativeScript code at runtime (iOS-only).
 
 *Made by Jamie Birch ([@LinguaBrowse](https://twitter.com/LinguaBrowse)).*
 
@@ -71,7 +79,7 @@ A REPL for experimenting with NativeScript code at runtime.
 * [App Store page](https://itunes.apple.com/us/app/nside/id1446068686?ls=1&mt=8)
 
 
-## WhatsApp Redesign
+### WhatsApp Redesign
 
 <table>
     <tbody>
@@ -100,10 +108,36 @@ A REPL for experimenting with NativeScript code at runtime.
     </tbody>
 </table>
 
-An example redesign of WhatsApp.
+An example redesign of WhatsApp, supporting both iOS and Android.
 
 *Made by Aliziwe Mahono ([@itxTiamat_BAF](https://twitter.com/itxTiamat_BAF)).*
 
-* NativeScript Playground [Source](https://play.nativescript.org/?template=play-react&id=QahdpV)
+* NativeScript Playground [Source](https://play.nativescript.org/?template=play-react&id=QahdpV&v=2)
+
+
+### Avfallshämtning
+
+<table>
+    <tbody>
+        <tr>
+            <td align="center" valign="middle">
+                <img alt="Avfallshämtning preview 1" src="/img/sample-apps/avfallshamtning-1.png" width="200px" </img>
+            </td>
+            <td align="center" valign="middle">
+                <img alt="Avfallshämtning preview 2" src="/img/sample-apps/avfallshamtning-1.png" width="200px"</img>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+Full description from the Google Play store (automatic translation):
+
+> Place an order for waste collection. Fill in personal information that is easily and securely stored in the phone for future orders. Answer a few questions about the waste and suggest a time for collection.
+
+Released for Android only.
+
+*Made by ([@lelelo1](https://github.com/lelelo1)).*
+
+* Google Play Store [page](https://play.google.com/store/apps/details?id=org.nativescript.avfallshamtning)
 
 
