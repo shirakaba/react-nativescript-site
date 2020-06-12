@@ -15,6 +15,15 @@ See also:
 
 ---
 
+#### Introduction to Node Roles
+
+An ActionItem is a child of the ActionBar, which is a complex component that can contain child components serving different roles (e.g. navigation button, title view, or action item). React NativeScript provides a `nodeRole` property so that you can make it explicit what role each given child serves.
+
+Take care not to miss the `nodeRole` property that we set in the following examples, to see which children (and grandchildren) require which roles.
+
+See: [Node Roles](/docs/core-concepts/node-roles)
+
+
 #### Basic use
 
 ```tsx
@@ -22,24 +31,62 @@ import * as React from "react";
 
 <actionBar title="My App">
   <actionItem
+    nodeRole={"actionItems"}
     onTap={onTapShare}
     ios={{
       systemIcon: 9,
-      position: "left"
+      position: "left" as const
     }}
     android={{
-      systemIcon: "ic_menu_share",
-      position: "actionBar"
+      systemIcon: "ic_menu_share" as const,
+      position: "actionBar" as const
     }}
   />
   <actionItem
+    nodeRole={"actionItems"}
     onTap={onTapDelete}
     ios={{
       systemIcon: 16,
-      position: "right"
+      position: "right" as const
     }}
     android={{
-      position: "popup"
+      position: "popup" as const
+    }}
+    text="delete"
+  />
+</actionBar>
+```
+
+#### Using custom icons as well as platform-specific positioning
+
+Specify the `systemIcon` as `undefined`. I know, it's weird; it's behaviour that's inherited from NativeScript Core.
+
+```tsx
+import * as React from "react";
+
+<actionBar title="My App">
+  <actionItem
+    nodeRole={"actionItems"}
+    onTap={onTapShare}
+    ios={{
+      systemIcon: undefined,
+      position: "left" as const
+    }}
+    android={{
+      systemIcon: undefined,
+      position: "actionBar" as const
+    }}
+  />
+  <actionItem
+    nodeRole={"actionItems"}
+    onTap={onTapDelete}
+    ios={{
+      systemIcon: undefined,
+      position: "right" as const
+    }}
+    android={{
+      systemIcon: undefined,
+      position: "popup" as const
     }}
     text="delete"
   />
@@ -55,32 +102,35 @@ import * as React from "react";
 
 <actionBar title="My App">
   <actionItem
+    nodeRole={"actionItems"}
     onTap={onTapEdit}
     visibility={isEditing ? "hidden" : "visible"}
     ios={{
       systemIcon: 2,
-      position: "right"
+      position: "right" as const
     }}
     android={{
       systemIcon: "ic_menu_edit"
     }}
   />
   <actionItem
+    nodeRole={"actionItems"}
     onTap={onTapSave}
     visibility={isEditing ? "visible" : "hidden"}
     ios={{
       systemIcon: 3,
-      position: "right"
+      position: "right" as const
     }}
     android={{
       systemIcon: "ic_menu_save"
     }} />
   <actionItem
+    nodeRole={"actionItems"}
     onTap={onTapCancel}
     visibility={isEditing ? "visible" : "hidden"}
     ios={{
       systemIcon: 1,
-      position: "ic_menu_close_clear_cancel"
+      position: "ic_menu_close_clear_cancel" as const
     }}
   />
 </actionBar>

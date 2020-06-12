@@ -17,13 +17,25 @@ See also:
 
 ---
 
+#### Introduction to Node Roles
+
+An ActionItem is a child of the ActionBar, which is a complex component that can contain child components serving different roles (e.g. navigation button, title view, or action item). React NativeScript provides a `nodeRole` property so that you can make it explicit what role each given child serves.
+
+Take care not to miss the `nodeRole` property that we set in the following examples, to see which children (and grandchildren) require which roles.
+
+See: [Node Roles](/docs/core-concepts/node-roles)
+
+#### Basic use
+
 ```tsx
 import * as React from "react";
 
 <actionBar title="My App">
   <navigationButton
+    nodeRole={"navigationButton"}
     text="Go back"
     android={{
+      position: undefined,
       systemIcon: "ic_menu_back"
     }}
     onTap={goBack}

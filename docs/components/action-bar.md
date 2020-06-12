@@ -17,6 +17,14 @@ See also:
 
 ---
 
+#### Introduction to Node Roles
+
+ActionBars are a complex component that can contain child components serving different roles (e.g. navigation button, title view, or action item). React NativeScript provides a `nodeRole` property so that you can make it explicit what role each given child serves.
+
+Take care not to miss the `nodeRole` property that we set in the following examples, to see which children (and grandchildren) require which roles.
+
+See: [Node Roles](/docs/core-concepts/node-roles)
+
 #### Using a title
 
 ```tsx
@@ -31,20 +39,12 @@ import * as React from "react";
 import * as React from "react";
 
 <actionBar>
-  <stackLayout orientation="horizontal">
+  <stackLayout nodeRole={"titleView"} orientation="horizontal">
     <image src="res://icon" width={40} height={40} verticalAlignment="center" />
     <label text="NativeScript" fontSize={24} verticalAlignment="center" />
   </stackLayout>
 </actionBar>
 ```
-
-<!-- TODO: check whether android.*attributes are strictly settable only on ActionItem as I had previously thought. -->
-
-<!-- #### Setting an app icon for Android
-
-```tsx
-<actionBar title="My App" android.icon="res://icon" android.iconVisibility="always" />
-``` -->
 
 #### Removing the border
 
@@ -56,6 +56,34 @@ To remove this styling from your app, you can set the `flat` property to `true`.
 import * as React from "react";
 
 <actionBar title="My App" flat={true} />
+```
+
+#### Adding buttons
+
+
+```tsx
+import * as React from "react";
+
+<actionBar>
+  <label nodeRole={"titleView"}>Hello Title View</label>
+  <actionItem nodeRole={"actionItems"}>
+    <button nodeRole={"actionView"}>One</button>
+  </actionItem>
+  <actionItem nodeRole={"actionItems"}>
+    <button nodeRole={"actionView"}>Two</button>
+  </actionItem>
+  <actionItem nodeRole={"actionItems"}>
+    <button nodeRole={"actionView"}>Three</button>
+  </actionItem>
+</actionBar>
+```
+
+#### Setting an app icon for Android
+
+```tsx
+import * as React from "react";
+
+<actionBar title="My App" android={{ icon: "res://icon", iconVisibility: "always" }} />
 ```
 
 ## Props

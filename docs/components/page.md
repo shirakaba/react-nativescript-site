@@ -13,6 +13,8 @@ See also:
 
 ---
 
+### Basic example
+
 ```tsx
 import * as React from "react";
 
@@ -23,6 +25,14 @@ import * as React from "react";
   </gridLayout>
 </page>
 ```
+
+#### The special case of the ActionBar child
+
+It doesn't matter whether the `<actionBar>` is a first child, last child, or middle child of `<page>`. React NativeScript will automatically detect it using an `child instanceof Page` check, and set it as the ActionBar for the Page. **Note:** You can skip this check by explicitly setting `<actionBar nodeRole="actionBar">`, but it's not a major performance concern.
+
+Any non-ActionBar child will be handled as the content view. Page only supports a single child, so if you want to insert multiple children on the Page (which is normally the case!), you should use a LayoutBase such as GridLayout to enscapsulate them.
+
+***Out of interest:** You'd expect to be able to set ActionBar as the content view by specifying `<actionBar nodeRole="content">`, but it's not supported in NativeScript Core, so React NativeScript doesn't support it either!*
 
 ## Props
 

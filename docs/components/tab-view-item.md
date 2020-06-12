@@ -14,6 +14,14 @@ See also:
 
 ---
 
+#### Introduction to Node Roles
+
+TabViewItem components are children of the TabView component. For technical reasons, each TabViewItem child must specify a `nodeRole` property.
+
+More details here: [Node Roles](/docs/core-concepts/node-roles)
+
+#### Basic use
+
 ```tsx
 import * as React from "react";
 import { SelectedIndexChangedEventData } from "tns-core-modules/ui/tab-view/tab-view";
@@ -25,10 +33,10 @@ import { SelectedIndexChangedEventData } from "tns-core-modules/ui/tab-view/tab-
     console.log(`Changed from tab index ${oldIndex} -> ${newIndex}.`);
   }}
 >
-  <tabViewItem title="Tab 1">
+  <tabViewItem nodeRole="items" title="Tab 1">
     <label text="Content for Tab 1" />
   </tabViewItem>
-  <tabViewItem title="Tab 2">
+  <tabViewItem nodeRole="items" title="Tab 2">
     <label text="Content for Tab 2" />
   </tabViewItem>
 </tabView>
