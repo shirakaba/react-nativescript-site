@@ -136,7 +136,7 @@ Full description from the Google Play store (automatic translation):
 
 Released for Android only.
 
-*Made by ([@lelelo1](https://github.com/lelelo1)).*
+*Made by ([@Lelelo1](https://github.com/lelelo1)).*
 
 * Google Play Store [page](https://play.google.com/store/apps/details?id=org.nativescript.avfallshamtning)
 
