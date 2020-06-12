@@ -144,8 +144,8 @@ export class BrowserExample extends React.Component<Props, State> {
           }}
         />
         <webView
-          width={{ value: 100, unit: "%" }}
-          height={{ value: 100, unit: "%" }}
+          width="100%"
+          height="100%"
           src={this.state.src}
           onUrlChange={(args) => {
             this.setState({ src: (args.object as WebView).src });

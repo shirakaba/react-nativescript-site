@@ -13,56 +13,22 @@ See also:
 
 ---
 
-#### Multiple Frames
-
-If you need to create multiple frames, you can do so by wrapping them in a Layout, for example if you want to have 2 frames side-by-side:
-
-```tsx
-import * as React from "react";
-
-<gridLayout columns={[new ItemSpec(1, "star"), new ItemSpec(1, "star")]} rows={[]}>
-  <frame col={0}/>
-  <frame col={1}/>
-</gridLayout>
-```
-
 #### A frame with a default page
 
 ```tsx
 import * as React from "react";
-import { Frame } from "@nativescript/core";
 
-interface Props {
-  forwardedRef: React.RefObject<Frame>;
-}
-
-class AppContainer extends React.Component<Props, State> {
-  private readonly pageRef: React.RefObject<Page> = React.createRef<Page>();
-
-  componentDidMount() {
-    const frame: Frame = this.props.forwardedRef.current!;
-    frame.navigate({
-      create: () => {
-        const page: Page = this.pageRef.current!;
-        return page;
-      }
-    });
-  }
-
-  render() {
-    const { forwardedRef } = this.props;
-
-    return (
-      <frame ref={forwardedRef}>
-        <page ref={this.pageRef}>
-          <actionBar title="Default Page Title" />
-          <gridLayout>
-            <label text="Default Page Content" />
-          </gridLayout>
-        </page>
-      </frame>
-    );
-  }
+function AppContainer(){
+  return (
+    <frame>
+      <page>
+        <actionBar title="Default Page Title" />
+        <gridLayout>
+          <label text="Default Page Content" />
+        </gridLayout>
+      </page>
+    </frame>
+  );
 }
 ```
 
@@ -75,6 +41,19 @@ import HomePage from './HomePage';
 <frame>
   <HomePage />
 </frame>
+```
+
+#### Multiple Frames
+
+If you need to create multiple frames, you can do so by wrapping them in a Layout, for example if you want to have 2 frames side-by-side:
+
+```tsx
+import * as React from "react";
+
+<gridLayout columns={"* *"} rows={[]}>
+  <frame col={0}/>
+  <frame col={1}/>
+</gridLayout>
 ```
 
 ## Native component

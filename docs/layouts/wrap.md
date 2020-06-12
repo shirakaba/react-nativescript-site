@@ -24,26 +24,26 @@ import * as React from "react";
 <wrapLayout backgroundColor="#3c495e">
   <label
     text="first"
-    width={{ value: 30, unit: "%" }}
-    height={{ value: 30, unit: "%" }}
+    width="30%"
+    height="30%"
     backgroundColor="#43b883"}
   />
   <label
     text="second"
-    width={{ value: 30, unit: "%" }}
-    height={{ value: 30, unit: "%" }}
+    width="30%"
+    height="30%"
     backgroundColor="#1c6b48"}
   />
   <label
     text="third"
-    width={{ value: 30, unit: "%" }}
-    height={{ value: 30, unit: "%" }}
+    width="30%"
+    height="30%"
     backgroundColor="#289062"}
   />
   <label
     text="fourth"
-    width={{ value: 30, unit: "%" }}
-    height={{ value: 30, unit: "%" }}
+    width="30%"
+    height="30%"
     backgroundColor="#289062"}
   />
 </wrapLayout>
@@ -59,31 +59,30 @@ The following example creates a column of equally-sized items. When the row runs
 
 ```tsx
 import * as React from "react";
-import { wrapLayout, label } from "react-nativescript";
 
 <wrapLayout orientation="vertical" backgroundColor="#3c495e">
   <label
     text="first"
-    width={{ value: 30, unit: "%" }}
-    height={{ value: 30, unit: "%" }}
+    width="30%"
+    height="30%"
     backgroundColor="#43b883"}
   />
   <label
     text="second"
-    width={{ value: 30, unit: "%" }}
-    height={{ value: 30, unit: "%" }}
+    width="30%"
+    height="30%"
     backgroundColor="#1c6b48"}
   />
   <label
     text="third"
-    width={{ value: 30, unit: "%" }}
-    height={{ value: 30, unit: "%" }}
+    width="30%"
+    height="30%"
     backgroundColor="#289062"}
   />
   <label
     text="fourth"
-    width={{ value: 30, unit: "%" }}
-    height={{ value: 30, unit: "%" }}
+    width="30%"
+    height="30%"
     backgroundColor="#289062"}
   />
 </wrapLayout>

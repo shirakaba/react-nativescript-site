@@ -31,11 +31,10 @@ The following example creates a simple 2-by-2 grid with fixed column widths and 
 
 ```tsx
 import * as React from "react";
-import { ItemSpec } from "tns-core-modules/ui/layouts/grid-layout/grid-layout";
 
 <gridLayout
-  columns={[new ItemSpec(115, "px"), new ItemSpec(115, "px")]}
-  rows={[new ItemSpec(115, "px"), new ItemSpec(115, "px")]}
+  columns="115, 115"
+  rows="115, 115"
 >
   <label text="0,0" row={0} col={0} backgroundColor="#43b883"/>
   <label text="0,1" row={0} col={1} backgroundColor="#1c6b48"/>
@@ -53,11 +52,11 @@ The following example creates a grid with responsive design, where space is alot
 
 ```tsx
 import * as React from "react";
-import { ItemSpec } from "tns-core-modules/ui/layouts/grid-layout/grid-layout";
 
 <gridLayout
-  columns={[new ItemSpec(1, "star"), new ItemSpec(2, "star")]}
-  rows={[new ItemSpec(2, "star"), new ItemSpec(3, "star")]}
+  columns="*, 2*"
+  rows="2*, 3*"
+  backgroundColor="#3c495e"
 >
   <label text="0,0" row={0} col={0} backgroundColor="#43b883"/>
   <label text="0,1" row={0} col={1} backgroundColor="#1c6b48"/>
@@ -75,11 +74,11 @@ The following example create a grid with one auto-sized column and one column wi
 
 ```tsx
 import * as React from "react";
-import { ItemSpec } from "tns-core-modules/ui/layouts/grid-layout/grid-layout";
 
 <gridLayout
-  columns={[new ItemSpec(80, "pixel"), new ItemSpec(1, "auto")]}
-  rows={[new ItemSpec(80, "pixel"), new ItemSpec(80, "pixel")]}
+   columns="80, auto"
+   rows="80, 80"
+   backgroundColor="#3c495e"
 >
   <label text="0,0" row={0} col={0} backgroundColor="#43b883"/>
   <label text="0,1" row={0} col={1} backgroundColor="#1c6b48"/>
@@ -97,11 +96,10 @@ The following example creates a complex grid with responsive design, mixed width
 
 ```tsx
 import * as React from "react";
-import { ItemSpec } from "tns-core-modules/ui/layouts/grid-layout/grid-layout";
 
 <gridLayout
-  columns={[new ItemSpec(40, "pixel"), new ItemSpec(1, "auto"), new ItemSpec(1, "star")]}
-  rows={[new ItemSpec(40, "pixel"), new ItemSpec(1, "auto"), new ItemSpec(1, "star")]}
+  columns="40, auto, *"
+  rows="40, auto, *"
   backgroundColor="#3c495e"
 >
   <label text="0,0" row={0} col={0} backgroundColor="#43b883"/>
