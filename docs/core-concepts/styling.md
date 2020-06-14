@@ -48,7 +48,7 @@ cv.width = "100";
 cv.width = "100px";
 ```
 
-It's not clear why the convenience property `cv.width` exists as well as `cv.width`, and if anything it's bewildering. However, as it's an underlying property of NativeScript Core, React NativeScript has decided to reflect both ways of setting the styles:
+It's not clear why the convenience property `cv.width` exists as well as `cv.width`, and if anything it's bewildering. However, as it's an underlying feature of NativeScript Core, React NativeScript has decided to reflect both ways of setting the styles:
 
 ```tsx
 <contentView width={100} style={{ width: 100 }} />
@@ -81,8 +81,47 @@ const extraStyle = { height: 100 };
 
 Not yet, but I hope to support it in future versions. There is no intelligent re-use of styles yet.
 
+```tsx
+// ❌ No "StyleSheet" API exists yet.
+const styles = StyleSheet.create({
+    fullWidth: { width: "100%" },
+    fullHeight: { height: "100%" },
+});
+
+// ✅ This is probably the closest equivalent for now.
+import { ViewBaseAttributes } from "react-nativescript/dist/shared/NativeScriptJSXTypings";
+type RNSStyle = ViewBaseAttributes["style"];
+
+const styles = {
+    fullWidth: { width: "100%" } as RNSStyle,
+    fullHeight: { height: "100%" } as RNSStyle,
+};
+
+// ❌ This is another option, but would be hard to refactor if
+// a StyleSheet.create() API were ever released.
+const fullWidthStyle: RNSStyle = { width: "100%" };
+const fullheightStyle: RNSStyle = { height: "100%" };
+```
+
+There may be a better way to type this to avoid constantly having to re-assert `as RNSStyle`. RNS may provide its own `StyleSheet.create()` method in future if only for typings assistance.
+
 ## CSS
 
 React NativeScript supports CSS in all the same ways that NativeScript Core supports it. However, as I don't use CSS in React Native apps, I haven't paid attention to it when developing React NativeScript.
 
 Please refer to the [NativeScript Core Styling docs](https://docs.nativescript.org/ui/styling) for comprehensive information on CSS.
+
+
+## Best practices for upcoming changes to styling
+
+We 
+
+```tsx
+// ❌ Don't use shorthand styles.
+<contentView width={100} />
+// ✅ Do use longhand styles.
+<contentView style={{ width: 100 } />
+
+// ✅ Use spread to spread extra styles until array syntax is supported.
+<contentView style={{ width: 100, ...extraStyle }} />
+```
