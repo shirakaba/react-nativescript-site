@@ -121,10 +121,10 @@ An example redesign of WhatsApp, supporting both iOS and Android.
     <tbody>
         <tr>
             <td align="center" valign="middle">
-                <img alt="Avfallshämtning preview 1" src="/img/sample-apps/avfallshamtning-1.png" width="200px" </img>
+                <img alt="Avfallshämtning preview 1" src="/img/sample-apps/avfallshamtning-ios-1.png" width="200px" </img>
             </td>
             <td align="center" valign="middle">
-                <img alt="Avfallshämtning preview 2" src="/img/sample-apps/avfallshamtning-1.png" width="200px"</img>
+                <img alt="Avfallshämtning preview 2" src="/img/sample-apps/avfallshamtning-ios-2.png" width="200px"</img>
             </td>
         </tr>
     </tbody>
@@ -134,10 +134,11 @@ Full description from the Google Play store (automatic translation):
 
 > Place an order for waste collection. Fill in personal information that is easily and securely stored in the phone for future orders. Answer a few questions about the waste and suggest a time for collection.
 
-Released for Android only.
+Released for iOS and Android.
 
 *Made by ([@Lelelo1](https://github.com/lelelo1)).*
 
+* iOS App Store [page](https://apps.apple.com/se/app/avfallshämtning/id1489799609?l=en)
 * Google Play Store [page](https://play.google.com/store/apps/details?id=org.nativescript.avfallshamtning)
 
 
