@@ -70,7 +70,7 @@ import * as React from "react";
 import { ListView } from "react-nativescript";
 import { ItemEventData } from "tns-core-modules/ui/list-view/list-view";
 
-type MyEvenItem = { textOdd: string };
+type MyEvenItem = { textEven: string };
 type MyOddItem = { textOdd: string };
 type MyItem = MyEvenItem | MyOddItem;
 
@@ -80,13 +80,14 @@ function itemTemplateSelector(item: MyItem, index: number, items: MyItem[]): str
   return index % 2 === 0 ? "even" : "odd";
 }
 
-const oddCellFactory = (item: MyOddItem) => {
-  return <label text={item.textOdd} color={"orange"}/>;
-},
+const evenCellFactory = (item: MyOddItem) => {
+  return <label text={item.textEven} color={"green"}/>;
+};
 
 const oddCellFactory = (item: MyOddItem) => {
-  return <label text={item.textEven} color={"green"}/>;
-},
+  return <label text={item.textOdd} color={"orange"}/>;
+};
+
 
 const cellFactories = new Map([
   [
