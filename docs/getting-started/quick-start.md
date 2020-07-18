@@ -8,7 +8,9 @@ sidebar_label: Quick Start
 
 ## Developing online (in the Playground)
 
-If you don't want the hassle of installing and configuring your system before you can have a taste of React NativeScript, the [NativeScript Playground](https://play.nativescript.org) has you covered.
+~~If you don't want the hassle of installing and configuring your system before you can have a taste of React NativeScript, the [NativeScript Playground](https://play.nativescript.org) has you covered.~~
+
+*Although the online Playground is ready, the accompanying Preview and Playground apps are awaiting an update from RNS v0 to v1, so this workflow isn't supported yet. We're working on it. – 18th July 2020.*
 
 But if you [already have your system ready for native development](/docs/installation), you can start by using the `tns-template-blank-react` detailed in the next section.
 
@@ -22,7 +24,11 @@ tns create my-blank-react --template tns-template-blank-react
 cd my-blank-react
 npm install
 
-tns preview
+# The Preview and Playground apps are awaiting an update from
+# RNS v0 to v1, so the `tns preview` workflow isn't supported
+# yet. We're working on it. – 18th July 2020
+#
+# tns preview
 # or
 tns run ios
 # or
