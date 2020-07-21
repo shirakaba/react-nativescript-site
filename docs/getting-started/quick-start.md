@@ -19,7 +19,7 @@ But if you [already have your system ready for native development](/docs/install
 Provided you already have your system ready for native development (see [Getting Started with NativeScript](https://www.nativescript.org/getting-started-with-nativescript) from the NativeScript official documentation), you can start by using the `tns-template-blank-react` starter boilerplate:
 
 ```sh
-tns create my-blank-react --template tns-template-blank-react
+tns create my-blank-react --react
 
 cd my-blank-react
 npm install
