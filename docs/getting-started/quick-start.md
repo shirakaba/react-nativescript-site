@@ -16,7 +16,7 @@ But if you [already have your system ready for native development](/docs/install
 
 ## Developing on desktop (via NativeScript CLI)
 
-Provided you already have your system ready for native development (see [Getting Started with NativeScript](https://www.nativescript.org/getting-started-with-nativescript) from the NativeScript official documentation), you can start by using the `tns-template-blank-react` starter boilerplate:
+Provided you already have your system ready for native development (see [Getting Started with NativeScript](https://www.nativescript.org/getting-started-with-nativescript) from the NativeScript official documentation), you can start by using the [`tns-template-blank-react`](https://github.com/NativeScript/nativescript-app-templates/tree/master/packages/template-blank-react) starter boilerplate simply by passing the `--react` flag when using `tns create`:
 
 ```sh
 tns create my-blank-react --react
