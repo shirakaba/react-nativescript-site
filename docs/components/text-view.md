@@ -35,6 +35,7 @@ import * as React from "react";
     <span text="italic " fontStyle="italic" />
     <span text="and " />
     <span text="underline." textDecoration="underline" />
+    <!-- To set text on the <span> element, please do use the `text` prop; it can't safely take text nodes as children! -->
   </formattedString>
 </textView>
 ```
