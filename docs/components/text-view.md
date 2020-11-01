@@ -16,7 +16,7 @@ See also:
 ---
 
 ```tsx
-<textView text="Multi\nLine\nText" />
+<textView text={"Multi\nLine\nText"} />
 ```
 
 <!-- [> screenshots for=TextView <] -->
