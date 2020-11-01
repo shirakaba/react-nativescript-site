@@ -27,7 +27,7 @@ import * as React from "react";
     <label text="horizontally" />
     <label text="if necessary" />
   </stackLayout>
-</ScrollView>
+</scrollView>
 ```
 
 <!-- [> screenshots for=ScrollView <] -->
