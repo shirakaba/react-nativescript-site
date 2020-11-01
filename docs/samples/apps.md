@@ -5,9 +5,58 @@ sidebar_label: Apps
 ---
 <!-- contributors: [shirakaba] -->
 
-## React NativeScript v1
+## React NativeScript v2
 
-There are no sample apps for React NativeScript v1 yet, as it has only recently been released! Please have patience 🙇‍♂️
+### NS:IDE
+
+<table>
+    <tbody>
+        <tr>
+            <td align="center" valign="middle">
+                <img alt="auto-complete" src="/img/sample-apps/nside-auto-complete.png" width="200px" </img>
+            </td>
+            <td align="center" valign="middle">
+                <img alt="native manipulation" src="/img/sample-apps/nside-native-manipulation.png" width="200px"</img>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" valign="middle">
+                <p><b>Evaluating native code</b></p>
+            </td>
+            <td align="center" valign="middle">
+                <p><b>Manipulating native UI</b></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+A REPL for experimenting with NativeScript code at runtime (iOS-only).
+
+*Made by Jamie Birch ([@LinguaBrowse](https://twitter.com/LinguaBrowse)).*
+
+* GitHub [Source](https://github.com/shirakaba/nside)
+* [App Store page](https://itunes.apple.com/us/app/nside/id1446068686?ls=1&mt=8)
+
+## Chat app
+
+A beautifully designed chat app, showing how you can create a very professional looking app with very little code!
+
+*Made by kaurag007ph ([@Kaurag1117L](https://twitter.com/Kaurag1117L)).*
+
+* GitHub [Source](https://github.com/kaurag007ph/react-nativescript-chat-app/)
+* [Demo video](https://twitter.com/Kaurag1117L/status/1321842717844885508?s=20) on Twitter
+
+## NativeScript UI Drawer demo app
+
+*Made by ([keerl](https://github.com/keerl)).*
+
+See in the `/react` directory at: https://github.com/nativescript-community/ui-drawer
+
+## NativeScript UI CollectionView demo app
+
+*Made by ([keerl](https://github.com/keerl)).*
+
+See in the `/react` directory at: https://github.com/nativescript-community/ui-collectionview
 
 ## React NativeScript v0
 
@@ -47,36 +96,6 @@ This app serves as the real-world sample app for React NativeScript. It's a port
 *Made by Jamie Birch ([@LinguaBrowse](https://twitter.com/LinguaBrowse)).*
 
 * GitHub [Source](https://github.com/shirakaba/rpstrackerrns)
-
-### NS:IDE
-
-<table>
-    <tbody>
-        <tr>
-            <td align="center" valign="middle">
-                <img alt="auto-complete" src="/img/sample-apps/nside-auto-complete.png" width="200px" </img>
-            </td>
-            <td align="center" valign="middle">
-                <img alt="native manipulation" src="/img/sample-apps/nside-native-manipulation.png" width="200px"</img>
-            </td>
-        </tr>
-        <tr>
-            <td align="center" valign="middle">
-                <p><b>Evaluating native code</b></p>
-            </td>
-            <td align="center" valign="middle">
-                <p><b>Manipulating native UI</b></p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-A REPL for experimenting with NativeScript code at runtime (iOS-only).
-
-*Made by Jamie Birch ([@LinguaBrowse](https://twitter.com/LinguaBrowse)).*
-
-* GitHub [Source](https://github.com/shirakaba/nside)
-* [App Store page](https://itunes.apple.com/us/app/nside/id1446068686?ls=1&mt=8)
 
 
 ### WhatsApp Redesign
