@@ -48,13 +48,13 @@ A beautifully designed chat app, showing how you can create a very professional 
 
 ## NativeScript UI Drawer demo app
 
-*Made by ([keerl](https://github.com/keerl)).*
+*Made by [keerl](https://github.com/keerl).*
 
 See in the `/react` directory at: https://github.com/nativescript-community/ui-drawer
 
 ## NativeScript UI CollectionView demo app
 
-*Made by ([keerl](https://github.com/keerl)).*
+*Made by [keerl](https://github.com/keerl).*
 
 See in the `/react` directory at: https://github.com/nativescript-community/ui-collectionview
 
