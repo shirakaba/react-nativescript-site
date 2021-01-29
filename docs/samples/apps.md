@@ -37,6 +37,15 @@ A REPL for experimenting with NativeScript code at runtime (iOS-only).
 * GitHub [Source](https://github.com/shirakaba/nside)
 * [App Store page](https://itunes.apple.com/us/app/nside/id1446068686?ls=1&mt=8)
 
+## Global Rewards app
+
+The mobile app for the corporate spend management platform, [Global Rewards](https://globalrewardsusa.com).
+
+*Made by [Finity Development](https://www.finitydevelopment.com/)*
+
+* iOS App Store [page](https://apps.apple.com/us/app/global-rewards/id1548512772)
+* Google Play Store [page](https://play.google.com/store/apps/details?id=org.finitydevs.global)
+
 ## Chat app
 
 A beautifully designed chat app, showing how you can create a very professional looking app with very little code!
