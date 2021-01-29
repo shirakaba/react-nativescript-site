@@ -43,13 +43,13 @@ A REPL for experimenting with NativeScript code at runtime (iOS-only).
     <tbody>
         <tr>
             <td align="center" valign="middle">
-                <img alt="Global Rewards rewards page" src="/img/sample-apps/gr-ios-1.jpg" width="200px" </img>
+                <img alt="Global Rewards rewards page" src="/img/sample-apps/gr-ios-1.png" width="200px" </img>
             </td>
             <td align="center" valign="middle">
-                <img alt="Global Rewards user profile page" src="/img/sample-apps/gr-ios-2.jpg" width="200px"</img>
+                <img alt="Global Rewards user profile page" src="/img/sample-apps/gr-ios-2.png" width="200px"</img>
             </td>
             <td align="center" valign="middle">
-                <img alt="Global Rewards transactions page" src="/img/sample-apps/gr-ios-3.jpg" width="200px"</img>
+                <img alt="Global Rewards transactions page" src="/img/sample-apps/gr-ios-3.png" width="200px"</img>
             </td>
         </tr>
         <tr>
