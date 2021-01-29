@@ -68,7 +68,7 @@ A REPL for experimenting with NativeScript code at runtime (iOS-only).
 
 The mobile app for the corporate spend management platform, [Global Rewards](https://globalrewardsusa.com).
 
-*Made by [Finity Development](https://www.finitydevelopment.com/)*
+*Made by [Finity Development](https://www.finitydevelopment.com/).*
 
 * iOS App Store [page](https://apps.apple.com/us/app/global-rewards/id1548512772)
 * Google Play Store [page](https://play.google.com/store/apps/details?id=org.finitydevs.global)
