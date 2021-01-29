@@ -39,6 +39,33 @@ A REPL for experimenting with NativeScript code at runtime (iOS-only).
 
 ## Global Rewards app
 
+<table>
+    <tbody>
+        <tr>
+            <td align="center" valign="middle">
+                <img alt="Global Rewards rewards page" src="/img/sample-apps/gr-ios-1.jpg" width="200px" </img>
+            </td>
+            <td align="center" valign="middle">
+                <img alt="Global Rewards user profile page" src="/img/sample-apps/gr-ios-2.jpg" width="200px"</img>
+            </td>
+            <td align="center" valign="middle">
+                <img alt="Global Rewards transactions page" src="/img/sample-apps/gr-ios-3.jpg" width="200px"</img>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" valign="middle">
+                <p><b>Rewards page</b></p>
+            </td>
+            <td align="center" valign="middle">
+                <p><b>User profile page</b></p>
+            </td>
+            <td align="center" valign="middle">
+                <p><b>Transactions page</b></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
 The mobile app for the corporate spend management platform, [Global Rewards](https://globalrewardsusa.com).
 
 *Made by [Finity Development](https://www.finitydevelopment.com/)*
