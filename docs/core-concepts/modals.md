@@ -13,7 +13,7 @@ Portals provide a first-class way to render children into a DOM node that exists
 We will also need to make use of [refs](https://reactjs.org/docs/refs-and-the-dom.html). Refs will give us access to functions like 
 showModal and closeModal from our component tree and our portal
 
-Here is a [github repo](https://github.com/mayerlench/react-nativescript-modals) that has a working example of modals and bottomsheets you can test for yourself!
+Here is a [github repo](https://github.com/mayerlench/react-nativescript-modals) that has a working example of modals, bottomsheets and snackbars! Go ahead and test it for yourself!
 
 ## Example: Modal
 A working example on opening and closing a modal
@@ -79,7 +79,7 @@ export default function Modal() {
 ```
 
 ## Example: Bottomsheets
-Similar to creating modal with portals, we can do the same with bottomsheet
+Similar to creating modal with portals, we can do the same with bottomsheet using a third party library
 
 First, a bit of setup to install the ui-material-bottomsheet
 - Run `npm i --save @nativescript-community/ui-material-bottomsheet`
@@ -150,4 +150,65 @@ export default function BottomSheetTest() {
         </>
     );
 }
+```
+
+## Example: Snackbars
+Heres another example of using a third party libary to display a snackbar. 
+
+This snackbar will display anchored above a view that will be passed to it. Since we want the snackbar to be on bottom of screen, we will use the view from our parent component's ref and use [forwardRef](https://reactjs.org/docs/forwarding-refs.html) to pass it to child component.
+
+First, a bit of setup to install the ui-material-snackbar
+- Run `npm i --save @nativescript-community/ui-material-snackbar`
+
+Create this component 
+```tsx
+import * as React from "react";
+import { SnackBar } from '@nativescript-community/ui-material-snackbar';
+
+const snackbar = new SnackBar();
+
+export const SnackBarTest = React.forwardRef((props, ref: any) => {
+
+    function showSimpleSnackbar() {
+        const view = ref.current?.nativeView
+
+        snackbar.action({
+            actionText: `I'm a simple snackbar`,
+            message: 'This is a snack',
+            view
+        }).then(result => console.log('Simple Snackbar:', result));
+    }
+
+    return (
+        <button text="Show Snack" onTap={showSimpleSnackbar} />
+    );
+})
+```
+
+In your parent component, import the snackbar component and pass it a ref
+```tsx
+import * as React from "react";
+import { StyleSheet } from "react-nativescript";
+import Modal from "./Modal";
+import BottomSheet from "./BottomSheet";
+import { SnackBarTest } from "./SnackBar";
+
+export function HomeScreen() {
+    const containerRef = React.useRef(null)
+    return (
+        <flexboxLayout style={styles.container} ref={containerRef}>
+            <Modal />
+            <BottomSheet />
+            <SnackBarTest ref={containerRef} />
+        </flexboxLayout>
+    );
+}
+
+const styles = StyleSheet.create({
+    container: {
+        height: "100%",
+        flexDirection: "column",
+        justifyContent: "center",
+    }
+});
 ```
