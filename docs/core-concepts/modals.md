@@ -5,7 +5,7 @@ title: Modals
 <!-- contributors: [mayerlench, shirakaba] -->
 
 Modals act like overlays, the goal here is to show a component modally. 
-The question is, where do we put our modal content in out component tree, because we dont want it to be visible untill it's presented
+The question is, where do we put our modal content in our component tree, because we dont want it to be visible untill it's presented
 
 The solution here is to use [React portals](https://reactjs.org/docs/portals.html).
 Portals provide a first-class way to render children into a DOM node that exists outside the DOM hierarchy of the parent component.
